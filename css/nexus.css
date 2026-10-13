@@ -260,3 +260,43 @@ html.js .arch.open{clip-path:inset(0 0 0 0 round 999px 999px 10px 10px);transiti
 .prose .timeline h3{margin:0 0 .3rem}
 @media (max-width:520px){.logo small{display:none}.logo b{font-size:1.15rem}}
 @media (pointer:coarse){.hint{display:none}}
+
+/* Case library: law-report layout */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.notice-box{border:1px solid var(--line);border-left:4px solid var(--accent);background:var(--bg-2);padding:14px 18px;margin:0 0 24px;font-size:.95rem;line-height:1.55;border-radius:4px}
+.lib-tools{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:8px 0 14px}
+.lib-tools input{flex:1 1 280px;font:inherit;padding:10px 14px;border:1px solid var(--line);background:var(--bg);color:var(--text);border-radius:6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+.chip{font:inherit;font-size:.85rem;padding:6px 12px;border:1px solid var(--line);background:transparent;color:var(--text);border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+table.lib{width:100%;border-collapse:collapse;font-size:.95rem}
+table.lib th{text-align:left;font-family:var(--serif);font-weight:600;border-bottom:2px solid var(--text);padding:8px 10px}
+table.lib td{border-bottom:1px solid var(--line);padding:12px 10px;vertical-align:top}
+table.lib td.ref{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--muted)}
+table.lib td a{font-family:var(--serif);font-weight:600;font-size:1.02rem}
+table.lib small{display:block;color:var(--muted);margin-top:4px;line-height:1.45}
+table.lib tr[hidden]{display:none}
+.report-head .lede{max-width:70ch}
+dl.cite{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0;margin:22px 0 0;border:1px solid var(--line);border-radius:4px}
+dl.cite div{padding:10px 14px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);margin:-0px}
+dl.cite dt{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+dl.cite dd{margin:2px 0 0;font-size:.95rem;overflow-wrap:anywhere}
+.rpt{display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px;align-items:start}
+.rpt .toc{position:sticky;top:90px;font-size:.9rem}
+.rpt .toc-h{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+.rpt .toc ol{list-style:none;margin:0;padding:0;border-left:1px solid var(--line)}
+.rpt .toc li a{display:block;padding:5px 12px;text-decoration:none;color:var(--muted)}
+.rpt .toc li a:hover{color:var(--text)}
+.rpt-body{max-width:74ch;overflow-wrap:anywhere}
+.rpt-body h2{font-family:var(--serif);border-top:1px solid var(--line);padding-top:22px;margin-top:38px;scroll-margin-top:90px}
+.rpt-body h2 .no{display:inline-block;min-width:2.6em;color:var(--accent)}
+.rpt-body ol.alpha{list-style:lower-alpha}
+@media (max-width:860px){
+  .rpt{grid-template-columns:1fr;gap:20px}
+  .rpt .toc{position:static}
+  .rpt .toc ol{columns:2}
+  table.lib thead{display:none}
+  table.lib,table.lib tbody,table.lib tr,table.lib td{display:block;width:100%}
+  table.lib tr{border-bottom:1px solid var(--line);padding:10px 0}
+  table.lib td{border:0;padding:3px 0}
+}

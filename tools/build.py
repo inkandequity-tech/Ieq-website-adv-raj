@@ -36,6 +36,19 @@ PRACTICE = PRACTICE + NEW_PRACTICE
 HOME_PRACTICE = PRACTICE[:4]
 OTHER_AREAS = []
 
+# Case library: hypothetical scenarios (tools/content/scenarios.json). Every page carries
+# the notice below. Nothing in the library states or implies that the practice handled a matter.
+_SC = json.loads((ROOT / "tools" / "content" / "scenarios.json").read_text(encoding="utf-8"))
+SCEN_NOTICE = _SC["notice"]
+SCEN_DATE, SCEN_DATE_HUMAN = "2026-10-14", "14 October 2026"
+SCEN_STATUS = "Draft for general information"
+LIB = [x for x in _SC["scenarios"] if x["publish"]]
+for _i, _x in enumerate(LIB, 1):
+    _x["ref"] = f"CL-{_i:02d}"
+SCEN_BY_PRACTICE = {}
+for _x in LIB:
+    SCEN_BY_PRACTICE.setdefault(_x["practice"], []).append(_x)
+
 TEAM = [
     ("rishabh", "Rishabh Raj", "Founding partner", "Constitutional and writ matters, property, service matters, cyber crime."),
     ("vedant", "Vedant Bhargav", "Managing partner", "Family law, criminal law, contract and civil litigation."),
@@ -124,6 +137,7 @@ NAV = [
     ("practice", "practice-areas.html", "Practice"),
     ("about", "about.html", "About"),
     ("insights", "insights.html", "Insights"),
+    ("library", "case-library.html", "Library"),
     ("careers", "careers.html", "Careers"),
     ("contact", "contact.html", "Contact"),
 ]
@@ -155,6 +169,7 @@ def footer(depth):
 <li><a href="{p("about.html")}">About</a></li>
 <li><a href="{p("rishabh-raj.html")}">Rishabh Raj, Advocate</a></li>
 <li><a href="{p("insights.html")}">Insights</a></li>
+<li><a href="{p("case-library.html")}">Case library</a></li>
 <li><a href="{p("careers.html")}">Careers</a></li>
 <li><a href="{p("contact.html")}">Contact</a></li>
 <li><a href="{p("disclaimer.html")}">Disclaimer</a></li>
@@ -238,7 +253,7 @@ def home():
 <h2>Areas of practice</h2>
 <p class="lede">Each page explains the law in plain terms: what the area covers, where matters are heard, and which papers usually matter.</p>
 <ul class="index">{rows}</ul>
-<p class="also">The practice covers {len(PRACTICE)} areas in total. See <a class="link" href="{p("practice-areas.html")}">all areas</a>.</p>
+<p class="also">The practice covers {len(PRACTICE)} areas in total. See <a class="link" href="{p("practice-areas.html")}">all areas</a>, or read worked examples in the <a class="link" href="{p("case-library.html")}">case library</a>.</p>
 </div></section>
 
 <section class="section" id="advocate"><div class="wrap founder">
@@ -375,6 +390,7 @@ def practice_index():
 </div></section>
 <section class="section"><div class="wrap">
 <ul class="index">{rows}</ul>
+<p class="also">Worked hypothetical scenarios for many of these areas are in the <a class="link" href="{p("case-library.html")}">case library</a>.</p>
 <div class="aside-note">These pages give general information and are reviewed from time to time. The law changes, and every matter turns on its own facts. Nothing here is legal advice.</div>
 </div></section>'''
     ld = [crumbs([("Home", BASE + "/"), ("Areas of practice", BASE + "/practice-areas.html")])]
@@ -534,6 +550,9 @@ def practice_pages():
         secs = "".join(f"<h2>{h}</h2>{b}" for h, b in c["sections"])
         faq = "".join(f"<details><summary>{q}</summary><p>{a}</p></details>" for q, a in c["faq"])
         others = "".join(f'<li><a href="{p("practice/" + s + ".html")}">{tt}</a></li>' for s, tt, _ in PRACTICE if s != slug)
+        sc = SCEN_BY_PRACTICE.get(slug, [])
+        scen = ('<h2>Illustrative scenarios</h2><p>Worked hypothetical scenarios in this area. They are general information and do not describe actual matters.</p><ul class="related">'
+                + "".join(f'<li><a href="{p("library/" + x["slug"] + ".html")}">{esc(x["title"])}</a></li>' for x in sc) + "</ul>") if sc else ""
         body = f'''<section class="page-head"><div class="wrap">
 <p class="site-name"><a class="link" href="{p("practice-areas.html")}">Areas of practice</a></p>
 <h1>{c["h1"]}</h1>
@@ -544,6 +563,7 @@ def practice_pages():
 {secs}
 <h2>Common questions</h2>
 <div class="faq">{faq}</div>
+{scen}
 <div class="aside-note">This page gives general information. It is not legal advice, the law changes, and every matter turns on its own facts. Advocates cannot solicit work, and nothing here is an invitation to instruct. Contact details are on the <a href="{p("contact.html")}">contact page</a>.</div>
 <h2>Other areas</h2>
 <ul class="related">{others}</ul>
@@ -594,7 +614,7 @@ def insights():
 </div></section>
 <section class="section"><div class="wrap">
 <ul class="index"><li><a class="row" href="{p("insights/pregnancy-pet-allahabad-hc.html")}"><h3>Pregnancy and public jobs</h3><p>The Allahabad High Court on Komal Jaiswal v. State of U.P. Constitutional and service law, 31 July 2026.</p><span class="go" aria-hidden="true">Read</span></a></li></ul>
-<p class="also">New notes are added as they are written.</p>
+<p class="also">New notes are added as they are written. Worked hypothetical scenarios are in the <a class="link" href="{p("case-library.html")}">case library</a>.</p>
 </div></section>'''
     ld = [crumbs([("Home", BASE + "/"), ("Insights", BASE + "/insights.html")])]
     PAGES.append(("insights.html", MODIFIED))
@@ -716,6 +736,130 @@ def not_found():
     write("404.html", html)
 
 
+# --- case library: law-report style pages for the hypothetical scenarios
+SC_SECTIONS = [
+    ("facts", "Hypothetical facts"), ("problem", "The practical problem"), ("issues", "Issues"),
+    ("framework", "Legal framework"), ("strategy", "Possible steps, in sequence"),
+    ("docs", "Documents and evidence"), ("forum", "Proceedings and forum"), ("outcomes", "How it could go"),
+    ("lessons", "Misconceptions and lessons"), ("faq", "Common questions"),
+    ("notcovered", "What this scenario does not cover"), ("sources", "Primary sources to consult"),
+]
+ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII"]
+URL_RE = re.compile(r"(https?://[^\s<>\"]+[^\s<>\".,;)])")
+
+
+def rich(t):
+    out, last = [], 0
+    for m in URL_RE.finditer(t):
+        out.append(esc(t[last:m.start()]))
+        u = m.group(1)
+        out.append(f'<a href="{esc(u)}" rel="noopener">{esc(u)}</a>')
+        last = m.end()
+    out.append(esc(t[last:]))
+    return "".join(out)
+
+
+def blocks_html(bl):
+    out = []
+    for b in bl:
+        t = b["t"]
+        if t == "p":
+            out.append(f"<p>{rich(b['x'])}</p>")
+        elif t == "h":
+            out.append(f"<h3>{esc(b['x'])}</h3>")
+        elif t == "ul":
+            out.append("<ul>" + "".join(f"<li>{rich(i)}</li>" for i in b["items"]) + "</ul>")
+        elif t == "ol":
+            cls = ' class="alpha"' if b.get("alpha") else ""
+            out.append(f"<ol{cls}>" + "".join(f"<li>{rich(i)}</li>" for i in b["items"]) + "</ol>")
+    return "".join(out)
+
+
+def case_library():
+    d = 0
+    p = lambda x: rel(d, x)
+    areas = sorted({x["area"] for x in LIB})
+    chips = '<button class="chip" type="button" data-area="" aria-pressed="true">All</button>' + "".join(
+        f'<button class="chip" type="button" data-area="{esc(a)}" aria-pressed="false">{esc(a)}</button>' for a in areas)
+    rows = "".join(
+        f'<tr data-area="{esc(x["area"])}" data-text="{esc((x["title"] + " " + x["area"] + " " + x["forum"] + " " + x["question"]).lower())}">'
+        f'<td class="ref">{x["ref"]}</td>'
+        f'<td><a href="{p("library/" + x["slug"] + ".html")}">{esc(x["title"])}</a><small>{esc(x["question"])}</small></td>'
+        f'<td>{esc(x["area"])}</td><td>{esc(x["forum"])}</td></tr>' for x in LIB)
+    body = f'''<section class="page-head"><div class="wrap">
+<p class="site-name">Case library</p>
+<h1>Worked scenarios in Indian law.</h1>
+<p class="lede">{len(LIB)} hypothetical scenarios. Each sets out the facts, the issues, the legal framework, the steps in sequence, the forums, and how the matter could go.</p>
+<p class="meta-line">General information, prepared {SCEN_DATE_HUMAN}. Scenarios are grouped by area of practice and carry a reference number.</p>
+</div></section>
+<section class="section"><div class="wrap">
+<div class="notice-box" role="note"><strong>Illustrative scenarios.</strong> {esc(SCEN_NOTICE)}</div>
+<div class="lib-tools"><label class="sr" for="lib-q">Search the library</label><input id="lib-q" type="search" placeholder="Search, for example bail, GST or RERA" autocomplete="off"><span id="lib-count" class="muted" aria-live="polite"></span></div>
+<div class="chips" role="group" aria-label="Filter by area of practice">{chips}</div>
+<table class="lib"><thead><tr><th scope="col">Ref.</th><th scope="col">Scenario</th><th scope="col">Area</th><th scope="col">Forum</th></tr></thead><tbody>{rows}</tbody></table>
+</div></section>'''
+    ld = [crumbs([("Home", BASE + "/"), ("Case library", BASE + "/case-library.html")]),
+          {"@context": "https://schema.org", "@type": "CollectionPage", "url": BASE + "/case-library.html", "name": "Case library",
+           "dateModified": SCEN_DATE,
+           "mainEntity": {"@type": "ItemList", "itemListElement": [
+               {"@type": "ListItem", "position": i + 1, "url": f"{BASE}/library/{x['slug']}.html", "name": x["title"]}
+               for i, x in enumerate(LIB)]}}]
+    PAGES.append(("case-library.html", SCEN_DATE))
+    write("case-library.html", shell(depth=0, path="case-library.html", current="library",
+          title="Case Library | Ink & Equity",
+          desc="Worked hypothetical scenarios in Indian law from Ink & Equity, Lucknow: facts, issues, framework, steps, forums and outcomes. General information only.",
+          body=body, ld=ld))
+
+
+def library_pages():
+    d = 1
+    p = lambda x: rel(d, x)
+    for x in LIB:
+        path = f"library/{x['slug']}.html"
+        sec = x["sections"]
+        present = [(k, h) for k, h in SC_SECTIONS if sec.get(k)]
+        toc = "".join(f'<li><a href="#{k}">{h}</a></li>' for k, h in present)
+        parts = []
+        for n, (k, h) in enumerate(present):
+            if k == "faq":
+                inner = '<div class="faq">' + "".join(
+                    f"<details><summary>{rich(q)}</summary><p>{rich(a)}</p></details>" for q, a in sec[k]) + "</div>"
+            else:
+                inner = blocks_html(sec[k])
+            parts.append(f'<h2 id="{k}"><span class="no">{ROMAN[n]}</span>{h}</h2>{inner}')
+        same = [y for y in LIB if y["practice"] == x["practice"] and y is not x]
+        more = ('<h2>More in this area</h2><ul class="related">' + "".join(
+            f'<li><a href="{p("library/" + y["slug"] + ".html")}">{esc(y["title"])}</a></li>' for y in same) + "</ul>") if same else ""
+        ptitle = next((t for s_, t, _ in PRACTICE if s_ == x["practice"]), "")
+        plink = f'<li><a href="{p("practice/" + x["practice"] + ".html")}">{esc(ptitle)}: area overview</a></li>' if ptitle else ""
+        cite = [("Ref.", x["ref"]), ("Type", "Illustrative scenario"), ("Area", x["area"]), ("Jurisdiction", x["jurisdiction"]),
+                ("Forum", x["forum"]), ("Audience", x["audience"]), ("Prepared", SCEN_DATE_HUMAN), ("Status", SCEN_STATUS)]
+        cite_html = "".join(f"<div><dt>{esc(a)}</dt><dd>{esc(b)}</dd></div>" for a, b in cite if b)
+        body = f'''<section class="page-head report-head"><div class="wrap">
+<p class="site-name"><a class="link" href="{p("case-library.html")}">Case library</a> &middot; {esc(x["area"])}</p>
+<h1>{esc(x["title"])}</h1>
+<p class="lede">{esc(x["question"])}</p>
+<dl class="cite">{cite_html}</dl>
+</div></section>
+<section class="prose report"><div class="wrap rpt">
+<nav class="toc" aria-label="On this page"><p class="toc-h">Contents</p><ol>{toc}</ol></nav>
+<article class="rpt-body">
+<div class="notice-box" role="note"><strong>Illustrative scenario.</strong> {esc(SCEN_NOTICE)}</div>
+{"".join(parts)}
+<h2>Related</h2>
+<ul class="related">{plink}<li><a href="{p("case-library.html")}">Back to the case library</a></li></ul>
+{more}
+<div class="aside-note">This page gives general information. It is not legal advice, the law changes, and every matter turns on its own facts. Contact details are on the <a href="{p("contact.html")}">contact page</a>.</div>
+</article></div></section>'''
+        ld = [crumbs([("Home", BASE + "/"), ("Case library", BASE + "/case-library.html"), (x["title"], f"{BASE}/{path}")]),
+              {"@context": "https://schema.org", "@type": "Article", "headline": x["title"], "url": f"{BASE}/{path}",
+               "description": x["meta_desc"], "dateModified": SCEN_DATE, "inLanguage": "en-IN",
+               "isPartOf": {"@type": "CollectionPage", "url": BASE + "/case-library.html"}}]
+        PAGES.append((path, SCEN_DATE))
+        write(path, shell(depth=1, path=path, current="library", title=x["meta_title"], desc=x["meta_desc"],
+                          body=body, ld=ld, og_type="article"))
+
+
 def sitemap_and_robots():
     urls = "\n".join(
         f"  <url><loc>{BASE}/{path}</loc><lastmod>{mod}</lastmod></url>" for path, mod in PAGES)
@@ -724,6 +868,6 @@ def sitemap_and_robots():
 
 
 if __name__ == "__main__":
-    home(); about(); rishabh(); practice_index(); practice_pages(); article(); insights(); contact(); careers()
+    home(); about(); rishabh(); practice_index(); practice_pages(); article(); insights(); case_library(); library_pages(); contact(); careers()
     disclaimer(); privacy(); not_found(); sitemap_and_robots()
     print(f"built {len(PAGES)} indexable pages + 404")
