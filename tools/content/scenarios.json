@@ -1,0 +1,3643 @@
+{
+ "notice": "This is a hypothetical illustrative scenario prepared for general legal information. It does not describe an actual client matter or guarantee any particular outcome. The applicable law and available remedies depend on the facts and jurisdiction; this page is not legal advice.",
+ "scenarios": [
+  {
+   "key": "A",
+   "batch": 1,
+   "slug": "recovering-unpaid-invoices",
+   "title": "Recovering Unpaid Invoices",
+   "meta_title": "Recovering Unpaid Invoices | Ink & Equity",
+   "meta_desc": "A hypothetical scenario explaining legal routes for recovering unpaid commercial invoices in India: notice, summary suits, limitation and alternatives.",
+   "area": "Contract and commercial",
+   "practice": "commercial-and-contract-disputes",
+   "forum": "Civil / commercial court",
+   "jurisdiction": "India",
+   "audience": "small and mid-sized suppliers and service providers",
+   "question": "A business owed money by a customer wants to know what legal routes exist to recover it, in what order, and how limitation affects them.",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional manufacturing supplier (\"the Supplier\") delivered packaging material to a fictional trading company (\"the Buyer\") over three consecutive months under purchase orders and invoices. The invoices stated payment within 30 days and a late-payment interest rate. The Buyer paid about half, then paid nothing further. About eight months after the last delivery, the Buyer's accounts manager emailed: \"We acknowledge the balance is outstanding and will clear it next quarter.\" Nothing was paid. Two follow-up emails went unanswered. There is no single master agreement; the dealings are documented by purchase orders, invoices, delivery challans and emails. One of the Buyer's cheques, given for part of the balance, was returned unpaid."
+     }
+    ],
+    "problem": [
+     {
+      "t": "ul",
+      "items": [
+       "Recover the balance and interest without losing the commercial relationship if that is still desirable.",
+       "Choose between slower, costly litigation and quicker pressure routes.",
+       "Avoid losing the claim to limitation while negotiating."
+      ]
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Is the debt provable from the documents?",
+       "Has limitation run, or has it been extended by acknowledgment or part payment?",
+       "Is the claim a \"commercial dispute\", and is mandatory pre-institution mediation required?",
+       "Is a summary suit available?",
+       "Does the cheque create a separate criminal remedy?",
+       "Is the Supplier a micro or small enterprise, opening a statutory payment route?",
+       "Can interim relief be justified?"
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Limitation Act, 1963. Articles 14 and 15 generally provide a three-year period for specified claims for the price of goods sold and delivered, with the starting point depending on whether a fixed credit period was agreed. Classify each invoice and identify its own accrual date; do not assume every invoice has the same limitation date. Section 18 requires a written and signed acknowledgment of liability made before the existing limitation period expires. Section 19 concerns qualifying part-payment made before expiry and requires compliance with the statutory conditions, including the required written acknowledgment of payment. An email may qualify depending on its content, attribution/signature and the applicable law of electronic records; do not assume that every email restarts limitation. Acknowledgment or payment after limitation has expired does not ordinarily revive the claim under Sections 18 or 19. Section 3 requires dismissal of a time-barred suit even if limitation is not pleaded.",
+       "Code of Civil Procedure, 1908, Order XXXVII (summary suits). A summary suit may be available where the claim falls within the categories specified by the Order, including certain debts or liquidated demands arising from a written contract. It is not automatic merely because invoices exist: examine the contractual documents, whether liability and amount are sufficiently ascertainable, the applicable court and the pleaded claim. Under the prescribed procedure, a defendant served with summons for judgment must seek leave to defend within the applicable period; the court decides whether leave is unconditional, conditional or refused under the governing principles. Verify the current Order and applicable High Court amendments/rules before stating a deadline.",
+       "Commercial Courts Act, 2015. A dispute arising from the sale of goods or supply of services may be a commercial dispute. The specified-value threshold is generally not less than INR 3 lakh, subject to the Act, applicable notifications and the valuation rules in force for the relevant forum. Section 12A generally requires pre-institution mediation for a suit that does not contemplate any urgent interim relief; the Supreme Court has treated this requirement as mandatory for covered suits. A party should not label relief \"urgent\" merely to bypass mediation: the court may examine the substance of the request. Check the current statute, rules and local commercial-court practice, including the relevant valuation and territorial allocation.",
+       "Identify the contractual basis for interest and whether the clause is enforceable on the facts. The Interest Act, 1978 and CPC Section 34 may be relevant to interest for periods before suit, during suit and after decree; the legal basis and rate differ by period. Pre-suit interest may arise under contract, statute, usage or other applicable law; pendente lite and post-decree interest are subject to the court's statutory powers and discretion.",
+       "Negotiable Instruments Act, 1881, Section 138. A cheque-dishonour complaint is a separate statutory remedy and its prerequisites must be strictly checked. In general, the payee or holder must issue a written demand notice within 30 days of receiving information from the bank about dishonour; the drawer then has 15 days after receipt of the notice to pay. If payment is not made, the cause of action ordinarily arises after that 15-day period, and the complaint must generally be filed within one month of that cause of action, subject to the court's power to condone delay for sufficient cause. Check the statutory text and current binding decisions for the facts, service, presentation, jurisdiction and any applicable procedural issue. A civil recovery claim and a Section 138 complaint are distinct; one does not automatically substitute for the other.",
+       "Micro, Small and Medium Enterprises Development Act, 2006, Sections 15–18. If the Supplier qualifies as a micro or small supplier for the relevant transactions and the statutory conditions are met, Section 15 regulates the agreed payment period (which cannot exceed 45 days from acceptance or deemed acceptance), Section 16 provides compound interest with monthly rests at three times the RBI-notified bank rate, and Sections 17–18 provide for recovery and reference to the Micro and Small Enterprises Facilitation Council. Eligibility, the effect and timing of Udyam registration, the nature of the supply, buyer status and applicable judicial decisions must be checked for the particular facts; do not assume retrospective coverage or eligibility from registration alone.",
+       "Insolvency and Bankruptcy Code, 2016. An operational creditor may issue a demand notice and, where statutory requirements are met, apply for initiation of the corporate insolvency resolution process. The minimum default threshold must be checked against the applicable notification and current law; do not insert a threshold without date-specific verification. A genuine dispute that existed before receipt of the demand notice, and other statutory defects, may prevent admission. The Code is a collective insolvency-resolution mechanism, not an ordinary debt-collection or coercive recovery device; it should not be threatened or used without a proper factual and legal basis."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Assemble the evidence (see checklist below) and compute the principal, interest and the limitation date for each invoice.",
+       "Diary the limitation date separately for every invoice and record the legal basis for any claimed extension. A qualifying acknowledgment under Section 18 or part-payment under Section 19 must satisfy the statutory conditions and occur before the existing period expires. Do not assume a verbal promise, a post-expiry email or an ordinary ledger entry revives a time-barred claim.",
+       "Send a clear written demand or legal notice quoting invoice numbers, amounts, interest clause and a reasonable deadline. A notice is not a legal precondition for a plain civil suit but it supports interest, shows good faith, and may prompt payment.",
+       "If cheques were returned, decide separately whether to pursue the statutory cheque remedy within its strict time limits.",
+       "If the Supplier may qualify as a micro or small supplier for these transactions, verify eligibility and registration timing, then evaluate the statutory facilitation route under Sections 15–18 of the MSMED Act.",
+       "Check whether pre-institution mediation is required, and if so complete it before filing.",
+       "File a summary suit if the claim fits Order XXXVII, or an ordinary or commercial suit otherwise.",
+       "Seek interim relief only where evidence supports the applicable legal test. Attachment before judgment under CPC Order XXXVIII Rule 5 is exceptional; the claimant must establish the statutory conditions, including a real intention to obstruct or delay execution by disposing of or removing property. A debt, non-payment or suspicion alone is not enough. Identify the evidence and the applicable binding authority before seeking this remedy.",
+       "After a decree, execution proceedings (CPC Order XXI) are a separate stage with their own practical difficulties."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Purchase orders; invoices with payment terms and interest clause; delivery challans and e-way bills; proof of receipt by the Buyer; account statements or ledger; GST returns reflecting the invoices; all emails and messages, including the acknowledgment; returned cheques and bank memos; any terms of business or standard conditions and any jurisdiction or arbitration clause; micro or small enterprise registration certificate, if applicable."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Pre-suit notice where strategically useful or legally required; pre-institution mediation under Commercial Courts Act Section 12A where applicable; then the court with territorial and pecuniary jurisdiction. CPC Section 20 is the usual general provision for suits against defendants or where the cause of action arises, subject to the facts and other applicable provisions. CPC Section 19 is specifically concerned with compensation for wrongs to persons or movable property and should not be cited as the general rule for invoice recovery. A jurisdiction clause may select one among courts that already have jurisdiction; it cannot ordinarily confer jurisdiction on a court that otherwise lacks it. Confirm the commercial-court forum and specified value where applicable. Check whether an arbitration clause in the invoices or terms sends the dispute to arbitration instead of court."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "If the documents are clean and no genuine defence is raised, a summary suit may be a comparatively focused route. If leave to defend is granted, the matter proceeds as an ordinary suit.",
+       "If the Buyer raises a real dispute about quality or quantity, the claim becomes a fuller trial. The Supplier's proof of delivery and acceptance becomes central.",
+       "If the claim is time-barred on some invoices, only the in-time invoices may be recoverable.",
+       "If the Buyer settles after a notice or mediation, the Supplier should document the settlement in a signed agreement with a default clause."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured, and timelines vary widely by court."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "ul",
+      "items": [
+       "\"A legal notice stops limitation.\" It does not.",
+       "\"An email promise always extends limitation.\" Whether an email satisfies the statutory acknowledgment requirement depends on its wording and authorship.",
+       "\"Insolvency is a quick way to get paid.\" It carries serious consequences and is often unsuitable."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Put credit terms, interest, and the dispute-resolution clause in writing before the first delivery. Keep proof of delivery. Diary limitation per invoice."
+     }
+    ],
+    "faq": [
+     [
+      "How long do I have to sue for unpaid invoices?",
+      "Time limits depend on the type of claim and the dates involved; a general educational answer is that limitation is measured from specific events, so each invoice should be checked separately."
+     ],
+     [
+      "Is a legal notice compulsory before filing a money suit?",
+      "Not for an ordinary civil suit, though it is useful. Some statutory remedies, such as the cheque remedy, require a notice within strict time limits."
+     ],
+     [
+      "Can I claim interest?",
+      "Often yes, depending on the contract, statute and court's discretion."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Cross-border sales, tax treatment of write-offs, disputes involving government buyers, and arbitration seated outside India."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "India Code: Limitation Act 1963; CPC 1908 (Order XXXVII, Order XXXVIII, Order XXI, Section 34); Commercial Courts Act 2015; Indian Contract Act 1872; Negotiable Instruments Act 1881; MSMED Act 2006; Interest Act 1978; Insolvency and Bankruptcy Code 2016. Official court websites for any commercial division practice directions."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B",
+   "batch": 1,
+   "slug": "agreement-to-sell-can-the-buyer-enforce-it",
+   "title": "Agreement to Sell: Can the Buyer Enforce It?",
+   "meta_title": "Agreement to Sell: Can the Buyer Enforce It?",
+   "meta_desc": "A hypothetical scenario on specific performance of an agreement to sell property in India: readiness and willingness, third-party buyers, limitation and...",
+   "area": "Property and real estate",
+   "practice": "property-and-real-estate",
+   "forum": "Civil court",
+   "jurisdiction": "India (State-specific stamp and registration rules)",
+   "audience": "individual property buyers",
+   "question": "A buyer under an agreement to sell wants to know if they can force the sale or must accept a refund.",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional buyer (\"the Buyer\") signs a written agreement to buy a house from a fictional owner (\"the Seller\") for a stated price. The Buyer pays a substantial advance. The agreement sets a date for completion within a few months, requires the Seller to deliver clear title documents, and requires the Buyer to pay the balance on completion. Before the date, the Buyer hears the Seller has been negotiating with another buyer at a higher price. The Seller has not yet delivered the title documents."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Does the Buyer have a right to the house itself, or only to money? What must the Buyer show to a court? What if the Seller sells to a third party first?"
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Whether the agreement is enforceable and what it says about time.",
+       "The Buyer's continuous readiness and willingness.",
+       "The Seller's title and ability to perform.",
+       "The effect of a sale to a third party who may or may not have notice.",
+       "Alternative relief of refund of the advance with compensation.",
+       "Registration and stamp duty effects on admissibility.",
+       "Limitation."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Specific Relief Act, 1963, particularly Sections 10, 14 and 16. The 2018 amendment materially changed the statutory approach to specific performance, but relief is not automatic: the contract must be enforceable, no statutory bar may apply, and the plaintiff must satisfy the applicable requirements. Section 16 includes personal bars, including the requirement to aver and prove performance or continuous readiness and willingness to perform the essential terms the plaintiff must perform, except terms whose performance the defendant has prevented or waived. Assess the actual agreement, reciprocal obligations and evidence; do not state that an advance payment alone establishes readiness and willingness.",
+       "Specific Relief Act, 1963, Section 19, including Section 19(b). Specific performance may, subject to the statutory exceptions, be enforced against a person claiming under a party to the contract, including a subsequent transferee. An important exception protects a subsequent transferee for value who paid in good faith and without notice of the original contract. The facts, consideration, good faith and notice must be established under the applicable evidentiary rules and binding precedent; do not say that every later purchaser is automatically bound or automatically protected.",
+       "Specific Relief Act, 1963, Section 21 (compensation in addition to or in substitution for specific performance, where legally available) and Section 22 (possession, partition or refund of earnest money/deposit in the circumstances covered by the section). The plaintiff should specifically claim appropriate ancillary or alternative relief in the pleadings and seek amendment if needed. Refund or compensation is not guaranteed merely because specific performance is refused; entitlement depends on the contract, pleadings, evidence and statutory requirements.",
+       "Transfer of Property Act, 1882. Section 54 provides that a contract for sale does not, of itself, create any interest in or charge on the property; a completed sale of immovable property must satisfy the applicable conveyance and registration requirements. Section 53A may protect possession in part performance only when its statutory conditions are met, including the applicable written-contract and registration requirements. Section 52 (lis pendens) may affect transfers made during pending litigation; verify the State-specific amendments and the effect of the doctrine on the proposed transaction.",
+       "Registration Act, 1908, Sections 17 and 49, read with the applicable amendments and State law. Whether an agreement to sell requires registration depends on its terms, possession, intended legal effect and the applicable statutory provisions. Section 49's proviso may permit an unregistered document to be received as evidence of a contract in a suit for specific performance or for a collateral transaction, subject to the statute and other admissibility rules. Registration, admissibility and stamp-duty compliance are distinct questions; do not treat an agreement as admissible merely because it is unregistered, or assume that an evidentiary exception cures deficient stamp duty.",
+       "State stamp law. Stamp duty on an agreement to sell varies by State and by whether possession is delivered. An insufficiently stamped agreement may be impounded and may need duty and penalty before being admitted in evidence.",
+       "Limitation Act, 1963, Article 54. The limitation period for a suit for specific performance is generally three years: from the date fixed for performance, or, if no date is fixed, from when the plaintiff has notice that performance is refused. Identify which limb applies from the contract and correspondence. A demand notice does not stop or extend limitation by itself. Limitation must be calculated on the actual facts, including any legally material subsequent events.",
+       "Code of Civil Procedure, 1908, Order XXXIX (temporary injunctions) and Order VII (plaint contents)."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Read the agreement closely: time clauses, default clauses, whether the advance is part-payment or earnest money, and who bears title-defect risk.",
+       "Check title and encumbrances, and whether the Seller has other co-owners or restrictions on transfer.",
+       "Prepare proof that the Buyer has been, and is, ready and willing: funds, bank statements, loan sanction if any, written communications offering to complete.",
+       "Send a written notice stating readiness to complete, requiring the Seller to perform, and recording the Buyer's position on the advance. Keep proof of service.",
+       "If the Seller does not perform, file a suit for specific performance with alternative relief of refund and compensation. Consider whether and when the balance consideration must be deposited or secured; this depends on the court's directions and the specific facts.",
+       "Apply for an interim order restraining the Seller from alienating the property or creating third-party rights, supported by the prima facie case, balance of convenience and risk of irreparable injury.",
+       "Track the property records and registration office for any attempted sale; consider whether notice of the pending suit to prospective purchasers is advisable."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Signed agreement (check stamping and registration); proof of every payment; identity and address proofs; Seller's title chain documents, revenue records and encumbrance certificate; correspondence including offers to complete; proof of Buyer's financial capacity; any possession-related documents; notice and proof of delivery."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Civil court with territorial jurisdiction over the immovable property under the applicable CPC provisions, subject to the nature of the relief and statutory exceptions; pecuniary jurisdiction and court fee depend on the applicable valuation rules and State court-fee law. A routine private residential sale is not automatically a commercial dispute. Check local filing rules, valuation, stamp duty and any relevant State amendments before filing."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "If the Buyer can show continuous readiness and willingness and the Seller's title is clear, a decree directing execution of the sale deed is possible.",
+       "If the Seller's title is defective or the third-party transferee proves good faith without notice, the practical relief may shift to refund with compensation.",
+       "If the Buyer cannot show readiness (for example, no funds available at the relevant dates), the claim for specific performance can fail even if the Seller was in breach."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "ul",
+      "items": [
+       "\"Paying an advance makes me the owner.\" Under the Transfer of Property Act framework an agreement to sell alone does not transfer ownership.",
+       "\"I can wait and decide later.\" Delay and lack of continuous readiness can defeat specific performance.",
+       "\"A higher offer lets the Seller cancel freely.\" The agreement's terms and the Specific Relief Act framework decide what the Seller can do."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Check stamping and registration at the start; diarise completion dates; keep evidence of funds; act promptly after any refusal or suspicious dealing."
+     }
+    ],
+    "faq": [
+     [
+      "Can I get the property itself, or only my money back?",
+      "It depends on the terms of the agreement, the title, and whether a third party has acquired rights."
+     ],
+     [
+      "Does an unregistered agreement have any use?",
+      "It may still be relevant as evidence in some situations, subject to stamping and registration rules in the State concerned."
+     ],
+     [
+      "Does delay matter?",
+      "Yes. Both limitation and the buyer's readiness and willingness depend on dates."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Agricultural land with ceiling or tenure restrictions; builder-buyer disputes under RERA; co-owned or ancestral property; NRI sellers or buyers and FEMA."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "India Code: Specific Relief Act 1963 (as amended 2018); Transfer of Property Act 1882; Registration Act 1908; Limitation Act 1963; CPC 1908; the relevant State's stamp and court-fee statutes."
+     }
+    ]
+   }
+  },
+  {
+   "key": "C",
+   "batch": 1,
+   "slug": "founder-deadlock-in-a-private-company",
+   "title": "Founder Deadlock in a Private Company",
+   "meta_title": "Founder Deadlock in a Private Company | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on deadlock between equal shareholders in an Indian private company: governing documents, buy-out routes, arbitration and the...",
+   "area": "Corporate and company law",
+   "practice": "corporate-and-commercial",
+   "forum": "NCLT / arbitration",
+   "jurisdiction": "India",
+   "audience": "founders, investors in private companies",
+   "question": "Co-founders who cannot agree and hold equal shares want to know what the law provides and what the documents may already say.",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional private limited company has two founders, each holding half the shares and each a director. A shareholders' agreement and articles of association exist. The board cannot pass a budget or approve hiring because each founder votes against the other's proposals. One founder has stopped attending meetings; the other is paying vendors without board approval. The shareholders' agreement includes an escalation clause and an arbitration clause but no buy-sell mechanism. Business performance is falling."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Keep the business running, avoid a value-destroying fight, and understand whether to negotiate an exit, invoke the contract, or go to a Tribunal."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "What the shareholders' agreement and articles say about deadlock, reserved matters and exit.",
+       "Whether deadlock alone amounts to oppression or mismanagement.",
+       "Whether the arbitration clause covers the dispute and whether statutory Tribunal remedies can be arbitrated.",
+       "Eligibility to apply to the Tribunal.",
+       "Interim protection.",
+       "Valuation and mechanics of a buy-out."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Companies Act, 2013, Sections 241 and 242. Eligible members may apply to the National Company Law Tribunal for relief where the statutory grounds for oppression and mismanagement are made out. A 50:50 deadlock or disagreement over management is not, by itself, automatic proof of oppression or mismanagement. The statutory tests, including the relevant prejudice/oppression requirements and the just-and-equitable winding-up condition where applicable, must be applied to the facts and the precise subsection relied on. Section 242 gives the Tribunal specified remedial powers, including orders regulating the company's affairs or share purchase in appropriate cases; relief is not guaranteed.",
+       "Companies Act, 2013, Section 244. Standing to apply is subject to the statutory member-number or shareholding thresholds, the precise category of company and any applicable exclusion. The Tribunal may waive the requirements in circumstances permitted by the section. Confirm eligibility, the current text and any required waiver application before asserting that a particular founder can maintain a petition.",
+       "Companies Act, 2013, Section 271(1)(e) concerns winding up by the Tribunal on just and equitable grounds. It is a distinct statutory remedy, not an automatic consequence of a deadlock or a substitute for proving the elements of an oppression-and-mismanagement petition. Winding up can destroy business value and should not be presented as the expected outcome. Check the current statutory framework, procedural route and relevant binding judgments.",
+       "Articles of association and shareholders' agreement. The Companies Act and the articles govern the company's internal constitution; a shareholders' agreement ordinarily binds its parties under contract law. A provision in a shareholders' agreement that conflicts with the Act or the articles may raise enforceability and implementation issues, particularly where company action or third-party effect is involved.",
+       "Arbitration and Conciliation Act, 1996, including Section 8, and Companies Act provisions governing the NCLT. A valid arbitration clause may cover contractual disputes between shareholders, but it does not mean that every dispute involving a company can be referred to arbitration. Statutory oppression-and-mismanagement remedies and other matters reserved to the NCLT may be non-arbitrable; the analysis depends on the substance of the relief, parties, statutory scheme and binding precedent. Do not promise that arbitration and NCLT proceedings can freely be split or pursued in parallel. Obtain forum-specific advice before filing.",
+       "Companies Act, 2013, Section 247 and the applicable Registered Valuers rules apply where a valuation is required under the relevant statutory provision. They do not make a registered valuer compulsory for every negotiated private-company share transfer or buy-out. The valuation method may instead be governed by the agreement, transaction terms, applicable law, tax rules, FEMA rules or the Tribunal's order. Identify the source of any claimed valuation requirement.",
+       "Companies Act, 2013, Section 56 and the applicable rules govern relevant share-transfer formalities. Stamp duty must be checked under the law in force for the instrument and transaction. If a non-resident is involved, review FEMA and the applicable non-debt instrument rules, including pricing, sectoral limits, reporting and payment requirements. Transfer restrictions, pre-emption rights, board approvals and company records must also be checked against the articles and agreement.",
+       "Common contractual deadlock tools (not statutory): escalation to chairs or advisers; mediation; casting vote; independent director; put or call options; \"shotgun\" or \"Texas shoot-out\" buy-sell clauses; third-party valuation. Whether any of these exists must be read from the documents."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Read the shareholders' agreement, articles and any side letters. List reserved matters, escalation steps, notice requirements, dispute-resolution clauses and transfer restrictions.",
+       "Assess the company's operational needs. Identify decisions that must be made to keep the business lawful and solvent (statutory filings, tax payments, payroll).",
+       "Follow the contractual escalation steps in order, keeping written records. Skipping a required step can be raised against the party that skipped it.",
+       "Explore a negotiated solution: independent mediation; interim governance protocol; buy-out with independent valuation; staged exit; sale of the company to a third party.",
+       "Obtain a forum analysis before commencing proceedings. Arbitration may be appropriate for arbitrable contractual claims covered by a valid clause; statutory remedies reserved to the NCLT may not be arbitrable. Do not assume a party can elect to divide a single dispute across forums or that parallel proceedings are harmless. Analyse parties, causes of action, relief sought, the statutory scheme and current binding authority.",
+       "If the Tribunal route is considered, confirm the applicant's eligibility, assemble evidence of conduct (not merely disagreement), and consider an interim application where the company or the applicant faces real harm.",
+       "If a buy-out is agreed, document it with valuation basis, payment terms, release, resignations, non-compete scope (subject to enforceability), and transfer formalities including stamp duty and company filings."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Memorandum and articles; shareholders' agreement and amendments; board and general meeting notices and minutes; statutory registers; financial statements and bank statements; tax and compliance filings; correspondence recording the disagreements; evidence of unauthorised actions or exclusion; any valuation reports."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Negotiation and mediation; arbitration only for disputes covered by a valid arbitration agreement and legally capable of arbitration; NCLT for statutory company-law relief within its jurisdiction. Section 8 of the Arbitration and Conciliation Act may be relevant to a court proceeding involving an arbitration agreement, but its application does not convert a non-arbitrable statutory claim into an arbitrable one. NCLT territorial allocation, procedure and any appeal to NCLAT must be checked under the current Act, rules and notifications."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "A structured buy-out at an independently determined value is a common commercial resolution where both sides prefer to preserve value.",
+       "A Tribunal may regulate conduct or order a buy-out if oppression or mismanagement is established; mere disagreement may not be enough.",
+       "If arbitration is held to cover the dispute, the Tribunal route may be limited, or the two proceedings may run in parallel with practical complications."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "ul",
+      "items": [
+       "\"A 50:50 split means the Tribunal will automatically order a buy-out.\" It will not; the statutory tests apply.",
+       "\"The shareholders' agreement automatically overrides the articles.\" It does not; the Companies Act, articles, agreement and relevant case law must be read together, and inconsistencies can create enforceability or implementation problems.",
+       "\"I can transfer my shares freely.\" Transfer restrictions in the articles or agreement may apply."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "A well-drafted deadlock clause, with a clear valuation and exit mechanism, is far easier to use than any statutory remedy. Founders should address this at incorporation."
+     }
+    ],
+    "faq": [
+     [
+      "Can I force the other founder to buy me out?",
+      "Only if the documents provide for it or a competent forum orders it on the statutory grounds."
+     ],
+     [
+      "Is deadlock itself a ground for relief?",
+      "It can be relevant but is not automatically sufficient; the legal tests depend on the facts."
+     ],
+     [
+      "Which comes first, arbitration or the Tribunal?",
+      "It depends on the clause wording and the nature of the claim; this is a point requiring careful legal analysis."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Listed companies; foreign shareholders; fraud allegations; insolvency of the company; investor protective rights in venture financing."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "India Code: Companies Act 2013 (Sections 56, 241, 242, 244, 247, 271 and relevant rules); Arbitration and Conciliation Act 1996; Indian Stamp Act and the relevant State amendments; FEMA rules if a non-resident is involved. NCLT and NCLAT official websites for current rules and practice directions."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B2-1",
+   "batch": 2,
+   "slug": "writ-petition-for-a-delayed-government-decision",
+   "title": "Writ Petition for a Delayed Government Decision",
+   "meta_title": "Writ Petition for a Delayed Government Decision",
+   "meta_desc": "A hypothetical scenario on using a writ of mandamus under Article 226 when a government department delays a licence decision.",
+   "area": "Constitutional and public law",
+   "practice": "constitutional-and-writ",
+   "forum": "High Court (Art. 226)",
+   "jurisdiction": "India, High Courts",
+   "audience": "individuals and small businesses dealing with licensing bodies",
+   "question": "Can a High Court writ force a government department to decide a pending application?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional small business owner applies to a State department for a licence required to operate. The governing rules say the application should be decided within a stated period. A year later, there has been no decision and no reasons. Three written reminders went unanswered. The department's counter staff say \"the file is under consideration.\""
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "The owner cannot lawfully start operating, is paying rent on premises, and does not know whether the application is likely to be refused."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Is there a legal duty on the department to decide, and by when?",
+       "Is the remedy a writ, or must the owner first use a statutory appeal, complaint or grievance route?",
+       "Does delay in approaching the court weaken the case?",
+       "What relief can a court realistically give?"
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Constitution of India, Article 226 (High Court's power to issue writs, including mandamus, for enforcement of rights and for other purposes) and Article 32 (Supreme Court, enforcement of fundamental rights). Article 14 (equality and non-arbitrariness) and Article 19(1)(g) (profession, trade or business) may be relevant where the petitioner and facts satisfy the constitutional requirements and any applicable restrictions. A High Court's territorial jurisdiction under Article 226(2) depends on where the cause of action arises.",
+       "The licensing statute and its rules: duty to decide, time limits, grounds for refusal, any deemed-approval or deemed-refusal clause, and any statutory appeal. Do not assume that expiry of a decision period creates deemed approval unless the statute expressly says so.",
+       "State public services or citizen-charter legislation, if the State has any.",
+       "The High Court's own writ rules and practice directions for format, affidavits and annexures.",
+       "Delay and laches: writ relief is discretionary and the court considers delay without a rigid limitation period.",
+       "Alternative remedy: courts commonly expect a statutory remedy to be used first, with recognised exceptions."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Obtain the rules and confirm the stated time limit and who the deciding authority is.",
+       "Write a clear representation to the competent authority attaching the application and receipts, asking for a reasoned decision within a short stated period. Keep proof of delivery.",
+       "Check whether any statutory appeal, grievance or information-rights route exists and whether it should be tried first.",
+       "If the delay continues, prepare a writ petition: concise facts, dates, the rule imposing the duty, the representations, the prejudice suffered, the relief sought. Prepare an affidavit and annexures.",
+       "Seek a direction to decide within a fixed period. Courts more commonly direct a decision than direct grant, because the decision belongs to the authority.",
+       "After notice, the State files a response. If the authority decides, examine the order for reasons and consider the next remedy if refused."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Application and receipt; the governing rule or notification; reminders and proof of delivery; any acknowledgment; evidence of loss or prejudice (such as rent); identity and address proofs."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "High Court (Article 226) with territorial jurisdiction; The Supreme Court under Article 32 is for enforcement of fundamental rights and is not an ordinary substitute for a High Court petition under Article 226. Direct recourse must be justified on the facts and applicable doctrine."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "Courts often dispose of such petitions by directing the authority to consider and decide within a time frame, leaving the merits to the authority.",
+       "If a statutory appeal exists and is plainly adequate, the court may decline to interfere until it is used.",
+       "If the licence is refused, the owner can examine the reasons and challenge them through the proper route."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"A writ will get me the licence.\" A writ usually secures a decision, not the licence. Keep dated records of every application and reminder. Do not delay once the deadline in the rules has passed."
+     }
+    ],
+    "faq": [
+     [
+      "Is there a deadline to file a writ?",
+      "There is no single fixed period; courts consider delay as part of discretion."
+     ],
+     [
+      "Do I need a lawyer's notice first?",
+      "Not legally for a writ, but a written representation is usually important."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Habeas corpus, quo warranto, public interest litigation, challenges to the validity of a law."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "Constitution of India; the specific licensing statute and rules; the High Court's rules; official judgment repository for authority on alternative remedy and delay."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B2-2",
+   "batch": 2,
+   "slug": "licence-cancelled-without-a-hearing",
+   "title": "Licence Cancelled Without a Hearing",
+   "meta_title": "Licence Cancelled Without a Hearing | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on challenging an administrative order made without notice or hearing in India: natural justice, statutory appeals and writ...",
+   "area": "Constitutional and public law",
+   "practice": "constitutional-and-writ",
+   "forum": "High Court / appellate authority",
+   "jurisdiction": "India",
+   "audience": "licensed businesses and professionals",
+   "question": "Can an administrative cancellation order be challenged for lack of notice or hearing?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional licence holder receives a cancellation order that cites alleged violations. No show-cause notice was received, no hearing was offered, and the order gives only a one-line reason. The licence holder says the allegations are inaccurate and relate to a different premises."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Operations must stop immediately, with staff, stock and contracts affected. The licence holder needs to know the fastest lawful way to challenge the order."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Was a notice and fair opportunity of being heard required?",
+       "Does the order disclose adequate reasons?",
+       "Is there a statutory appeal, and what is its time limit?",
+       "Can a writ be filed despite the appeal?",
+       "Can a stay be obtained pending challenge?"
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Principles of natural justice, including notice, a meaningful opportunity to respond and reasons where required by law. The content of the duty depends on the statute, the nature of the decision and the circumstances. Exceptions are narrow and fact-sensitive; do not assume that urgency or a 'useless formality' argument automatically excuses a hearing.",
+       "The licensing statute and rules: whether they require notice before cancellation, and whether they provide for appeal or revision, with time limits and any pre-deposit.",
+       "Article 226 writ jurisdiction. The alternative-remedy rule has recognised exceptions, including certain cases involving breach of natural justice, lack of jurisdiction or a challenge to vires; the exceptions are not automatic and depend on the facts and binding precedent.",
+       "Distinction between a decision that is void for breach of natural justice and one that is merely defective, and how prejudice is treated."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Obtain the full order, the date of service and the file notings or inspection report relied on, using the statute's route or an information request.",
+       "Identify the statutory appeal and calendar its deadline from the date of receipt of the order.",
+       "File the statutory appeal if one exists, with an application for interim stay of the order.",
+       "Consider a writ petition in parallel or instead where there is a clear breach of natural justice and the circumstances justify bypassing the appeal. This is a legal judgment call requiring careful analysis.",
+       "Prepare to show the court the factual inaccuracy and the prejudice caused by lack of hearing.",
+       "If the order is set aside for procedural breach, anticipate that the authority may be permitted to proceed afresh after notice."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "The order and proof of date of service; the licence and conditions; inspection reports; correspondence with the department; evidence rebutting the allegations; evidence of operating losses."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Appellate or revisional authority under the statute; High Court under Article 226."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "Where natural justice was clearly denied, a court may quash the order and allow a fresh decision after hearing, rather than restoring the licence permanently.",
+       "If an effective statutory appeal exists, the court may direct the licence holder to use it.",
+       "Interim stay depends on prima facie case, balance of convenience and harm."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"A procedural defect always ends the case.\" Often it leads to a fresh hearing. \"I can wait for the department to correct itself.\" Appeal limits run from the date of the order. Preserve the evidence of what was and was not served."
+     }
+    ],
+    "faq": [
+     [
+      "Can the department cancel a licence without telling me?",
+      "Generally the law expects fair procedure, subject to the statute and recognised exceptions."
+     ],
+     [
+      "Should I appeal or file a writ?",
+      "It depends on the statute, the grounds and the court's approach; this is a point for careful legal analysis."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Tender disqualification and blacklisting (separate scenario), criminal prosecutions, tax licences with special procedures."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "The licensing statute and rules; Constitution Articles 14, 19(1)(g), 226; official judgment repository for natural justice authority."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B2-3",
+   "batch": 2,
+   "slug": "challenging-a-compulsory-retirement-order",
+   "title": "Challenging a Compulsory Retirement Order",
+   "meta_title": "Challenging a Compulsory Retirement Order | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on challenging a disciplinary penalty in government service in India: charge sheets, inquiries, departmental appeals and tribunal...",
+   "area": "Service law",
+   "practice": "service-matters",
+   "forum": "CAT / High Court",
+   "jurisdiction": "India (Union or State employees)",
+   "audience": "public employees",
+   "question": "How can a government employee challenge a disciplinary penalty?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional government employee faces a charge sheet alleging irregularity in handling a file. The charge sheet does not list the documents the department relies on or the witnesses. The inquiry officer proceeds without supplying those documents on request. The disciplinary authority then imposes compulsory retirement. The employee has several years of service left."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Loss of salary and reduced pension, and a stain on the service record. The employee needs to know which forum applies and how quickly to act."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Was the charge sheet sufficiently specific and were relied-upon documents supplied?",
+       "Was the inquiry conducted fairly, including the right to cross-examine and to a copy of the inquiry report before the penalty?",
+       "Is the penalty proportionate?",
+       "Is the order a penalty or a non-punitive retirement under the service rules?",
+       "What is the correct forum and the time limit?"
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Constitution of India, Article 311, which protects qualifying members of the civil services of the Union or a State and persons holding civil posts against dismissal, removal or reduction in rank except in accordance with its requirements and exceptions. It does not apply identically to every public-sector or government-linked employee. Compulsory retirement imposed as a disciplinary penalty must be distinguished from non-punitive retirement in public interest under applicable service rules; the legal tests and remedies differ.",
+       "The employee's service rules and discipline-and-appeal rules determine charge-sheet requirements, inquiry procedure, penalties and appeals. For central government employees, identify the applicable Central Civil Services (Classification, Control and Appeal) Rules, 1965 and other service-specific rules; State employees are governed by the applicable State/service rules.",
+       "Administrative Tribunals Act, 1985: central government employees generally approach the Central Administrative Tribunal. For State employees, whether a State Administrative Tribunal exists varies; where none exists, the High Court under Article 226 is the usual forum.",
+       "Limitation before the Tribunal under the 1985 Act, which runs from specified events and requires exhausting departmental remedies.",
+       "Principles on supply of the inquiry report to the delinquent before the penalty, proportionality, and the limited scope of judicial review of disciplinary findings."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Identify the applicable rules and the exact penalty provision used.",
+       "Apply for the order's records, the inquiry report and all relied-upon documents.",
+       "File the departmental appeal within the prescribed period, raising every procedural and merits ground, with a request to stay the order.",
+       "After the appeal is decided (or the period lapses as the rules allow), approach the Tribunal or High Court as applicable within the limitation period.",
+       "Seek interim protection where available, and consider payment of subsistence-type allowances and retiral benefits under the rules.",
+       "If a procedural defect is established, the court may remit the matter for a fresh or resumed inquiry, depending on the nature of the defect and governing precedent. Reinstatement, back wages, continuity and pension consequences are separate, fact-sensitive questions."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Charge sheet and annexures; replies; inquiry notices and proceedings; inquiry report and the employee's representation; penalty order; appeal and its order; service book; pay and pension records."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Departmental appellate authority; Central Administrative Tribunal (central employees) or the competent State tribunal or High Court (State employees); Supreme Court on further appeal."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "Procedural defects may lead to remand, fresh inquiry or reconsideration of penalty.",
+       "Courts are generally reluctant to re-appreciate evidence and may interfere with penalty only where it is disproportionate.",
+       "Back wages and seniority are discretionary and fact-dependent."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"The court will re-decide guilt.\" Judicial review is usually limited to fairness and legality. Appeal and tribunal periods are strict. Keep copies of everything served and submitted during the inquiry."
+     }
+    ],
+    "faq": [
+     [
+      "Which court do I approach?",
+      "It depends on whether you are a central or State employee and on the State's tribunal arrangements."
+     ],
+     [
+      "Does the department have to give me the relied-upon documents?",
+      "Fairness generally requires disclosure; the rules and authority decide the details."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Criminal prosecution for the same facts; recruitment disputes; judicial service."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "Constitution Art 311; applicable service rules; Administrative Tribunals Act 1985; official repository for authority on inquiry procedure and proportionality."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B2-4",
+   "batch": 2,
+   "slug": "interim-injunction-in-a-partnership-dispute",
+   "title": "Interim Injunction in a Partnership Dispute",
+   "meta_title": "Interim Injunction in a Partnership Dispute | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on seeking an interim injunction or status quo order in India to protect property during a dispute: the three-part test, procedure...",
+   "area": "Civil litigation",
+   "practice": "civil-litigation",
+   "forum": "Civil court",
+   "jurisdiction": "India, civil courts",
+   "audience": "business owners and property owners",
+   "question": "How can a party get an interim injunction to preserve property during a civil dispute?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "Two fictional partners run a trading firm from premises registered in one partner's name, which the parties claim were acquired for or used by the firm. The title documents, source of purchase money, partnership deed and applicable property law do not conclusively establish firm ownership on these facts alone. After a breakdown, one partner learns the other has agreed to sell the premises to an outsider. The accounts of the firm are unsettled and no dissolution has been agreed."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "If the premises are sold, the firm's base, a major asset and the possible basis of a settlement could disappear before the dispute is decided."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Is there an arguable right in the premises or in the firm's accounts that merits protection?",
+       "Prima facie case, balance of convenience, irreparable injury.",
+       "Candour, delay and clean hands.",
+       "Is an injunction the right remedy, or is compensation adequate?",
+       "What happens to a purchaser who buys during the suit?"
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Code of Civil Procedure, 1908, Order XXXIX Rules 1 and 2 (temporary injunctions), Rule 3 (notice and the exceptional ex parte grant, with the requirement to record reasons and comply promptly), Rule 4 (setting aside orders); Section 151 (inherent powers); Order XLIII (appeals from interim orders).",
+       "Specific Relief Act, 1963, provisions on perpetual and temporary injunctions and circumstances where injunction is refused.",
+       "Indian Partnership Act, 1932, including provisions on partnership property, dissolution and accounts, and the restriction on suits by unregistered firms in certain cases.",
+       "Transfer of Property Act, 1882, Section 52 (transfer of property pending suit), noting State amendments in some States."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Establish the legal basis for claiming a right in the premises. Use of premises by the firm, by itself, does not make immovable property partnership property; analyse title, acquisition documents, contribution of funds, the partnership deed and relevant evidence.",
+       "File a suit (for accounts, dissolution or declaration as appropriate) because an injunction normally requires an underlying claim.",
+       "File the injunction application with the suit, stating all material facts, including facts that go against the applicant, and explaining urgency.",
+       "If real and imminent harm is shown, ask for an ad interim order on the first hearing with notice to the other side. Comply with the procedural requirements for any order without notice.",
+       "Be ready to give undertakings, including about damages if the injunction later proves unjustified.",
+       "Track the property records for any attempted registration. Consider a caveat where applicable.",
+       "If the order is refused or granted, consider the appeal route under Order XLIII."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Partnership deed or evidence of partnership; title documents; proof of use of premises by the firm; accounts and bank statements; agreement or correspondence showing the intended sale; evidence of urgency (dates, messages, notices)."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Civil court with territorial and pecuniary jurisdiction; commercial court division where the dispute qualifies as commercial. Where a partnership deed has an arbitration clause, consider interim relief under the Arbitration and Conciliation Act, 1996 (Section 9) instead."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "If the applicant proves the three elements and acted promptly, the court may order status quo or restrain alienation pending trial.",
+       "If damages are adequate or the applicant delayed or withheld facts, the court may refuse.",
+       "A conditional order (such as a deposit or undertaking) may be passed."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"An injunction is automatic if I am right.\" It is discretionary and depends on the three elements and conduct. \"I can wait and see.\" Delay is often held against the applicant. Candour matters; hiding adverse facts can lose the relief."
+     }
+    ],
+    "faq": [
+     [
+      "Can I get an injunction before filing a suit?",
+      "Generally the application is made within a suit; urgent steps and caveats may be possible but need careful advice."
+     ],
+     [
+      "What if the property is sold anyway?",
+      "The effect on a purchaser depends on the facts and on the rule on transfers pending suit."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Injunctions in IP cases, anti-suit injunctions, injunctions against government."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "CPC 1908; Specific Relief Act 1963; Partnership Act 1932; Transfer of Property Act 1882; official repository for authority."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B2-5",
+   "batch": 2,
+   "slug": "two-similar-brand-names-in-the-same-category",
+   "title": "Two Similar Brand Names in the Same Category",
+   "meta_title": "Two Similar Brand Names in the Same Category",
+   "meta_desc": "A hypothetical scenario on trademark infringement, passing off, opposition and clearance searches in India for two similar brand names.",
+   "area": "Intellectual property",
+   "practice": "intellectual-property",
+   "forum": "Registry / High Court",
+   "jurisdiction": "India",
+   "audience": "brand owners and start-ups",
+   "question": "What can a registered trademark owner do against a similar mark, and what risk does a new brand face?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional established company has a registered word mark for packaged snacks. A new fictional company launches a snack brand with a name that sounds similar and uses a similar colour scheme. The older company also notices the new brand's pending application in the trade marks journal."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "The older company wants to protect its brand. The newer company, after receiving a cease-and-desist letter, wants to know whether it can keep the name."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Likelihood of confusion between the marks, considering sound, appearance, goods, trade channels and consumer type.",
+       "Registration status and priority of use.",
+       "Infringement versus passing off.",
+       "Opposition to the pending application.",
+       "Defences, such as prior use, honest concurrent use, or descriptiveness.",
+       "Interim relief."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Trade Marks Act, 1999: grounds for refusal (Sections 9 and 11); infringement (Section 29); passing off preserved (Section 27(2)); opposition (Section 21); rectification and removal (Sections 47 and 57); jurisdiction for suits (Section 134); reliefs (Section 135).",
+       "Trade Marks Rules, 2017: opposition and counter-statement procedure. Under Section 21 of the Trade Marks Act, opposition is ordinarily to be filed within four months from the date of advertisement or re-advertisement of the application; the counter-statement deadline and consequences of default are governed by the Act and Rules.",
+       "Since 2021, rectification and appeal functions formerly with the Intellectual Property Appellate Board were moved to the High Courts under the Tribunals Reforms framework.",
+       "Commercial Courts Act, 2015: IP disputes are commercial disputes; pre-institution mediation under Section 12A has an exception where urgent interim relief is contemplated.",
+       "Principles of deceptive similarity, anti-dissection, and the standard of the average consumer of imperfect recollection."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "h",
+      "x": "For the owner"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Gather registration certificates, evidence of use and reputation (sales, advertising, dates).",
+       "Compare marks and goods; document instances of actual confusion if any.",
+       "Decide between a notice, an opposition in the Registry, a suit for infringement and passing off, or a combination.",
+       "If suing, plan an interim injunction application supported by evidence of use, reputation and the risk of confusion."
+      ]
+     },
+     {
+      "t": "h",
+      "x": "For the new adopter"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Evaluate the claim honestly with a search of the register and common law use.",
+       "Consider modifying the mark, coexistence terms, or opposing or defending as appropriate.",
+       "If suit is filed, assess defences and the cost of rebranding versus defending."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Registration certificates; journal extracts; evidence of first and continuous use; invoices, advertising and sales data; samples of both marks and packaging; correspondence; search reports."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Trade Marks Registry (opposition, application stage); High Court or the commercial court with jurisdiction for infringement and passing off; rectification before the High Court."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "Courts compare the marks as a whole in context. A finding of deceptive similarity may support an injunction; a finding of differences in goods or marks may not.",
+       "Coexistence agreements, with territory, class and presentation limits, are a common commercial outcome.",
+       "Pending applications may be refused or limited following opposition."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"Registration of my company name protects my brand.\" Company registration is not trademark registration. \"A different colour is enough.\" Courts consider the overall impression. Clearance searches before launch cost far less than rebranding."
+     }
+    ],
+    "faq": [
+     [
+      "What is the difference between infringement and passing off?",
+      "Infringement protects a registered mark under the statute; passing off protects goodwill and reputation, including for unregistered marks."
+     ],
+     [
+      "How long do I have to oppose an application?",
+      "Section 21 ordinarily provides four months from advertisement or re-advertisement. Verify the current statute, rules and the specific Registry record immediately; do not wait until the last day."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Well-known mark status, international filings, domain-name disputes, counterfeits and border measures."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "Trade Marks Act 1999; Trade Marks Rules 2017; Registry website; High Court websites."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B2-6",
+   "batch": 2,
+   "slug": "who-owns-a-logo-made-by-a-freelancer",
+   "title": "Who Owns a Logo Made by a Freelancer?",
+   "meta_title": "Who Owns a Logo Made by a Freelancer? | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on copyright ownership of a commissioned logo in India: first ownership, written assignment, licences and infringement.",
+   "area": "Intellectual property",
+   "practice": "intellectual-property",
+   "forum": "Civil / commercial court",
+   "jurisdiction": "India",
+   "audience": "designers, freelancers, small businesses",
+   "question": "Who owns the copyright in commissioned creative work, and what can the creator or commissioner do?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional freelance designer creates a logo for a fictional company on the basis of emails and a single invoice. There is no written assignment. The company later uses the logo on products, packaging and in a national campaign, and registers it as a trademark application in the company's name. The designer says only a limited use was agreed."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "The company needs certainty of ownership for its brand. The designer wants fair compensation or recognition for use beyond what was agreed."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Who is the first owner of copyright in a commissioned work by an independent contractor?",
+       "Is there an assignment or only a licence, and is it in writing?",
+       "Scope, territory and duration of any assignment.",
+       "Moral rights.",
+       "Interaction with the trademark application.",
+       "Infringement and remedies."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Copyright Act, 1957: definition of artistic work and author; first ownership under Section 17; assignment under Sections 18 and 19; licences under Section 30; author's special rights under Section 57; infringement under Section 51; civil remedies under Section 55; and jurisdiction under Section 62. The statutory commissioned-work exception is limited to specified categories and should not be assumed to transfer copyright in every commissioned logo. A logo created by an independent freelancer will ordinarily require analysis of authorship, employment status, any valid written assignment, and any express or implied licence. Section 19 contains default rules where duration or territory is omitted; verify the current text and facts before stating the precise consequence.",
+       "Whether a logo qualifies as an \"artistic work\" and the effect on commissioned-work rules.",
+       "Implied licence principles where payment was made and use was contemplated.",
+       "Trade Marks Act, 1999: trademark registration does not by itself resolve copyright ownership in the artwork.",
+       "Limitation Act, 1963 for civil claims."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "h",
+      "x": "For the designer"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Collect emails, drafts, invoices and dates showing creation and the agreed use.",
+       "Analyse whether any assignment exists and, if not, whether an implied licence limits the company's use.",
+       "Send a measured notice stating the claim, proposing a licence fee or a proper assignment, and preserving rights.",
+       "If unresolved, consider an appropriately framed copyright claim and, separately, assess whether any opposition or other step in the trademark proceedings is legally available on its own statutory grounds. A copyright ownership dispute does not automatically invalidate a trademark application."
+      ]
+     },
+     {
+      "t": "h",
+      "x": "For the company"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Check whether a written assignment exists; if not, negotiate a signed assignment with scope, territory, duration and consideration.",
+       "Record the chain of title and update the brand portfolio.",
+       "Assess exposure before launching further campaigns."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Emails and briefs; drafts and the final artwork file with dates; invoice and payment proof; any terms of engagement; evidence of the company's uses; the trademark application and filing particulars."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Negotiation and mediation; civil or commercial court for infringement, with jurisdiction rules under the Copyright Act; Trade Marks Registry or High Court for trademark-related steps."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "If the designer is an independent contractor and there is no effective assignment, the designer will generally be the first owner, subject to the exact statutory category, contractual terms and facts. The company may have an express or implied licence, whose scope cannot be assumed without examining the communications, payment, brief and intended use.",
+       "Courts may treat payment and the contemplated use as shaping the scope of licence. Extensions beyond that may be negotiated.",
+       "A signed assignment, even after the event, can resolve the position."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"Paying the invoice transfers all rights.\" Not necessarily. \"Registering the logo as a trademark gives ownership of the artwork.\" It does not. Agree ownership, territory, duration and credit in a signed agreement before work begins."
+     }
+    ],
+    "faq": [
+     [
+      "Does a freelancer or the client own the logo?",
+      "It depends on the written terms and the legal rules on first ownership and assignment."
+     ],
+     [
+      "Is an email enough to assign copyright?",
+      "Section 19 requires a written assignment signed by the assignor. Whether a particular electronic record and signature satisfy the applicable legal requirements is fact-specific; do not assume an ordinary email alone transfers copyright."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Employee-created works, software copyright, AI-generated works, performers' rights."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "Copyright Act 1957; Trade Marks Act 1999; official repository for authority on commissioned works and implied licences."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B2-7",
+   "batch": 2,
+   "slug": "sudden-dismissal-of-a-manager",
+   "title": "Sudden Dismissal of a Manager",
+   "meta_title": "Sudden Dismissal of a Manager | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on dismissal without inquiry or notice pay in India: contract, labour codes, forums and time limits.",
+   "area": "Employment and labour",
+   "practice": "employment-and-labour",
+   "forum": "Tribunal / civil court",
+   "jurisdiction": "India",
+   "audience": "private-sector employees and employers",
+   "question": "What can an employee do after a sudden dismissal, and does it matter whether they are a \"worker\" or a manager?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional private company dismisses a mid-level manager with immediate effect, alleging misconduct. No charge sheet, inquiry or opportunity to respond was given. The appointment letter provides a notice period and salary in lieu. Final dues have not been paid. The manager supervises a team, approves leave and works mostly on administrative and managerial tasks. The company is located in Uttar Pradesh."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "The manager needs to know whether to claim reinstatement or compensation, which forum applies, and the time limit. The employer wants to know its exposure."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Does the manager fall within the statutory definition of a worker, or only under contract law?",
+       "What do the appointment letter and policies say on misconduct, inquiry and notice?",
+       "Which labour framework now applies, given the 2025 commencement of the labour codes?",
+       "Recovery of wages and dues.",
+       "Whether reinstatement is available.",
+       "Restrictive covenants and post-termination obligations."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Labour codes: the Ministry of Labour and Employment states that the Code on Wages, 2019, Industrial Relations Code, 2020, Code on Social Security, 2020 and Occupational Safety, Health and Working Conditions Code, 2020 came into force on 21 November 2025. For this Uttar Pradesh scenario, verify applicable Central/State rules, notifications, establishment coverage and the law governing events that occurred before commencement. Official sources include https://labour.gov.in/sites/default/files/pib2200433.pdf and https://labour.gov.in/sites/default/files/e-noti-ir-_0.pdf.",
+       "Industrial Relations Code, 2020: the definition of \"worker\" and its exclusions, including for employees working mainly in a managerial, administrative or supervisory capacity and any wage ceiling.",
+       "Industrial Relations Code provisions on retrenchment, standing orders (which apply to establishments above a stated size), grievance redressal, conciliation and the Industrial Tribunal, and the time limit for raising a dispute.",
+       "Code on Wages, 2019: timing of payment of wages and full and final dues on termination.",
+       "Code on Social Security, 2020: gratuity and other benefits and eligibility.",
+       "State shops and establishments legislation, if it continues to apply to the establishment.",
+       "Indian Contract Act, 1872: breach of contract and damages; Section 27 on restraint of trade as it affects non-compete clauses.",
+       "Specific Relief Act, 1963: contracts of personal service are generally not specifically enforceable, subject to recognised exceptions.",
+       "Natural justice in private employment is limited compared with public employment, and depends on the contract, policies, standing orders and statute."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Classify the employee: worker under the Industrial Relations Code or not, based on duties, wages and the statutory definition.",
+       "Collect the appointment letter, policies, termination letter and payroll records.",
+       "Send a written request for reasons, the basis of the allegation and payment of dues.",
+       "If a worker, consider the statutory grievance and conciliation route and then the Industrial Tribunal, mindful of the time limit. If not a worker, consider a contractual claim for notice pay, unpaid wages and damages in a civil court, and a claim for statutory dues under the wages and social security frameworks.",
+       "Evaluate settlement, including payment of dues, a reference letter, and treatment of any restrictive covenants.",
+       "Employer side: review the evidence of misconduct, whether any inquiry should have been held under the policy or standing orders, and the exposure on notice pay and interest."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Appointment letter; policies and handbook; standing orders if any; termination letter; emails; payslips; bank statements; evidence of duties and reporting lines; performance records; any warning letters."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Conciliation officer and Industrial Tribunal for worker disputes under the Industrial Relations Code; civil court for contractual claims of a non-worker; authorities under the wages and social security frameworks for specified dues."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "If the employee is a worker, a tribunal may examine the fairness of the termination and can grant remedies, which may include reinstatement or compensation depending on the facts.",
+       "If the employee is not a worker, remedies are generally contractual: notice pay, accrued dues, damages for breach, and statutory benefits.",
+       "A negotiated separation is a common practical outcome."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"Every dismissed employee can get reinstated.\" It depends on the employee's category and the forum. \"No inquiry means automatic reinstatement.\" Not in every case. Dispute time limits can be short. Employers should keep inquiry records; employees should keep copies of all communications."
+     }
+    ],
+    "faq": [
+     [
+      "Is a manager covered by the same law as a factory worker?",
+      "Not necessarily; the statutory definition of worker decides which framework applies."
+     ],
+     [
+      "What if my final dues are not paid?",
+      "Statutory and contractual routes exist, and time limits apply."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Public-sector employees, sexual harassment complaints, whistle-blowing, gig workers, collective bargaining."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "The four labour codes and their rules; Gazette notifications on commencement and repeal; Uttar Pradesh State rules; Indian Contract Act 1872; Specific Relief Act 1963; official repository for authority."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B2-8",
+   "batch": 2,
+   "slug": "arbitration-award-challenge",
+   "title": "Arbitration Award Challenge",
+   "meta_title": "Arbitration Award Challenge | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on arbitration in India for a supply dispute: appointment of an arbitrator, challenging an award under Section 34 and enforcement.",
+   "area": "Arbitration and ADR",
+   "practice": "arbitration-and-adr",
+   "forum": "Arbitral tribunal / court",
+   "jurisdiction": "India-seated domestic arbitration",
+   "audience": "companies and counsel",
+   "question": "How does arbitration work in India, when can an award be challenged, and how is it enforced?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "Two fictional companies sign a supply agreement with an arbitration clause providing for a sole arbitrator and a seat in India. A payment dispute arises. The supplier invokes arbitration and proposes an arbitrator. The buyer objects to the proposed name and later participates under protest. An award is made against the buyer. The buyer considers challenging it, and the supplier wants to enforce."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Both sides need to know how appointment objections are handled, how narrow the challenge grounds are, and how quickly time limits run."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Is there a valid written arbitration agreement covering the dispute?",
+       "Appointment procedure and objections to an arbitrator's eligibility or independence.",
+       "Jurisdiction objections before the tribunal.",
+       "Time limit for the award.",
+       "Grounds and time limit for setting aside.",
+       "Enforcement and any stay.",
+       "Appeals."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Arbitration and Conciliation Act, 1996, as amended in 2015, 2019 and 2021: written agreement (Section 7); reference by court (Section 8); interim relief from court (Section 9); appointment of arbitrators (Section 11), including the limited scope of the court's examination at the appointment stage after the 2015 amendment; grounds of challenge to arbitrator and ineligibility (Sections 12 and 14 and the Seventh Schedule), including the issue of unilateral appointment by a party; tribunal's competence to rule on its own jurisdiction (Section 16); interim measures by the tribunal (Section 17); time limit for the award (Section 29A); setting aside (Section 34); enforcement (Section 36); appeals (Section 37).",
+       "Section 34: a closed list of grounds, including incapacity, invalid agreement, lack of proper notice, matters beyond the scope of submission, improper composition or procedure, non-arbitrability, conflict with the public policy of India, and (for domestic awards) patent illegality; the application must be made within three months of receipt of the award, extendable by up to thirty days on sufficient cause, but not beyond; prior notice to the other party; and the target for disposal within one year.",
+       "Section 36: enforcement as a decree, with no automatic stay on filing of a Section 34 application since 2015, and a 2021 amendment dealing with unconditional stay where a prima facie case of fraud or corruption is made out.",
+       "Modification of awards: in Gayatri Balasamy v. ISG Novasoft Technologies Ltd., 2025 INSC 605 (Constitution Bench, 30 April 2025), the Supreme Court recognised limited modification powers in specified circumstances, including severable portions, certain clerical/computational/typographical or manifest errors without merits review, and limited post-award-interest situations; the Supreme Court's Article 142 power is a distinct, carefully constrained matter. Official judgment: https://www.sci.gov.in/sci-get-pdf/?diary_no=207882021&from=latest_judgements_order&order_date=2025-04-30&type=j.",
+       "Arbitration legislation: check India Code and the Gazette for any enactment or commencement after the Arbitration and Conciliation Act, 1996 and its amendments.",
+       "Commercial Courts Act, 2015: applications under Section 34 in commercial arbitrations lie before the commercial court where the specified value is met."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Read the clause: scope, seat, number of arbitrators, appointment mechanism, rules, institution, and any pre-arbitration steps.",
+       "Send a notice invoking arbitration under Section 21 describing the claim and proposing steps for appointment.",
+       "If the other side does not agree to an appointment, consider an application under Section 11. If the objection is to independence or eligibility, raise it at the earliest stage and in the statutory manner.",
+       "Raise jurisdictional objections before the tribunal at the stage the statute requires.",
+       "Plan interim relief, if needed, under Section 9 or Section 17.",
+       "After the award, diarise the Section 34 period from the date of receipt. Assess grounds candidly: the challenge is not an appeal on the merits.",
+       "For the award holder, prepare enforcement and consider the stay implications.",
+       "Consider settlement or mediation at each stage."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Agreement and arbitration clause; correspondence invoking arbitration; appointment record; pleadings; evidence and orders; the award and proof of date of receipt; costs and interest computations."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Arbitral tribunal; High Court or designated court or institution for Section 11 as per the statute; the court with jurisdiction for Section 9, 34, 36 and 37 applications."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "Section 34 is not a merits appeal; the statutory grounds are limited, and courts generally do not reappraise evidence as an appellate court would.",
+       "Section 34(3) ordinarily allows three months from receipt of the award, with a further period of up to thirty days if sufficient cause is shown, but not thereafter. Verify the applicable computation and any legally relevant Section 33 request or service issue immediately.",
+       "Following Gayatri Balasamy (2025 INSC 605), limited modification may be permissible in specified circumstances."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"I can appeal the award on the facts.\" Section 34 is not an appeal. \"Filing a challenge stops enforcement.\" Not automatically. \"Late filing can be excused.\" The statute limits the extension. Diarise the date of receipt on day one, and draft the arbitration clause carefully, including seat, appointment method and institutional rules."
+     }
+    ],
+    "faq": [
+     [
+      "How long do I have to challenge an award?",
+      "The statute sets a short period from receipt of the award, with a limited extension."
+     ],
+     [
+      "Can I choose any arbitrator?",
+      "The clause and the statute govern who may be appointed, and certain relationships make a person ineligible."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "International commercial arbitration, foreign awards, emergency arbitration, mediation under the Mediation Act, 2023."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "Arbitration and Conciliation Act 1996 and the 2015, 2019 and 2021 amendment Acts; the Commercial Courts Act 2015; the Supreme Court and High Court websites for current authority on appointment, unilateral appointment and modification of awards."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B3-1",
+   "batch": 3,
+   "slug": "cheating-complaint-in-a-business-dispute",
+   "title": "Cheating Complaint in a Business Dispute",
+   "meta_title": "Cheating Complaint in a Business Dispute | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on anticipatory bail, bail and quashing of a criminal complaint arising from a commercial dispute in India under the BNSS.",
+   "area": "Criminal law",
+   "practice": "criminal-law",
+   "forum": "Sessions court / High Court",
+   "jurisdiction": "India, post-BNSS",
+   "audience": "businesspeople and individuals facing criminal complaints",
+   "question": "What can a person do when a business dispute is turned into a criminal complaint: bail, anticipatory bail, quashing?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional businessperson (\"the Applicant\") agreed to supply machinery to a fictional buyer (\"the Complainant\") for an advance payment. Delivery was delayed by a dispute over specifications. After negotiations failed, the Complainant filed a private complaint before a Magistrate alleging cheating and criminal breach of trust, and separately approached the police. The alleged conduct occurred in the second half of 2024, after the new criminal codes generally came into force. The Applicant fears arrest."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Avoiding arrest, protecting the business, and deciding whether the criminal case can be ended because the dispute is essentially a failed contract."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Which codes apply, given the date of the alleged offence.",
+       "Whether the facts show a dishonest intention at the start, or only a breach of contract.",
+       "Anticipatory bail versus regular bail.",
+       "Procedure for a private complaint, including examination of the complainant under Section 223 BNSS and the proviso concerning an opportunity of hearing to the accused before cognizance; the application and interpretation of this proviso should be checked against current binding authority.",
+       "Quashing.",
+       "Parallel civil proceedings."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Bharatiya Nyaya Sanhita, 2023 (BNS) applies to offences committed on or after 1 July 2024; for earlier conduct the Indian Penal Code continues, with procedure under the BNSS for proceedings after 1 July 2024 subject to savings provisions.",
+       "Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS): anticipatory bail is addressed in Section 482 and an application may be made to the Court of Session or High Court. Check the current provision and any applicable special-statute bar.",
+       "BNSS regular-bail provisions include Sections 480 and 483 for different courts and circumstances; check the precise provision applicable to the offence, court and procedural stage.",
+       "BNSS Section 528 (inherent powers of the High Court), the successor to CrPC Section 482. Applications to quash proceedings after 1 July 2024 are filed under Section 528 BNSS.",
+       "BNSS Section 223 addresses examination of the complainant and contains a proviso requiring an opportunity of hearing to the accused before cognizance, subject to the statutory text and exceptions. The practical application has generated interpretive issues; do not describe the law as settled without identifying and checking the latest binding Allahabad High Court/Supreme Court authority.",
+       "Special statutes may bar anticipatory bail (for example, the SC/ST Atrocities Act)."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Establish dates and which offence provisions are invoked. Obtain the complaint, FIR (if any) and annexures.",
+       "Collect the commercial record: purchase order, specification correspondence, payment proofs, delivery attempts, dispute emails. The question is whether the record shows a genuine commercial dispute.",
+       "If arrest is apprehended, prepare an anticipatory bail application with the facts, the absence of flight risk, willingness to cooperate with investigation, and the civil nature of the dispute.",
+       "Respond to any police notice for appearance and cooperate within lawful limits, with counsel's advice.",
+       "In a private complaint, examine the procedural stage and the current judicial interpretation of Section 223 BNSS before deciding whether and how the accused may be heard. Do not assume a universal hearing procedure without checking the applicable authority.",
+       "Where the complaint on its face discloses no offence or is a clear abuse of process, consider a quashing petition in the High Court.",
+       "Keep parallel civil remedies (recovery or refund claim, specific performance) in view; a negotiated civil settlement can sometimes lead to compounding or quashing where the law permits."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Complaint and annexures; any FIR and police notices; agreement or purchase order; specifications and correspondence; payment records; delivery and transport records; legal notices exchanged."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Court of Session or High Court (anticipatory bail); Magistrate and Sessions Court (regular bail and trial); High Court (quashing under Section 528 BNSS)."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "Courts often grant interim protection or bail in business disputes where custodial interrogation is not shown to be necessary, subject to conditions.",
+       "Quashing is exceptional and fact-specific. Where a dispute shows only breach of contract and no dishonest intention at the outset, courts have in some cases quashed; where the allegations disclose dishonest intention at inception, courts may refuse and leave the matter for trial."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"Anticipatory bail ends the case.\" It only protects against arrest on conditions. \"A civil dispute can never be a crime.\" Fraud at inception can be criminal even in a commercial deal. Document the commercial dispute carefully from the start."
+     }
+    ],
+    "faq": [
+     [
+      "Which law applies to events after July 2024?",
+      "Generally, the new criminal statutes apply to offences committed on or after 1 July 2024. Earlier offences and pending proceedings require a transitional/savings analysis."
+     ],
+     [
+      "Is quashing available after a settlement?",
+      "Sometimes, depending on the offence and the High Court's assessment."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Offences under special statutes, white-collar investigation by central agencies, economic offences under money-laundering law."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "BNS 2023; BNSS 2023; IPC and CrPC for transitional matters; Allahabad High Court rules and Lucknow bench practice directions where relevant; official repository for authority."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B3-2",
+   "batch": 3,
+   "slug": "maintenance-and-custody-after-separation",
+   "title": "Maintenance and Custody After Separation",
+   "meta_title": "Maintenance and Custody After Separation | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on maintenance, interim maintenance and child custody in India: statutory routes, welfare of the child and overlapping proceedings.",
+   "area": "Family law",
+   "practice": "family-and-matrimonial",
+   "forum": "Family court",
+   "jurisdiction": "India, family courts",
+   "audience": "separated spouses and parents",
+   "question": "How are maintenance and custody decided, and which proceedings can run together?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "Two fictional parents separate. The child, of primary-school age, lives with one parent (\"the Carer\"), who has limited independent income. The other parent (\"the Respondent\") earns a salary and also has business income that is not fully disclosed. The Respondent offers access only on alternate weekends and disputes the amount of support claimed. Several proceedings are possible and one has already been started under another statute."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Securing support quickly, stabilising the child's routine, and avoiding contradictory orders from different forums."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Which statute or statutes to use, and whether they overlap.",
+       "Interim versus final maintenance.",
+       "Proof of income and the Respondent's disclosure.",
+       "The welfare of the child as the guiding principle for custody and access.",
+       "Enforcement.",
+       "Confidentiality for the child."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "BNSS Section 144 provides a summary remedy for maintenance of wives, children and parents; Section 147 concerns enforcement of maintenance orders. Check the statutory text, eligibility, procedural requirements, interim-relief provisions and the applicable personal-law/statutory route before advising.",
+       "Hindu Marriage Act, 1955: interim maintenance and expenses (Section 24), permanent alimony (Section 25), custody and maintenance of children (Section 26), where the parties are governed by that Act.",
+       "Hindu Adoption and Maintenance Act, 1956 (maintenance of children and others), where applicable.",
+       "Protection of Women from Domestic Violence Act, 2005: remedies may include monetary relief, residence-related relief and temporary custody orders, subject to statutory requirements and facts.",
+       "Guardians and Wards Act, 1890 and, where applicable, Hindu Minority and Guardianship Act, 1956: custody/guardianship analysis is statute- and fact-specific, with the child's welfare a paramount consideration.",
+       "Other personal laws and special statutes (for example, those governing Muslim, Christian or Parsi families) may differ. The applicable law depends on the parties' personal law and the proceedings chosen.",
+       "Family Courts Act, 1984: establishment and jurisdiction of Family Courts, where notified for the area."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Identify the governing personal law and the forums available.",
+       "Choose the proceeding or combination; coordinate so that orders do not conflict and so that amounts awarded under one are accounted for in another.",
+       "Prepare a clear statement of income, expenses and the child's needs: schooling, health, care.",
+       "Seek interim maintenance and interim arrangements for the child. Ask for a disclosure affidavit from the other parent.",
+       "Propose a workable access schedule and explore mediation, which many family courts encourage.",
+       "If non-payment follows an order, consider enforcement steps available under the relevant statute."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Marriage and birth certificates; income proofs and bank statements; evidence of the child's schooling and medical care; evidence of caregiving; earlier orders; communications about access; any police or protection complaints."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Family Court or District Court as applicable; Magistrate for maintenance under the criminal procedure provision; High Court for revision or appeal."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "Interim orders are commonly made on the available material; the amount depends on proof of the Respondent's means and the child's needs.",
+       "Custody and access are decided on the child's welfare; continuity of care and the child's wishes (where appropriate for age) are considered.",
+       "Parallel proceedings can lead to adjustment of amounts to avoid double recovery."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"Custody always goes to the mother.\" The welfare principle governs, not a rule favouring either parent. \"I can ignore a maintenance order if I disagree.\" Non-compliance has legal consequences. Keep records of care and expenses."
+     }
+    ],
+    "faq": [
+     [
+      "Can I file under more than one law?",
+      "Often yes, but courts may adjust amounts to avoid overlap, so coordination matters."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "International relocation, foreign custody orders, adoption."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "BNSS 2023; Hindu Marriage Act 1955; HAMA 1956; DV Act 2005; Guardians and Wards Act 1890; Hindu Minority and Guardianship Act 1956; Family Courts Act 1984; official repository for authority on disclosure and overlap."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B3-3",
+   "batch": 3,
+   "slug": "minority-shareholder-oppression",
+   "title": "Minority Shareholder Oppression",
+   "meta_title": "Minority Shareholder Oppression | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on oppression and mismanagement of a minority shareholder in an Indian private company: evidence, NCLT remedies and information...",
+   "area": "Corporate and company law",
+   "practice": "corporate-and-commercial",
+   "forum": "NCLT",
+   "jurisdiction": "India",
+   "audience": "minority shareholders, family businesses",
+   "question": "What can a minority shareholder do if excluded from management and benefits of a closely held company?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional minority shareholder holds a modest stake in a fictional family-run private company and was a director until removed at a general meeting held on short notice. No dividends have been declared for years. Family members of the majority shareholder draw salaries and the company has made loans and a property transfer to related parties. The minority shareholder has not received accounts for two years and was not invited to later meetings."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "The minority shareholder wants information, a fair exit or a restoration of rights, and needs to know whether the company's conduct meets the legal standard."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Whether the conduct is oppressive or mismanagement and not merely a majority decision the minority dislikes.",
+       "Eligibility to apply.",
+       "Evidence of related-party transactions and diversion.",
+       "Interim relief.",
+       "Available remedies.",
+       "Limitation and delay."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Companies Act, 2013, Sections 241 and 242: relief for oppression and mismanagement and the Tribunal's powers (regulating conduct, buy-out, restricting transactions, setting aside agreements, interim orders).",
+       "Section 244: eligibility thresholds for members to apply and the Tribunal's power to waive them.",
+       "Companies Act provisions on meeting notice, annual general meetings, financial statements, statutory registers, member inspection rights and related-party transactions must be identified by section and checked against the company's articles and applicable rules.",
+       "Removal of a director is governed by Section 169 of the Companies Act, 2013, subject to statutory exceptions and the special-notice and hearing requirements. Confirm the director's category, the company's constitution and the exact procedure.",
+       "Rectification of the register of members may be available under Section 59 of the Companies Act, 2013 where its requirements are met; assess whether the dispute belongs before the NCLT and whether other remedies apply.",
+       "NCLT Rules, 2016 for procedure and forms."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Obtain a certified record of the company: MCA filings (publicly available records), financial statements, charges and director changes, and the register of members. Check eligibility to apply under Section 244.",
+       "Make a written request to the company for accounts and records, with copies of notices and minutes.",
+       "Map the conduct: dates of meetings, notices, resolutions, related-party transactions, dividend history and compensation of family members.",
+       "Assess whether a negotiated exit is feasible. Where it is, require an independent valuation basis.",
+       "If proceeding, prepare a petition before the Tribunal with a clear chronology, the legal grounds and specific reliefs (for example, buy-out at fair value, restoration of rights, restraint on transactions) and an interim application if assets are at risk.",
+       "Anticipate defences: majority rule, business judgment, delay, lack of standing."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Share certificates and transfer records; MCA records; financial statements; board and general meeting notices and minutes; correspondence; bank statements if lawfully available; evidence of related-party dealings."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "National Company Law Tribunal bench with territorial jurisdiction over the registered office; appeal to the National Company Law Appellate Tribunal."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "If oppression is established, the Tribunal may order a buy-out at fair value, regulate future conduct or set aside specific transactions.",
+       "If the conduct reflects ordinary commercial decisions within the majority's powers, relief may be refused.",
+       "Delay and weak evidence can weaken the case."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"Being outvoted is oppression.\" It is not by itself. \"I can wait until the company recovers.\" Delay can hurt. Keep records and request information in writing."
+     }
+    ],
+    "faq": [
+     [
+      "Do I need a minimum shareholding to apply?",
+      "The Act sets thresholds but the Tribunal can waive them in appropriate cases."
+     ],
+     [
+      "Can I get paid out?",
+      "A buy-out is one remedy the Tribunal can order if grounds are made out."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Listed companies, class actions, fraud investigations by the government, foreign shareholders."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "Companies Act 2013 and rules; NCLT Rules 2016; MCA portal; official repository for authority."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B3-4",
+   "batch": 3,
+   "slug": "gst-show-cause-notice-and-appeal",
+   "title": "GST Show-Cause Notice and Appeal",
+   "meta_title": "GST Show-Cause Notice and Appeal | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on responding to a GST show-cause notice over input tax credit and appealing the order in India, including Section 74A and...",
+   "area": "Tax, customs and FEMA",
+   "practice": "tax-customs-and-fema",
+   "forum": "GST appellate forums",
+   "jurisdiction": "India",
+   "audience": "registered businesses",
+   "question": "How to respond to a GST show-cause notice and appeal an order.",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional trading company receives a show-cause notice alleging it wrongly claimed input tax credit because certain suppliers did not pay tax to the government or did not file returns. The notice covers periods in two financial years: one in FY 2023-24 and one in FY 2024-25. The precise tax periods and alleged conduct must be separated before choosing the statutory provision. The company paid its suppliers by bank transfer and holds tax invoices."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Responding to the notice on time, choosing the right legal provision, and preserving appeal rights, including any pre-deposit."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Which section the notice should invoke for each period.",
+       "Eligibility conditions for input tax credit and the effect of a supplier's default.",
+       "Whether the department alleges fraud or suppression.",
+       "Time limits for the notice and order.",
+       "Appeal and pre-deposit."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "CGST Act, 2017: Sections 73 and 74 generally address determination for periods up to FY 2023-24 (non-fraud and fraud/wilful-misstatement/suppression cases respectively); Section 74A generally applies to determination for FY 2024-25 onwards. Verify the exact period, applicable amendments, notice and order limitation, and statutory exceptions against the current Act and notifications. Do not imply that the supplier's default alone automatically resolves entitlement to ITC.",
+       "CGST Act Section 16 sets conditions for input tax credit, including possession of prescribed documents, receipt of goods/services, supplier-related conditions, return filing and time limits, as amended. Sections 16(5) and 16(6) introduced retrospective/relief provisions for specified periods and circumstances; assess their exact scope and any relevant circulars for the taxpayer.",
+       "Appeal to the Appellate Authority under Section 107: the ordinary limitation period and condonable extension are statutory and run from communication of the order. A pre-deposit is generally required. The amount, caps, and special rules for penalty-only orders must be calculated from the currently effective amended Sections 107 and 112 and applicable commencement notifications; do not rely on an unverified date or generic percentage.",
+       "Appeal to the Appellate Tribunal under Section 112 is subject to separate limitation and pre-deposit requirements. Confirm the relevant Tribunal's operational status, notified benches, filing rules and any transitional directions at the time of filing.",
+       "State GST Acts, which mirror the central provisions.",
+       "Writ jurisdiction of the High Court in limited circumstances such as lack of jurisdiction or breach of natural justice."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Read the notice: period, provision invoked, quantum, alleged ground, and the response deadline.",
+       "Check whether the provision matches the period (73 or 74 for earlier years; 74A for FY 2024-25 onwards) and whether time limits for the notice are met.",
+       "Collect proof of bona fides: invoices, e-way bills, transport records, bank payment proof, GSTR-2B reconciliations, and supplier registration status at the time.",
+       "File a reasoned reply on the statutory portal within the stated time, request a personal hearing and attach documents.",
+       "If an adverse order follows, calendar the appeal deadline from the date of communication. Check the pre-deposit, and file with the required deposit.",
+       "Consider writ remedies only where the circumstances justify bypassing the statutory appeal.",
+       "Review internal compliance: supplier due diligence, reconciliation routines and invoice matching."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Show-cause notice and order; invoices and e-way bills; payment proofs; transport and delivery records; return filings and reconciliations; supplier registration and filing status."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Adjudicating authority; Appellate Authority; Appellate Tribunal; High Court where appropriate."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "Strong documentary proof of genuine transactions can help, though courts and authorities apply the statutory conditions strictly.",
+       "A procedural defect in the notice or order may result in setting aside or remand.",
+       "Pre-deposit is generally a condition for appeal, so cash-flow planning matters."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"The old section numbers always apply.\" Later periods fall under Section 74A. \"Appeal deadlines are flexible.\" The Act allows only a limited condonation. Missing the reply or appeal date is usually more damaging than the underlying tax issue."
+     }
+    ],
+    "faq": [
+     [
+      "Do I have to pay anything to appeal?",
+      "Generally a percentage of the disputed amount as pre-deposit, plus any admitted amount; check current rules."
+     ],
+     [
+      "Can I lose credit because my supplier did not pay tax?",
+      "ITC depends on the statutory conditions and the applicable period. The effect of a supplier's default is fact-sensitive and should be assessed against the Act, rules, circulars and binding case law; payment to a supplier and possession of an invoice do not by themselves guarantee credit."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Refund claims, classification disputes, anti-profiteering, customs."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "CGST Act 2017 and Rules; State GST Acts; CBIC notifications and circulars; GST portal; official repository for authority."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B3-5",
+   "batch": 3,
+   "slug": "operational-creditor-insolvency-application",
+   "title": "Operational Creditor Insolvency Application",
+   "meta_title": "Operational Creditor Insolvency Application | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on an operational creditor's insolvency application against a company in India: demand notice, disputes, thresholds and recent IBC...",
+   "area": "Banking and insolvency",
+   "practice": "banking-recovery-and-insolvency",
+   "forum": "NCLT",
+   "jurisdiction": "India",
+   "audience": "operational creditors and companies",
+   "question": "When can a supplier or service provider start insolvency proceedings, and what are the risks?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional service provider (\"the Creditor\") has unpaid invoices from a fictional company (\"the Company\"). The Company has stopped responding, says some invoices relate to disputed work, and has not paid the undisputed part. The Creditor is considering an insolvency application."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Whether insolvency is the right tool, what must be shown, and what the Company can do in response."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Whether the debt is an operational debt and above the minimum default threshold.",
+       "Whether there is a genuine pre-existing dispute.",
+       "The statutory demand notice and the response period.",
+       "Limitation.",
+       "Consequences of admission and the risk of misuse.",
+       "The effect of the 2026 amendments."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Insolvency and Bankruptcy Code, 2016 (IBC): an operational creditor ordinarily serves a demand notice under Section 8 and may apply under Section 9 after the statutory period if the requirements are met and no qualifying pre-existing dispute is shown. Admission can trigger a collective insolvency process and moratorium. Verify the current consolidated Code, rules and commencement notifications.",
+       "Minimum default threshold: verify the currently operative notification and any category-specific rule on the date of filing. Do not assume the original statutory amount remains the applicable threshold.",
+       "Limitation for applications under the Code and the extension of limitation by acknowledgment.",
+       "Distinguish enactment from commencement. If not verifiable from an official source, remove this detail from public-facing copy.",
+       "Information-utility requirements: verify whether any proposed or enacted requirement applies to this category of creditor and whether it is in force; do not describe a proposal as a current filing prerequisite.",
+       "Other routes: civil suit, summary suit, statutory routes for micro and small enterprises."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Establish that the debt is operational, due, above the threshold and within limitation. Gather invoices, delivery proof, and any acknowledgment.",
+       "Assess the dispute risk honestly. A real dispute raised before the demand notice is a common reason for rejection.",
+       "Consider alternatives: negotiated settlement, civil recovery, statutory remedies. Insolvency has far-reaching consequences and should not be used as ordinary pressure.",
+       "If proceeding, serve the statutory demand notice and observe the response period.",
+       "If no payment or dispute follows, prepare the application with the required documents and evidence of default.",
+       "Debtor side: respond within the statutory period, identify any genuine pre-existing dispute with contemporaneous evidence, consider settlement, and verify the currently effective withdrawal rules before taking a position."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Contract and invoices; delivery or performance proof; ledger statements; demand notice and proof of delivery; the Company's replies; bank statements; any prior correspondence on the alleged dispute."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "National Company Law Tribunal; appeal to the National Company Law Appellate Tribunal; resolution professional and committee of creditors after admission."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "Admission is more likely where default is clear and no genuine dispute pre-dates the demand notice.",
+       "Rejection is likely where a substantial pre-existing dispute is shown.",
+       "Settlement before admission is common.",
+       "Frivolous or abusive filings can attract costs or penalties."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"Insolvency is a fast way to get paid.\" It is a collective process, not an individual recovery tool. \"Any unpaid bill qualifies.\" Thresholds and conditions apply. Record disputes in writing as they arise."
+     }
+    ],
+    "faq": [
+     [
+      "Can I withdraw after filing?",
+      "Withdrawal is governed by the IBC, applicable regulations and judicial orders, and the position may differ before and after constitution of the committee of creditors. Check the current text and applicable approval requirements."
+     ],
+     [
+      "What if the other side says the work was defective?",
+      "A genuine, documented dispute can prevent admission."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Financial creditor applications, personal insolvency, cross-border insolvency, liquidation."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "IBC 2016 as amended, including the 2026 Act; IBBI regulations; NCLT rules; commencement notifications; official repository for authority."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B3-6",
+   "batch": 3,
+   "slug": "sarfaesi-enforcement-against-a-borrower",
+   "title": "SARFAESI Enforcement Against a Borrower",
+   "meta_title": "SARFAESI Enforcement Against a Borrower | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on challenging SARFAESI enforcement of a mortgaged property in India: demand notice, possession, the Debt Recovery Tribunal and...",
+   "area": "Banking and insolvency",
+   "practice": "banking-recovery-and-insolvency",
+   "forum": "DRT / DRAT",
+   "jurisdiction": "India",
+   "audience": "borrowers, guarantors, lenders",
+   "question": "How can a borrower challenge a bank's enforcement against mortgaged property?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional borrower's term loan, secured by a mortgage over a commercial property, becomes a non-performing asset. The lender issues a demand notice, the borrower sends a representation and proposes a one-time settlement, the lender communicates its response, and possession is then taken with assistance from the District Magistrate. Whether the response and possession comply with law depends on the documents and the applicable procedure. A sale notice follows."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Protecting the property from sale, testing the lender's compliance, and exploring settlement or restructuring."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Whether the loan was properly classified and the notice properly issued.",
+       "Whether the lender considered the borrower's representation and gave reasons.",
+       "Compliance in taking possession and in conducting the sale.",
+       "The remedy before the Tribunal and its time limit.",
+       "Pre-deposit for further appeal.",
+       "Right to redeem."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "SARFAESI Act, 2002: Section 13(2) generally requires a 60-day demand notice; Section 13(3A) addresses consideration of the borrower's representation and communication of reasons; Section 13(4) lists enforcement measures; Section 14 concerns assistance by the Chief Metropolitan Magistrate/District Magistrate; Section 17 provides an application to the DRT ordinarily within 45 days of the measure challenged; Section 18 governs appeal to the DRAT and generally requires a deposit of 50% of the debt due, reducible by the DRAT for recorded reasons to not less than 25%. Verify the current text and facts.",
+       "Recovery of Debts and Bankruptcy Act, 1993: procedure before the Tribunal.",
+       "Exclusions and limits on the Act's application, such as certain securities and smaller dues.",
+       "Interaction with the Insolvency and Bankruptcy Code: a moratorium in insolvency can restrain enforcement."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Obtain the loan documents, notice, classification letters and all enforcement notices; note receipt dates.",
+       "Check whether the notice period, representation process and reasons requirement were followed.",
+       "Calendar the Tribunal application deadline from the date of the enforcement measure and prepare the application with grounds, prayer for interim protection and a statement of dues.",
+       "Explore settlement or restructuring in parallel, including a one-time settlement, with a written, approved proposal.",
+       "Be ready to pay or deposit amounts the Tribunal may require as a condition of interim protection.",
+       "Track the sale process urgently.",
+       "If the Tribunal's order is adverse, assess appeal and the pre-deposit."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Loan agreement and security documents; account statements; classification notice; demand notice and representation; lender's reply; possession and sale notices; valuation reports; settlement correspondence."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Debt Recovery Tribunal; Debt Recovery Appellate Tribunal; High Court under Article 226 in narrow circumstances."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "Procedural non-compliance can invalidate a step and lead to relief.",
+       "Tribunals often condition interim protection on a deposit.",
+       "A negotiated settlement is a common resolution."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"A representation stops the lender.\" It does not by itself; the lender must consider it. \"I can challenge whenever I like.\" The period to approach the Tribunal is short. Keep every notice and its date of receipt."
+     }
+    ],
+    "faq": [
+     [
+      "How long do I have to challenge enforcement?",
+      "A Section 17 application is ordinarily required within 45 days of the relevant measure under Section 13(4). Identify the exact measure and calculate limitation immediately; do not assume that a representation or settlement discussion stops time."
+     ],
+     [
+      "Can the sale be stopped?",
+      "Interim protection depends on the facts, statutory compliance and the Tribunal's or court's order. Filing a challenge does not automatically stay the sale."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Agricultural land and other excluded security, guarantor-specific issues, asset reconstruction company assignments."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "SARFAESI Act 2002 and Rules; RDB Act 1993; RBI circulars on classification and settlement; official repository for authority."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B3-7",
+   "batch": 3,
+   "slug": "defective-product-consumer-complaint",
+   "title": "Defective Product Consumer Complaint",
+   "meta_title": "Defective Product Consumer Complaint | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on a consumer complaint for a defective appliance in India: which Commission, limitation, evidence and mediation.",
+   "area": "Consumer protection",
+   "practice": "consumer-protection",
+   "forum": "Consumer Commission",
+   "jurisdiction": "India",
+   "audience": "consumers",
+   "question": "How to file a consumer complaint for defective goods or deficient service.",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional consumer buys an appliance with a one-year warranty from a retailer. It fails within months. The retailer redirects to the manufacturer's service centre. The service centre cancels visits and gives no repair date. Written complaints go unanswered."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Getting a repair, replacement or refund, plus compensation for the inconvenience, with minimal cost."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Whether the buyer is a \"consumer\" for the purchase.",
+       "Defect in goods and deficiency in service.",
+       "Which parties to name.",
+       "Which Commission has jurisdiction by value and by territory.",
+       "Limitation.",
+       "Evidence."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Consumer Protection Act, 2019: consider the definitions of consumer, defect, deficiency and unfair trade practice; applicable remedies and product-liability provisions; mediation provisions; and the two-year limitation period from the cause of action, subject to the Commission's power to condone delay for sufficient cause. Check the precise statutory section and facts.",
+       "Pecuniary jurisdiction by value of consideration paid, per the 2021 Rules: District up to Rs 50 lakh; State above Rs 50 lakh up to Rs 2 crore; National above Rs 2 crore.",
+       "Territorial jurisdiction may include the place where the complainant resides or personally works for gain, subject to the Consumer Protection Act and the facts. Check the current statutory wording and whether the complaint is maintainable against each opposite party.",
+       "Consumer Protection (E-Commerce) Rules, 2020 where the product was bought online.",
+       "Confirm the currently operational electronic filing portal, applicable filing procedure, court fee and rules before advising; portal names and processes may change."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Gather invoice, warranty terms, photos or videos of the defect, service tickets and all complaints.",
+       "Send a clear written notice to the seller and manufacturer stating the defect, the relief sought and a reasonable deadline.",
+       "Consider mediation, which the Act supports where parties agree.",
+       "If unresolved, prepare a complaint to the right Commission, with facts, documents, relief and a statement on limitation.",
+       "Seek a technical or service report if the defect is technical and disputed.",
+       "After an order, follow the enforcement provisions if there is non-compliance."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Invoice; warranty card; product details; defect evidence; service history; written complaints with proof of delivery; correspondence; any payment evidence."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "The District Commission is ordinarily the first-instance forum for claims within its current pecuniary jurisdiction. State and National Commission jurisdiction depends on the Act and Rules; appellate routes and deposit requirements must be separately checked. The illustrative facts do not specify a purchase value, so do not assert a forum until that value is supplied."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "Where defect and non-redress are shown, Commissions may order repair, replacement or refund with compensation and costs.",
+       "Missing documents or delay can weaken the case.",
+       "Settlement during proceedings is common."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"Only the manufacturer is responsible.\" The seller can also be liable. \"No deadline applies.\" The limitation period is two years, with limited condonation. Keep every document and message."
+     }
+    ],
+    "faq": [
+     [
+      "Do I need a lawyer?",
+      "Parties may represent themselves, though legal advice can help with drafting and evidence."
+     ],
+     [
+      "Which Commission?",
+      "Pecuniary jurisdiction is based on the value of consideration paid for the goods or services, not simply the compensation demanded. Territorial jurisdiction is a separate test. Confirm the current limits and the complainant's facts."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Product liability class actions, housing and builder disputes, insurance claims."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "Consumer Protection Act 2019; 2020 and 2021 Rules; consumer affairs ministry notifications; official repository for authority."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B3-8",
+   "batch": 3,
+   "slug": "data-protection-readiness-for-a-retailer",
+   "title": "Data Protection Readiness for a Retailer",
+   "meta_title": "Data Protection Readiness for a Retailer | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on preparing an online business for India's Digital Personal Data Protection Act and Rules: phased dates, notices, consent, rights...",
+   "area": "Data and technology",
+   "practice": "data-privacy-and-technology",
+   "forum": "Regulatory / internal",
+   "jurisdiction": "India",
+   "audience": "online businesses",
+   "question": "What must a business do under India's data protection law and when?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional online retailer collects names, contacts, addresses and purchase histories, and has started using these for marketing messages without a clear notice. A customer asks the retailer to delete their data. The retailer uses third-party vendors for payments and delivery and stores data on cloud servers."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "What legal obligations apply now, what will apply later, and how to prepare without overpromising compliance."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Which law governs today and which obligations are not yet in force.",
+       "Notice and consent for marketing.",
+       "Handling the customer's deletion request.",
+       "Vendor contracts.",
+       "Security and breach readiness.",
+       "Penalties and governance."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Until the relevant DPDP provisions commence, other applicable laws and rules may continue to govern relevant processing, including the Information Technology Act, 2000 and the SPDI Rules, 2011 to the extent applicable. Check the DPDP Act's repeal/amendment and commencement provisions, the type of data and processing, and sector-specific obligations; do not assume every pre-existing rule applies to every dataset.",
+       "Consumer Protection (E-Commerce) Rules, 2020, which may apply independently.",
+       "The Act and Rules address notice, consent, certain legitimate uses, data-principal rights, security safeguards, personal-data-breach notifications, children's data and additional obligations for Significant Data Fiduciaries. The exact duty, exceptions, timelines and commencement date differ by provision; confirm each from the official text before describing it as currently mandatory.",
+       "Penalties under the Act's schedule; the exact amounts and conditions must be read from the Act and not summarised without verification."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Map data: what is collected, why, where it is stored, who receives it and how long it is kept.",
+       "Identify which obligations apply today and which will apply from the later commencement dates; build a dated plan.",
+       "Revise the privacy notice to describe actual processing; separate marketing consent from order fulfilment.",
+       "Create a process for customer requests (access, correction, deletion) with a log and response timelines to be confirmed once the relevant provisions commence.",
+       "Review vendor contracts for security, sub-processing, breach cooperation and deletion.",
+       "Prepare an incident response plan and internal training.",
+       "Review children's data practices if any users may be minors."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Data inventory; current privacy notice and consent screens; vendor agreements; security policies; retention schedule; incident log; customer request records."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Compliance is primarily internal and regulatory. The Act establishes the Data Protection Board of India; confirm its constitution, operational status, applicable rules and the commencement of the relevant powers before stating which complaints it can currently receive or decide."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "A business that maps data, updates notices and tightens vendor contracts will be better placed when obligations commence.",
+       "Marketing based on data collected for another purpose is a common compliance gap.",
+       "Compliance timelines can change through further notifications."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"The law is not in force, so I can wait.\" Some provisions are in force and others commence in stages; preparation takes time. \"A policy page is enough.\" The notice must match actual processing."
+     }
+    ],
+    "faq": [
+     [
+      "Can a customer demand deletion today under the new Act?",
+      "The answer depends on the exact commencement status and any other applicable law, contract or sectoral rule. Check the official enforcement timeline and the facts; do not categorically deny or promise a deletion right."
+     ],
+     [
+      "Does the law apply to small businesses?",
+      "Size alone should not be treated as a blanket exemption. Applicability and any exemption depend on the Act, Rules, processing and current commencement status."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Cross-border transfers beyond a general mention, significant data fiduciary audits, sector-specific rules for banking, health, telecom."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "DPDP Act 2023; DPDP Rules 2025; Gazette commencement notifications; MeitY website; IT Act 2000 and rules; E-Commerce Rules 2020."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B4-1",
+   "batch": 4,
+   "slug": "cartel-investigation-by-the-cci",
+   "title": "Cartel Investigation by the CCI",
+   "meta_title": "Cartel Investigation by the CCI | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on a competition investigation into price information exchange and refusal to supply: presumption, leniency, penalties on global...",
+   "area": "Competition and regulatory",
+   "practice": "competition-and-regulatory",
+   "forum": "CCI / NCLAT",
+   "jurisdiction": "India",
+   "audience": "businesses and compliance teams",
+   "question": "What are the risks and options when a competition regulator investigates a suspected cartel?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "Three fictional regional distributors of an industrial product exchanged messages about upcoming prices and agreed not to supply a new entrant. A trade body staff member heard of this and a complaint followed. The Competition Commission of India (\"CCI\") has sent a notice seeking information. The scenario assumes a valid notice; the recipient should check its scope, statutory basis, deadline and any available procedural objections."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Each distributor must decide how to respond, whether to cooperate with the regulator, and how to limit exposure, while preserving privilege and avoiding obstruction."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Whether the conduct is a horizontal agreement presumed to have an appreciable adverse effect on competition.",
+       "Evidence of the agreement and of its implementation.",
+       "Leniency.",
+       "Penalty calculation.",
+       "Settlement and commitment, and their limits.",
+       "Search and seizure and privilege.",
+       "Appeal."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Competition Act, 2002, Section 3 (anti-competitive agreements; the presumption for certain horizontal agreements, including price fixing, limiting supply and market allocation; and rule-of-reason analysis for other agreements).",
+       "Sections 19 and 26 (inquiry, prima facie opinion, investigation by the Director General); Section 27 (orders, including penalties); Section 41 (Director General's powers, including search and seizure).",
+       "Section 46 and the leniency regulations: reduced penalty for first-in cartel participants who make full and true disclosure; the 2023 amendments added \"leniency plus\".",
+       "Penalties: the Amendment Act provides for penalties calculated on global turnover; the CCI's penalty guidelines and turnover regulations govern the method.",
+       "Appeals to the National Company Law Appellate Tribunal (Section 53B).",
+       "Privilege and confidentiality in competition investigations: verify the applicable statutory provisions and current authority, including whether the communication and the lawyer's role qualify for protection. Do not assume that all in-house legal communications are privileged."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Issue a document preservation notice. Do not delete or alter records.",
+       "Engage competition counsel and, separately, consider whether conflicts require separate representation of individuals and the company.",
+       "Conduct a privileged internal review of communications to understand the facts.",
+       "Evaluate leniency promptly; position in the queue can matter.",
+       "Respond to the information request accurately and on time, with careful scope.",
+       "Prepare for a possible Director General investigation and for the penalty stage; review financial information relevant to turnover.",
+       "Implement a compliance programme and training regardless of outcome."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Notice from the CCI; trade body communications; messages and emails among competitors; pricing and supply records; refusal-to-supply correspondence; turnover and financial statements; any compliance policies."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Competition Commission of India; Director General; National Company Law Appellate Tribunal; Supreme Court."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "If the exchange and the boycott are established, penalties can be significant and are now assessed with reference to turnover as defined in the amended law.",
+       "A qualifying applicant may be considered for a reduction under the operative leniency framework; eligibility, order of priority and disclosure requirements must be checked against current regulations.",
+       "Weak evidence of an agreement may lead to closure."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"Sharing prices informally is harmless.\" It can be treated as a cartel facilitator. \"We can fix this later.\" Leniency and cooperation depend on timing. Preserve documents; never destroy records once an inquiry is anticipated."
+     }
+    ],
+    "faq": [
+     [
+      "Are penalties based only on Indian sales?",
+      "The 2023 amendments introduced a global turnover basis; confirm the current method."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Abuse of dominance, merger filings, sector regulators."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "Competition Act 2002 and the 2023 Amendment Act; CCI regulations and guidelines; commencement notifications; official repository for authority."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B4-2",
+   "batch": 4,
+   "slug": "pollution-control-board-notice-to-a-factory",
+   "title": "Pollution Control Board Notice to a Factory",
+   "meta_title": "Pollution Control Board Notice to a Factory | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on a State pollution control board notice, consent renewal, closure directions, penalties and appeals to the National Green...",
+   "area": "Environment and energy",
+   "practice": "environment-energy-and-infrastructure",
+   "forum": "Pollution board / NGT",
+   "jurisdiction": "India",
+   "audience": "industrial units",
+   "question": "What can a factory do when a pollution control board issues a notice or directions?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional manufacturing unit holds consent to operate that is due for renewal. After a complaint from neighbours, the State pollution control board inspects, finds exceedances in stack emissions and effluent, issues a show-cause notice and directs a corrective plan within a period, warning of closure."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Keeping the unit lawfully operating, responding credibly, and understanding which proceedings can lead to penalties or closure."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "The legal basis of the board's notice and directions.",
+       "Compliance with consent conditions.",
+       "Renewal and any deemed-consent rule.",
+       "Penalties and the adjudication process after the 2023-2024 amendments.",
+       "Appeals.",
+       "Whether criminal liability remains for some contraventions."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Air (Prevention and Control of Pollution) Act, 1981, as amended by the Jan Vishwas (Amendment of Provisions) Act, 2023: consent (Section 21), directions (Section 31A), and monetary penalties through adjudication.",
+       "Rules on holding inquiry and imposing penalty issued in November 2024.",
+       "Environment (Protection) Act, 1986: general directions and penalties, as amended.",
+       "National Green Tribunal Act, 2010: the NGT has only the jurisdiction and appellate powers conferred by statute. Identify the exact provision permitting an appeal from the particular order; do not imply that every board notice, direction or adjudication order is appealable to the NGT.",
+       "Do not assume deemed consent from delay. Check whether a deemed-consent provision applies to the relevant State, category of industry, statute and application, and whether all statutory prerequisites were met."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Identify the legal basis of each notice and the stated deadline.",
+       "Commission an independent environmental audit of emissions and effluent against consent conditions and standards.",
+       "Submit a considered reply with the audit findings and a time-bound corrective action plan, including installation or repair of control equipment.",
+       "File the renewal application in time with complete documents; keep proof of filing for any deemed-consent argument.",
+       "If the board issues a closure or stoppage direction, assess immediate appeal and interim relief.",
+       "Track adjudication proceedings for penalties and the appeal route with deposit.",
+       "Set up a compliance calendar and monitoring records."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Consent orders and conditions; inspection reports; monitoring data; board notices and replies; audit report; equipment records; renewal application and proof of filing."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "State Pollution Control Board; adjudicating officer; National Green Tribunal; High Court under Article 226 in narrow cases."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "A credible corrective plan and verified data may be relevant to the regulator's response, but do not guarantee that closure or other directions will be avoided.",
+       "Penalties are monetary for many contraventions; continued non-compliance can escalate.",
+       "Where operating without valid consent is alleged, the consequences may be more serious."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"Renewal can wait.\" Missing the renewal window risks operating without valid consent. Keep monitoring data."
+     }
+    ],
+    "faq": [
+     [
+      "Can the board shut my unit?",
+      "It can issue directions within its statutory powers, which can be challenged through the appeal routes."
+     ],
+     [
+      "Where do I appeal a penalty?",
+      "Generally to the National Green Tribunal, with a deposit; confirm current rules."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Environmental impact assessment clearances, waste management rules, forest clearance, mining."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "Water Act 1974 as amended; Air Act 1981 as amended; Jan Vishwas Act 2023; Environment (Protection) Act 1986; NGT Act 2010; board consent conditions; official repository."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B4-3",
+   "batch": 4,
+   "slug": "fire-insurance-claim-repudiation",
+   "title": "Fire Insurance Claim Repudiation",
+   "meta_title": "Fire Insurance Claim Repudiation | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on an insurer rejecting a business fire claim for alleged non-disclosure in India: duty of disclosure, surveyor reports, remedies...",
+   "area": "Insurance",
+   "practice": "insurance-and-claims",
+   "forum": "Ombudsman / civil / consumer",
+   "jurisdiction": "India",
+   "audience": "policyholders, small businesses",
+   "question": "Can an insurer reject a claim for non-disclosure, and what can the policyholder do?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional small business has a fire policy over its premises and stock. After a fire, a surveyor assesses the loss. The insurer repudiates the claim, alleging that the business did not disclose an earlier minor fire loss on the proposal form. The business says the earlier incident was disclosed to the agent orally."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Recovering the loss and testing whether the repudiation is legally sound."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Duty of disclosure and materiality.",
+       "Whether the insurer proved non-disclosure and its materiality.",
+       "The role and report of the surveyor.",
+       "The policy terms and any time limits in the policy.",
+       "The correct forum: consumer, civil or arbitration.",
+       "The effect of the 2025 amendments."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Duty of utmost good faith and disclosure of material facts in insurance contracts; Indian Contract Act, 1872 provisions on misrepresentation and fraud; policy terms and proposal form.",
+       "Insurance Act, 1938. The statutory rule that limits repudiation after a stated period (Section 45) is framed for life insurance; do not assume it applies to a fire policy.",
+       "Surveyors and loss assessors are governed by the Insurance Act and applicable IRDAI regulations. Verify the currently operative policyholder-protection and claims regulations, their timelines, exceptions and the legal weight of the survey report. Do not imply that the surveyor's assessment automatically binds the insurer or court.",
+       "Insurance Ombudsman eligibility, subject-matter jurisdiction, monetary limits, exclusions, prior representation requirements and limitation must be checked under the rules in force.",
+       "Consumer Protection Act, 2019: maintainability must be assessed under the Act and binding case law. Do not assume that a business insurance policy either automatically qualifies or automatically fails the consumer test; analyse the insured, purpose, policy and relief sought.",
+       "Arbitration clauses in policies and limitation clauses; Limitation Act, 1963 for a suit."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Obtain the policy, proposal form, survey report and the repudiation letter with its reasons.",
+       "Reconstruct what was disclosed, to whom and when. Gather evidence of the oral disclosure and the agent's role.",
+       "Test materiality: would the earlier loss have affected the insurer's decision to insure or the terms?",
+       "Write a detailed representation to the insurer's grievance process, attaching evidence.",
+       "Choose the forum with care: civil suit, consumer complaint (if maintainable), arbitration under the policy, or the ombudsman if eligible.",
+       "Quantify the loss with documents: accounts, stock records, invoices, repair estimates.",
+       "Watch limitation and any policy time limits."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Policy and endorsements; proposal form; agent communications; surveyor report; claim form and supporting accounts; repudiation letter; fire brigade or police report; loss evidence."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Insurer's grievance cell; Insurance Ombudsman if eligible; civil court; consumer commission if maintainable; arbitrator if the policy requires."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "If the insurer fails to prove materiality or the policyholder shows disclosure, the repudiation may be set aside.",
+       "If material non-disclosure is established, the claim can fail.",
+       "A negotiated or partial settlement may be possible, depending on the policy, evidence, insurer and applicable procedure; it is not an assumed or typical outcome."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"Insurers cannot repudiate after taking premium.\" They can in some circumstances. \"Telling the agent is always enough.\" It depends on the facts and the agent's role. Read the proposal form carefully and keep copies."
+     }
+    ],
+    "faq": [
+     [
+      "Does the three-year rule on challenging policies apply to fire cover?",
+      "That rule is framed for life insurance; check the Act before relying on it."
+     ],
+     [
+      "Where do I complain?",
+      "It depends on the type of policy and policyholder; there may be several routes."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Life and health insurance claims, motor claims, marine cargo, reinsurance."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "Insurance Act 1938 as amended in 2025; IRDAI regulations; Contract Act 1872; Consumer Protection Act 2019; Insurance Ombudsman rules; official repository."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B4-4",
+   "batch": 4,
+   "slug": "school-admission-cancelled-after-fees",
+   "title": "School Admission Cancelled After Fees",
+   "meta_title": "School Admission Cancelled After Fees | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on a private school cancelling an admission and retaining fees in India: fee regulation, refund, grievance routes and possible forums.",
+   "area": "Education and healthcare",
+   "practice": "healthcare-education-and-professional-regulation",
+   "forum": "State authority / civil court",
+   "jurisdiction": "India (State education law)",
+   "audience": "parents and students",
+   "question": "What can parents do when a private school cancels an admission and keeps fees?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional private school confirms a child's admission, collects the first instalment and an admission fee, then cancels it citing an incomplete document. The family says it submitted the document by email and in person. The school refuses to refund the fee."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Restoring the admission or recovering the amount paid, without harming the child's schooling."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "The terms of admission and fee policy.",
+       "Whether the school followed its own procedure.",
+       "Whether State fee regulation or refund rules apply.",
+       "Whether the school's acts are open to challenge in a writ court or only in civil or consumer forums.",
+       "Evidence of submission."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "The prospectus, admission form, fee policy and communications are relevant evidence of the terms, but do not assume they alone determine the dispute; mandatory State law, statutory rules, public policy and consumer-law maintainability may affect the result.",
+       "State education legislation and fee regulation, if any, for private schools in the relevant State (for example, State laws on fee regulation of self-financed schools).",
+       "Right of Children to Free and Compulsory Education Act, 2009, to the extent relevant to the school type and class.",
+       "Consumer Protection Act, 2019: courts and commissions have addressed whether educational institutions' services fall within \"service\"; the answer has depended on the nature of the service and claim.",
+       "Article 226: maintainability against a private unaided school is fact- and duty-specific. A public function alone should not be treated as an automatic answer; identify the enforceable public/statutory duty and verify the controlling Supreme Court and High Court authority.",
+       "Any regulator or State fee-refund guideline must be identified by name, legal authority, institution type, level of education and current applicability."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Collect proof of submission: email with attachments, sent items, courier receipts, acknowledgments.",
+       "Write to the school stating the facts and asking for reasons and reconsideration or a full refund.",
+       "Use the State grievance machinery, such as a district education officer or fee regulatory committee if it exists.",
+       "Consider mediation or a legal notice.",
+       "Evaluate forums: civil suit for refund, consumer complaint if maintainable, or writ if a statutory duty is involved.",
+       "Protect the child: seek alternative admission in parallel if timelines matter."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Admission letter; fee receipts; prospectus and policies; proof of document submission; school's cancellation letter and reasons; emails and messages."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "State education authority; civil court; consumer commission if maintainable; High Court under Article 226 where justified."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "Where the school did not follow its own policy or the State's fee rules, refund or reinstatement may be ordered or negotiated.",
+       "Where the contract allows forfeiture and the school followed it, recovery can be limited."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"Schools can keep any fee.\" State rules and the contract matter. \"A writ lies against every school.\" It depends on the school's character and duty. Keep dated proof of every submission."
+     }
+    ],
+    "faq": [
+     [
+      "Can a private school keep admission fees?",
+      "It depends on the terms and any State regulation."
+     ],
+     [
+      "Should I go to court or the education department?",
+      "The appropriate route depends on the governing State law, urgency, available statutory remedy and limitation; a grievance representation does not necessarily stop limitation."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Higher education regulators, exam disputes, scholarships, minority institutions."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "Applicable State education and fee laws; RTE Act 2009; Contract Act 1872; Consumer Protection Act 2019; official repository."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B4-5",
+   "batch": 4,
+   "slug": "ai-voice-clone-in-an-advertisement",
+   "title": "AI Voice Clone in an Advertisement",
+   "meta_title": "AI Voice Clone in an Advertisement | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on an unauthorised AI-generated voice in an advertisement in India: personality rights, passing off, performers' rights, platform...",
+   "area": "Media and personality rights",
+   "practice": "media-entertainment-and-sports",
+   "forum": "High Court",
+   "jurisdiction": "India",
+   "audience": "performers, brands, agencies",
+   "question": "What rights does a performer have against an AI voice clone used in advertising?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional voice performer finds an advertisement featuring a voice that sounds like theirs, produced by an AI tool, endorsing a product they have never worked with. The ad is running on social media and a streaming platform."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Stopping the use quickly, identifying the responsible parties and seeking compensation."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Whether personality or publicity rights protect the voice and persona.",
+       "Passing off and false endorsement.",
+       "Performers' rights and moral rights under copyright law.",
+       "Advertising and consumer law.",
+       "Intermediary takedown.",
+       "Evidence and attribution.",
+       "Interim relief against unknown persons."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Personality and publicity rights as developed by High Courts through injunctions in cases involving public figures and misuse of name, image and voice; the scope for non-celebrity performers is less clear.",
+       "Passing off and false endorsement as part of common law.",
+       "Copyright Act, 1957: confirm the precise performer-right and moral-right provisions, ownership and duration. Training on or imitating a recording does not by itself resolve infringement; identify the protected subject matter and the relevant act, licence and evidence.",
+       "Information Technology Act, 2000 and the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, as currently amended: verify the exact intermediary duty, notice/takedown route, deadlines and any operative synthetic-content requirements. Distinguish notified rules from draft amendments or consultation proposals.",
+       "Consumer Protection Act, 2019 and guidelines on misleading advertisements and endorsements; liability of endorsers and advertisers.",
+       "Penal provisions on cheating by personation or identity theft online.",
+       "Digital Personal Data Protection Act, 2023 and the Digital Personal Data Protection Rules, 2025: a voice recording may be personal data where it relates to an identifiable individual, but applicability depends on the processing and statutory definitions/exemptions. Check the official phased commencement timeline; do not say that all obligations are or are not in force without checking the specific provision."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Preserve evidence: screenshots, URLs, recordings, timestamps, and a comparison with genuine recordings.",
+       "Identify the advertiser, agency and platforms. Send notices to platforms using their grievance channels and the legal takedown routes.",
+       "Send a cease-and-desist to the advertiser and agency, demanding withdrawal, disclosure of the tool and source data, and an account.",
+       "Consider an urgent suit for injunction, including orders against unknown persons where the court allows, and orders directed to intermediaries.",
+       "Assess damages and an account of profits.",
+       "Prevent recurrence: licensing terms for voice data, contract clauses on AI use, and watch monitoring."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Evidence of the advertisement; genuine recordings and contracts; proof of reputation and earnings; takedown correspondence; platform responses; advertiser details."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "High Court or the civil or commercial court with jurisdiction; platform grievance officers; advertising self-regulation bodies; consumer protection authority for misleading advertisements."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "Interim relief may be available on the facts, but the scope of personality rights, especially for non-celebrities and AI-generated imitations, remains fact-sensitive and must be supported by current authority.",
+       "Platforms may remove content on valid notice.",
+       "Damages depend on proof of loss and of use."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"There is no law against AI voice clones.\" Several legal bases may apply, though the law is developing. \"Takedown solves everything.\" It does not compensate. Keep clear contracts on voice use."
+     }
+    ],
+    "faq": [
+     [
+      "Does a voice have legal protection?",
+      "It can be protected through several routes, depending on the facts."
+     ],
+     [
+      "Can the platform be forced to remove the ad?",
+      "It can be asked, and courts can direct intermediaries in appropriate cases."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Deepfake sexual content, political deepfakes, training-data copyright claims."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "Copyright Act 1957; IT Act 2000 and the 2021 Rules as amended; Consumer Protection Act 2019; official repository for personality-rights authority."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B4-6",
+   "batch": 4,
+   "slug": "charitable-trust-dispute-among-trustees",
+   "title": "Charitable Trust Dispute Among Trustees",
+   "meta_title": "Charitable Trust Dispute Among Trustees | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on a dispute over charitable funds and a property transfer in an Indian trust: duties of trustees, State charity regulators, civil...",
+   "area": "Trusts and non-profits",
+   "practice": "non-profit-trusts-and-societies",
+   "forum": "Charity regulator / civil court",
+   "jurisdiction": "India (State-specific)",
+   "audience": "trustees and beneficiaries",
+   "question": "What can be done about alleged breach of trust in a charitable trust?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional charitable trust runs a school. Two trustees allege that a third trustee, with a relative, arranged to sell a trust property below value and used donations for unrelated expenses. The trust deed requires majority approval for sale of property."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Protecting trust assets, correcting any breach, and avoiding loss of tax registration."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Whether the trust is private or public and which statute governs it.",
+       "Compliance with the deed and approvals.",
+       "Duties of trustees and conflicts of interest.",
+       "Remedies: accounts, setting aside, removal, recovery.",
+       "Limitation.",
+       "Tax and registration consequences."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Indian Trusts Act, 1882 for private trusts and general principles of trusteeship: duties, accounts, breach of trust and removal.",
+       "For public charitable trusts, the position varies by State: some States have comprehensive public trusts or endowment statutes and charity commissioners; where none applies, Section 92 of the Code of Civil Procedure, 1908 allows suits for breach of public charitable trust with leave of court.",
+       "Limitation Act, 1963: identify the exact article and nature of relief. Any special rule for suits against express trustees is narrow and should not be generalised to every claim involving a trust or its property.",
+       "If the body is a society or a Section 8 company, the Societies Registration Act, 1860 as applicable in the State, or the Companies Act, 2013.",
+       "Income-tax legislation and transitional provisions: identify the statute and provisions applicable to the relevant tax year, registration status, transaction and filing. Verify the Income-tax Act, 2025 and any savings/transitional rules against the official Act and commencement notifications; do not assume that the same Act governs all earlier and later years. review by a qualified tax adviser is mandatory.",
+       "Foreign Contribution (Regulation) Act, 2010, if foreign contribution is involved: verify registration/prior permission, permitted receipt and utilisation, bank-account, reporting and restriction requirements on current official sources."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Obtain the trust deed, registration documents, minutes, accounts and property records.",
+       "Identify the governing law and regulator.",
+       "Demand accounts and explanations; call a trustee meeting with proper notice and record resolutions.",
+       "Where appropriate, make a representation to the charity regulator or file the proceeding the State law provides.",
+       "If a suit is needed, seek interim orders restraining further alienation, and the remedies of accounts, recovery and removal.",
+       "Involve a tax qualified professional to assess registration risk and corrective filings.",
+       "Adopt a conflict-of-interest and approval policy."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Trust deed; registration certificates; minutes; bank statements; sale documents and valuation; donation records; audit reports; tax filings."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "State charity commissioner or equivalent where it exists; civil court; High Court; tax authorities for registration issues."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "Courts and regulators can restrain dealings with trust property, order accounts and, in serious cases, remove trustees.",
+       "A transaction below market value may be examined for breach of trust."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"All trusts are governed by the same law.\" Public and private trusts differ, and States differ. \"Majority trustees can do as they wish.\" Duties and the deed constrain them."
+     }
+    ],
+    "faq": [
+     [
+      "Can a trustee be removed?",
+      "Courts and regulators have power to remove trustees in appropriate cases under the governing law."
+     ],
+     [
+      "Is there a time limit?",
+      "Rules differ; some claims concerning trust property have special limitation rules."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Religious endowments, waqf property, FCRA registration, charity tax structuring."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "Indian Trusts Act 1882; relevant State trust or charity law; CPC Section 92; Income-tax Act 2025 and 1961 Act for earlier years; FCRA 2010; official repository."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B4-7",
+   "batch": 4,
+   "slug": "foreign-investment-in-an-indian-company",
+   "title": "Foreign Investment in an Indian Company",
+   "meta_title": "Foreign Investment in an Indian Company | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on a foreign investor buying shares in an Indian private company: routes under FDI policy, land-border investor rules, pricing...",
+   "area": "Cross-border and foreign investment",
+   "practice": "cross-border-and-nri-matters",
+   "forum": "RBI / Government / CCI",
+   "jurisdiction": "India; foreign law separate",
+   "audience": "foreign investors, Indian promoters",
+   "question": "What approvals, filings and structuring steps apply to a foreign investor buying into an Indian company?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional foreign fund wants to acquire a majority of the shares of a fictional Indian private company in a sector with foreign investment conditions. Some limited partners of the fund are in a country sharing a land border with India, holding small stakes."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Confirming that the investment is permitted, the route (automatic or government approval), pricing rules, required filings and structuring risks."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Sectoral caps and conditions.",
+       "Land-border-country rules and beneficial ownership.",
+       "Pricing and valuation.",
+       "Reporting.",
+       "Competition law thresholds.",
+       "Tax consequences.",
+       "Foreign-law issues in the investor's own jurisdiction."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Foreign Exchange Management Act, 1999 and the Foreign Exchange Management (Non-debt Instruments) Rules, 2019, with the Consolidated FDI Policy: permitted sectors, caps, automatic and approval routes, pricing guidelines and reporting.",
+       "Press Note 3 (2020 Series) and DPIIT Press Note 2 (2026 Series), together with any implementing FEMA notification: analyse the complete operative text and definitions of investor, beneficial owner, control, thresholds, sectoral conditions, reporting and prior approval.",
+       "Sector-specific FDI limits and routes change. Verify the current sectoral policy, applicable press note, FEMA rules/notification and conditions at signing and closing. Any insurance example must be checked against the operative policy and statutory commencement.",
+       "Companies Act, 2013 on share issue and transfer; Companies (Share Capital and Debentures) Rules for private placements.",
+       "Competition Act, 2002: combination thresholds, including the deal value threshold.",
+       "Tax: capital gains, withholding, treaty and anti-avoidance issues; qualified professional review required.",
+       "Foreign law: the investor's home-law issues must be handled by qualified counsel in that jurisdiction. This practice would not advise on foreign law."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Define the structure: primary issuance, secondary purchase, instruments.",
+       "Verify sectoral cap and route. Map the fund's beneficial ownership against the land-border rules and the 10% non-controlling test.",
+       "Determine whether combination filing is needed.",
+       "Conduct due diligence and structure the transaction documents with conditions precedent for approvals.",
+       "Apply pricing and valuation requirements and obtain required valuation reports.",
+       "Complete the reporting filings after the transaction within the prescribed time.",
+       "Coordinate with tax advisers and foreign counsel."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Fund structure chart and beneficial ownership details; shareholding of the target; sector classification; valuation reports; transaction documents; approvals; bank and remittance records."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Reserve Bank of India and authorised dealer banks (reporting); the government approval route through the designated authority; Registrar of Companies; Competition Commission of India if applicable."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "If the route is automatic and conditions are met, the transaction proceeds with reporting.",
+       "Where the operative policy requires prior Government approval, the transaction must not close on an assumption that approval can be obtained retrospectively.",
+       "Errors in route or pricing can lead to contraventions and compounding."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"Any small foreign stake is automatically fine.\" Beneficial ownership rules matter. \"FDI rules are stable.\" They change often; verify at each step. Document the analysis."
+     }
+    ],
+    "faq": [
+     [
+      "Do all foreign investments need government approval?",
+      "Many are under the automatic route, but sector and investor conditions can require approval."
+     ],
+     [
+      "Can an Indian advocate advise on the investor's home law?",
+      "No, that requires qualified counsel in that jurisdiction."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Outward investment by Indian companies, portfolio investment in listed companies, external borrowings."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "FEMA 1999; NDI Rules 2019; Consolidated FDI Policy and press notes on the DPIIT website; RBI master directions; Companies Act 2013; Competition Act 2002."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B4-8",
+   "batch": 4,
+   "slug": "legal-due-diligence-in-an-acquisition",
+   "title": "Legal Due Diligence in an Acquisition",
+   "meta_title": "Legal Due Diligence in an Acquisition | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on legal due diligence when buying a software company in India: IP ownership, open-source licences, employee claims, data, and...",
+   "area": "Mergers and acquisitions",
+   "practice": "mergers-acquisitions-and-investment",
+   "forum": "Transactional",
+   "jurisdiction": "India",
+   "audience": "buyers and founders",
+   "question": "What does legal due diligence cover in a company acquisition and how do findings change the deal?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional buyer is acquiring all shares of a fictional software company. Diligence finds: a former employee has raised a claim for dues and wrongful termination; some code contains components under licences with source-code disclosure conditions; several developers were contractors with no written IP assignment; and privacy practices are informal."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Understanding what the risks mean for price and terms, and how to protect the buyer through the agreement."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "IP ownership and chain of title.",
+       "Open-source licence compliance.",
+       "Employment claims.",
+       "Data protection readiness.",
+       "Contractual and regulatory exposure.",
+       "How to allocate risk: price, indemnity, escrow, conditions.",
+       "Limits of legal diligence."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Copyright Act, 1957: verify first ownership under Section 17 and the applicable employment/commission exceptions; assignments must satisfy the Act's formalities, including Section 19 where applicable. Contractor-created code may remain with the contractor absent an effective assignment, but assess the actual contract, authorship, employment status, commissioned-work provisions and licence terms.",
+       "Open-source compliance depends on the specific licence, how the component is used/distributed and the code architecture. A licence does not invariably require disclosure of an entire proprietary codebase; obtain a software bill of materials and qualified technical and legal review.",
+       "Employment: verify commencement notifications, applicable rules and transitional provisions for each labour code and the worker's/employee's status. Assess contractual restrictions under current law, including the limits on post-termination restraints.",
+       "Digital Personal Data Protection Act, 2023 and Rules, 2025: commencement is phased. Check the official timeline for each relevant obligation at the transaction signing/closing date. Also assess the IT Act framework and other sectoral data/security requirements that remain applicable.",
+       "Companies Act, 2013 for share transfers; FEMA if the buyer is foreign; Competition Act thresholds.",
+       "Stamp duty on share transfer under the Indian Stamp Act as applicable.",
+       "Transaction documents: share purchase agreement, disclosure letter, warranties, indemnities, escrow, conditions precedent, covenants."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Agree scope and limits of the diligence, including that technical, tax and financial reviews need specialists.",
+       "Review corporate records, contracts, IP assignments, employment files, litigation and compliance.",
+       "Prepare a report with issues ranked by seriousness and with proposed actions.",
+       "Fix what can be fixed before signing: obtain confirmatory IP assignments from contractors, remediate licence issues, settle the employee claim.",
+       "Reflect remaining risks in the agreement: specific indemnities, price adjustment, escrow, conditions precedent and covenants.",
+       "Plan post-closing integration and compliance.",
+       "Maintain confidentiality in the data room."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Constitutional documents and registers; contracts; IP registrations and assignments; code licence inventory; employment records; claim papers; privacy policies and vendor contracts; tax filings."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Contractual and transactional; disputes under the agreement are handled under its dispute resolution clause."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "Findings typically lead to a mix of remediation before closing and contractual protection.",
+       "Unresolved IP chain issues can affect value significantly."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"Due diligence guarantees there are no risks.\" It finds what the documents and disclosures reveal within the agreed scope. \"Warranties alone are enough.\" Without remediation or specific indemnities, recovery can be hard. Do not skip contractor IP assignments."
+     }
+    ],
+    "faq": [
+     [
+      "Who owns code written by contractors?",
+      "Often the contractor, unless there is a written assignment."
+     ],
+     [
+      "What happens to risks found in diligence?",
+      "They are addressed through price, indemnities, conditions or fixes."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Cross-border carve-outs, listed company takeovers, tax structuring, technical code audits."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "Copyright Act 1957; Companies Act 2013; labour codes and rules; DPDP Act and Rules; FEMA rules; Competition Act 2002; official repository."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B4-9",
+   "batch": 4,
+   "slug": "rti-request-for-tender-records",
+   "title": "RTI Request for Tender Records",
+   "meta_title": "RTI Request for Tender Records | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on a Right to Information request for public tender records in India: exemptions, personal information after the 2025 amendment...",
+   "area": "Government records and RTI",
+   "practice": "government-procurement-and-rti",
+   "forum": "Information Commission",
+   "jurisdiction": "India",
+   "audience": "citizens, bidders, journalists",
+   "question": "How does the Right to Information Act work now, and how can a refusal be challenged?",
+   "publish": true,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional unsuccessful bidder files an RTI request with a public authority for the evaluation sheet, the names of evaluation committee members and the winning bidder's technical bid. The Public Information Officer refuses, citing personal information and commercial confidence, without detailed reasons."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Understanding what can be obtained, how to appeal, and how the recent amendment affects personal-information requests."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "Exemptions for commercial confidence and personal information.",
+       "The effect of the amendment to the personal-information exemption.",
+       "Severability and partial disclosure.",
+       "The duty to give reasons.",
+       "Time limits for appeals.",
+       "Remedies if the Commission does not decide."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Right to Information Act, 2005: verify the current text of Sections 6, 7, 8, 10, 19 and 20, including response and appeal periods, as amended and commenced. Consider Section 11 third-party procedure where applicable. Do not promise disclosure of bid records: commercial confidence, third-party interests, public interest and severability require a record-specific analysis.",
+       "DPDP Act, 2023, Section 44(3): verify the official commencement notification and exact substituted text of RTI Act Section 8(1)(j).",
+       "State RTI rules and fee requirements.",
+       "Proactive disclosure duties of public authorities (Section 4) and tender transparency rules in procurement law."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Draft the request narrowly and specifically; ask for records, not opinions. Pay the fee as required.",
+       "Note the date of the request and the response deadline.",
+       "If refused, file the first appeal within the statutory period, arguing for partial disclosure and pointing to the absence of reasons.",
+       "If the first appeal fails or is not decided, file the second appeal to the Information Commission within its period.",
+       "Consider tender-specific remedies in parallel, such as a challenge to the award, through the proper forum.",
+       "If delay or non-compliance persists, consider remedies through the High Court."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "RTI application and proof of fee and delivery; refusal letter; first appeal and decision; tender notice and bid documents already available."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "Public Information Officer; first appellate authority; Central or State Information Commission; High Court under Article 226."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "Disclosure of evaluation scores and award reasons depends on the records, applicable exemptions, third-party procedure and current authority; seek severable disclosure where appropriate.",
+       "Personal information may be withheld where the current statutory exemption applies; apply the amended text and binding authority rather than assuming a blanket rule.",
+       "Partial disclosure with redaction is a common result."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"RTI gives access to everything.\" Exemptions apply. Appeal deadlines are fixed; diary them."
+     }
+    ],
+    "faq": [
+     [
+      "Can I get my competitor's bid?",
+      "Commercial secrets are protected, but some tender records may be disclosable."
+     ],
+     [
+      "Where do I appeal?",
+      "First to the appellate authority in the same public authority, then to the Information Commission."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Information requests about private bodies, security and intelligence organisations, judicial records."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "RTI Act 2005 as amended; DPDP Act 2023 Section 44(3); State RTI rules; Commission decisions and official repository."
+     }
+    ]
+   }
+  },
+  {
+   "key": "B4-10",
+   "batch": 4,
+   "slug": "complaint-about-an-advocate-s-conduct",
+   "title": "Complaint About an Advocate's Conduct",
+   "meta_title": "Complaint About an Advocate's Conduct | Ink & Equity",
+   "meta_desc": "A hypothetical scenario on remedies for a client's complaint about an advocate in India: Bar Council disciplinary proceedings, civil claims and the...",
+   "area": "Professional regulation",
+   "practice": "",
+   "forum": "State Bar Council",
+   "jurisdiction": "India",
+   "audience": "clients and advocates",
+   "question": "What remedies exist when a client is dissatisfied with an advocate?",
+   "publish": false,
+   "sections": {
+    "facts": [
+     {
+      "t": "p",
+      "x": "A fictional client engaged an advocate to file a case. Months later the client learns that the case was filed late, that an adverse interim order was passed and that the advocate did not tell them. The client wants to know the options."
+     }
+    ],
+    "problem": [
+     {
+      "t": "p",
+      "x": "Understanding the difference between a disciplinary complaint and a damages claim, and the evidence needed."
+     }
+    ],
+    "issues": [
+     {
+      "t": "ol",
+      "items": [
+       "What conduct can amount to professional misconduct.",
+       "The disciplinary procedure and its outcomes.",
+       "Civil liability for negligence.",
+       "Whether the Consumer Protection Act applies.",
+       "Fee and engagement issues.",
+       "Confidentiality and privilege."
+      ],
+      "alpha": true
+     }
+    ],
+    "framework": [
+     {
+      "t": "ul",
+      "items": [
+       "Advocates Act, 1961: professional or other misconduct and the disciplinary jurisdiction of State Bar Councils (Section 35), the role of the Bar Council of India, and appeals.",
+       "Bar Council of India Rules on standards of professional conduct and etiquette, including duties to the client such as keeping the client informed.",
+       "Consumer law: the Supreme Court has held that advocates' professional services are not within the Consumer Protection Act, 2019 framework in Bar of Indian Lawyers v. D.K. Do not suggest a consumer complaint against an advocate as an available remedy unless later binding authority or legislation changes the position.",
+       "Civil remedies in contract or tort should be described cautiously: availability, standard of care, causation, limitation, proof of loss, privilege and public-policy issues require case-specific assessment. Do not imply that a civil damages claim necessarily lies merely because a client is dissatisfied.",
+       "Advocate-client privilege and confidentiality under the Bharatiya Sakshya Adhiniyam, 2023 and the Advocates Act."
+      ]
+     }
+    ],
+    "strategy": [
+     {
+      "t": "ol",
+      "items": [
+       "Gather the engagement letter or instructions, fee receipts, case filings and dates, court orders and communications with the advocate.",
+       "Ask the advocate in writing for explanations and the file; consider a fresh advocate to protect the case and, where possible, rectify prejudice.",
+       "Decide whether to file a complaint with the State Bar Council, which may require a sworn statement and the prescribed form. Consider that disciplinary proceedings do not award compensation.",
+       "Assess a civil claim for damages and the burden of proving negligence and loss.",
+       "Do not assume a consumer forum is available."
+      ]
+     }
+    ],
+    "docs": [
+     {
+      "t": "p",
+      "x": "Engagement terms; payments; filings; orders; messages; evidence of loss."
+     }
+    ],
+    "forum": [
+     {
+      "t": "p",
+      "x": "State Bar Council disciplinary committee; Bar Council of India on appeal; civil court for damages; High Court for related supervisory issues."
+     }
+    ],
+    "outcomes": [
+     {
+      "t": "ul",
+      "items": [
+       "A disciplinary committee may impose only the sanctions authorised by the Advocates Act and applicable rules, after the prescribed process; verify the available sanction and appeal route.",
+       "A civil claim requires proof of duty, breach, causation and damage.",
+       "Mere error of judgment is not necessarily misconduct."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No result is assured."
+     }
+    ],
+    "lessons": [
+     {
+      "t": "p",
+      "x": "\"A Bar Council will compensate me.\" It disciplines; it does not award damages. Keep a clear written record of instructions on both sides."
+     }
+    ],
+    "faq": [
+     [
+      "Where do I complain about an advocate?",
+      "To the State Bar Council under the Advocates Act."
+     ],
+     [
+      "Can I get money back?",
+      "Through contract or civil claims, not through the disciplinary process alone."
+     ]
+    ],
+    "notcovered": [
+     {
+      "t": "p",
+      "x": "Complaints against judges, tribunal members or non-advocate legal service providers."
+     }
+    ],
+    "sources": [
+     {
+      "t": "p",
+      "x": "Advocates Act 1961; Bar Council of India Rules; State Bar Council rules; the Supreme Court judgment and official repository; Bharatiya Sakshya Adhiniyam 2023."
+     }
+    ]
+   }
+  }
+ ]
+}
