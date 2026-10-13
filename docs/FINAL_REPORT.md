@@ -28,7 +28,7 @@ STEP 10: Git Commit & Deployment       ✅ DONE
 
 ## 🌐 DEPLOYMENT DETAILS
 
-- **Live URL:** https://inkandequity-tech.github.io/v5-ink-and-equity-website/courts.html
+- **Live URL:** https://ieqlaw.com/courts.html
 - **GitHub Repo:** https://github.com/inkandequity-tech/v5-ink-and-equity-website
 - **Commit Hash:** `3385fdc`
 - **Branch:** main
@@ -321,8 +321,8 @@ Workflow steps: 4 ✅
 
 ## 🔗 LINKS
 
-- **Live Site:** https://inkandequity-tech.github.io/v5-ink-and-equity-website/
-- **Courts Portal:** https://inkandequity-tech.github.io/v5-ink-and-equity-website/courts.html
+- **Live Site:** https://ieqlaw.com/
+- **Courts Portal:** https://ieqlaw.com/courts.html
 - **GitHub Repo:** https://github.com/inkandequity-tech/v5-ink-and-equity-website
 - **Commit:** https://github.com/inkandequity-tech/v5-ink-and-equity-website/commit/3385fdc
 

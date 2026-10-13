@@ -9,8 +9,8 @@ A complete website redesign featuring a brand new **Courts eCourts Services Port
 
 ## 🚀 Quick Links
 
-- **Live Site:** https://inkandequity-tech.github.io/v5-ink-and-equity-website/
-- **Courts Portal:** https://inkandequity-tech.github.io/v5-ink-and-equity-website/courts.html
+- **Live Site:** https://ieqlaw.com/
+- **Courts Portal:** https://ieqlaw.com/courts.html
 - **Documentation:** See [`/docs/`](docs/) folder
 
 ---
@@ -125,7 +125,7 @@ ink-equity-v2/
 ## 🎮 How to Use
 
 ### View Live
-Visit: https://inkandequity-tech.github.io/v5-ink-and-equity-website/courts.html
+Visit: https://ieqlaw.com/courts.html
 
 ### Develop Locally
 1. Clone this repo
@@ -206,8 +206,8 @@ Works on:
 ## 🔗 Important Links
 
 **Live Sites:**
-- Main: https://inkandequity-tech.github.io/v5-ink-and-equity-website/
-- Courts: https://inkandequity-tech.github.io/v5-ink-and-equity-website/courts.html
+- Main: https://ieqlaw.com/
+- Courts: https://ieqlaw.com/courts.html
 
 **Repository:**
 - GitHub: https://github.com/inkandequity-tech/v5-ink-and-equity-website

@@ -259,7 +259,7 @@ Message: "feat: eCourts Services Portal — complete redesign
 
 **Verification:**
 - Pages Status: Building → Will be live soon
-- Live URL: https://inkandequity-tech.github.io/v5-ink-and-equity-website/courts.html
+- Live URL: https://ieqlaw.com/courts.html
 
 ---
 
@@ -331,7 +331,7 @@ Test Cases:                 40 (100% pass)
 
 ### View Live (Recommended)
 ```
-https://inkandequity-tech.github.io/v5-ink-and-equity-website/courts.html
+https://ieqlaw.com/courts.html
 ```
 
 ### Use Locally
@@ -455,7 +455,7 @@ All code is well-commented and self-documenting.
 
 **STATUS: ✅ PROJECT COMPLETE & DEPLOYED**
 
-**Live URL:** https://inkandequity-tech.github.io/v5-ink-and-equity-website/courts.html  
+**Live URL:** https://ieqlaw.com/courts.html  
 **Repository:** https://github.com/inkandequity-tech/v5-ink-and-equity-website  
 **Commit:** 3385fdc  
 **Tests:** 40/40 passing  

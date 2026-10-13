@@ -222,7 +222,7 @@ If chat context exceeds limit before reaching Step 10:
 
 Once deployed to GitHub Pages, the page will be live at:
 ```
-https://inkandequity-tech.github.io/v5-ink-and-equity-website/courts.html
+https://ieqlaw.com/courts.html
 ```
 
 **Currently deployed:** ✅ Yes (from earlier)  

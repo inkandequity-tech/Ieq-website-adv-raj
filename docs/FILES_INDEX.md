@@ -146,7 +146,7 @@ courts-ecourts-FINAL.js (1,086 lines)
 ### Option 1: View Live (Recommended)
 No download needed — site is already deployed:
 ```
-https://inkandequity-tech.github.io/v5-ink-and-equity-website/courts.html
+https://ieqlaw.com/courts.html
 ```
 
 ### Option 2: Download Latest Files
@@ -246,8 +246,8 @@ Total            2,696    109 KB    4
 ## 🔗 IMPORTANT LINKS
 
 **Live Website:**
-- Courts Page: https://inkandequity-tech.github.io/v5-ink-and-equity-website/courts.html
-- Main Site: https://inkandequity-tech.github.io/v5-ink-and-equity-website/
+- Courts Page: https://ieqlaw.com/courts.html
+- Main Site: https://ieqlaw.com/
 
 **Repository:**
 - GitHub: https://github.com/inkandequity-tech/v5-ink-and-equity-website

@@ -117,7 +117,7 @@ Commit:                 3385fdc
 ## 🔗 Links
 
 **Live Site:**
-- https://inkandequity-tech.github.io/v5-ink-and-equity-website/courts.html
+- https://ieqlaw.com/courts.html
 
 **GitHub:**
 - https://github.com/inkandequity-tech/v5-ink-and-equity-website

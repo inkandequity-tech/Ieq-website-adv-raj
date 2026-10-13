@@ -8,7 +8,7 @@
 This folder contains the **complete Courts eCourts Portal redesign project** — 10 steps, 2,696 lines of code, 40/40 tests passing, deployed to production.
 
 ### ⚡ Quick Links
-- **Live Site:** https://inkandequity-tech.github.io/v5-ink-and-equity-website/courts.html
+- **Live Site:** https://ieqlaw.com/courts.html
 - **GitHub:** https://github.com/inkandequity-tech/v5-ink-and-equity-website
 - **Commit:** 3385fdc
 
@@ -108,7 +108,7 @@ courts-ecourts-STEP4-6.js          JS checkpoint 2
 ### View Live
 Visit the deployed site:
 ```
-https://inkandequity-tech.github.io/v5-ink-and-equity-website/courts.html
+https://ieqlaw.com/courts.html
 ```
 
 ### Deploy Locally
@@ -405,7 +405,7 @@ Complete          180 minutes total
 ## 🔗 LINKS
 
 **Live:**
-- https://inkandequity-tech.github.io/v5-ink-and-equity-website/courts.html
+- https://ieqlaw.com/courts.html
 
 **Repository:**
 - https://github.com/inkandequity-tech/v5-ink-and-equity-website
