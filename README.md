@@ -1,319 +1,66 @@
-# Ink & Equity Website v5
-## Complete Redesign with Courts eCourts Portal
+# aequitas-nexus
 
-A complete website redesign featuring a brand new **Courts eCourts Services Portal** for Ink & Equity law firm.
+The website of Ink & Equity, advocates and legal consultants, Lucknow: <https://ieqlaw.com>.
 
-![Status](https://img.shields.io/badge/Status-Live-brightgreen) ![Tests](https://img.shields.io/badge/Tests-40%2F40%20Pass-brightgreen) ![Accessibility](https://img.shields.io/badge/Accessibility-WCAG%20AA-brightgreen)
+A static site with no build step to deploy and no runtime dependencies. Plain HTML, one stylesheet, one script.
 
----
-
-## 🚀 Quick Links
-
-- **Live Site:** https://ieqlaw.com/
-- **Courts Portal:** https://ieqlaw.com/courts.html
-- **Documentation:** See [`/docs/`](docs/) folder
-
----
-
-## 📖 Documentation
-
-**Start here:** [`docs/INDEX.md`](docs/INDEX.md) — Table of contents for all documentation
-
-### Quick Reading Order:
-1. [`docs/README.md`](docs/README.md) — Project overview
-2. [`docs/SESSION_SUMMARY.md`](docs/SESSION_SUMMARY.md) — Complete breakdown ⭐
-3. [`docs/FINAL_REPORT.md`](docs/FINAL_REPORT.md) — Deployment details
-4. [`docs/SPECIFICATION.md`](docs/SPECIFICATION.md) — Technical spec (15,000 words)
-
-**For developers:**
-- All code files have inline comments
-- [`docs/FILES_INDEX.md`](docs/FILES_INDEX.md) — File organization guide
-- Source files: `courts.html`, `css/courts-ecourts.css`, `js/courts-data.js`, `js/courts-ecourts.js`
-
----
-
-## 🎯 Courts eCourts Portal — What's New
-
-The Courts page has been completely redesigned as a **District Courts eCourts Services Portal**:
-
-### Removed
-- ❌ Supreme Court section
-- ❌ Delhi High Court section
-- ❌ Allahabad High Court section
-- ❌ Lucknow Bench section
-- ❌ Static matter boards
-
-### Added
-- ✅ Interactive 6-service portal (Case Status, Cause List, Case Search, Judgments, Notices, Court Info)
-- ✅ 4-step workflow modal (State → District → Court → Search)
-- ✅ 76 UP districts with 30+ court complexes
-- ✅ 16 mock records (cases, judgments, notices)
-- ✅ Progress bar indicator
-- ✅ Status badges (5 types)
-- ✅ Expandable results with Download/Print/Share
-- ✅ LocalStorage caching system
-- ✅ API integration hooks (ready for real eCourts APIs)
-- ✅ WCAG AA accessibility
-- ✅ Mobile-responsive design
-- ✅ Full keyboard navigation
-
----
-
-## 📊 Key Metrics
+## Structure
 
 ```
-Lines of Code:          2,696
-  - HTML:               380 lines
-  - CSS:                750+ lines
-  - JavaScript:         1,566 lines (41 functions)
-
-Features:
-  - Service cards:      6
-  - Workflow steps:      4
-  - Districts:          76 (Uttar Pradesh)
-  - Court complexes:    30+
-  - Mock records:       16
-  - Functions:          41
-
-Quality:
-  - Tests passing:      40/40 (100%)
-  - Accessibility:      WCAG AA ✅
-  - Responsive:         3 breakpoints ✅
-  - Performance:        ~109 KB total (unminified)
+index.html, about.html, rishabh-raj.html, practice-areas.html,
+insights.html, contact.html, careers.html, disclaimer.html, privacy.html, 404.html
+practice/      four area pages
+insights/      long-form commentary
+css/nexus.css  the whole design system
+js/nexus.js    enhancement only; the site reads fine with it off
+assets/        fonts (self-hosted), team portraits (WebP), favicon, share image, judgment PDF
+tools/         build.py, lint.py, make_og.py, content/
+robots.txt, sitemap.xml, CNAME, .nojekyll
 ```
 
----
+## Editing
 
-## 🏗️ Project Structure
-
-```
-ink-equity-v2/
-├── courts.html                 # Courts page (redesigned)
-├── css/
-│   ├── variables.css
-│   ├── base.css
-│   ├── components.css
-│   ├── layouts.css
-│   └── courts-ecourts.css      # NEW: Portal styling (750+ lines)
-├── js/
-│   ├── global.js
-│   ├── forms.js
-│   ├── courts-data.js          # NEW: Data structure (480 lines)
-│   └── courts-ecourts.js       # NEW: Core logic (1,086 lines)
-├── docs/                       # NEW: Complete documentation
-│   ├── INDEX.md                # Documentation table of contents
-│   ├── README.md
-│   ├── SESSION_SUMMARY.md
-│   ├── FINAL_REPORT.md
-│   ├── SPECIFICATION.md
-│   ├── SPECIFICATION_SUMMARY.md
-│   ├── CHECKPOINT_STEPS_1-3.md
-│   ├── CHECKPOINT_STEPS_4-6.md
-│   ├── SESSION_CHECKPOINT_STEPS_1-3.md
-│   └── SESSION_CHECKPOINT_STEPS_4-6.md
-├── index.html
-├── about.html
-├── careers.html
-├── contact.html
-├── insights.html
-├── practice-areas.html
-└── README.md                   # This file
-```
-
----
-
-## 🎮 How to Use
-
-### View Live
-Visit: https://ieqlaw.com/courts.html
-
-### Develop Locally
-1. Clone this repo
-2. Open `courts.html` in a browser
-3. All dependencies are included (no npm install needed)
-
-### Deploy
-Files are automatically deployed to GitHub Pages when pushed to `main` branch.
-
-### Enable Real APIs
-When eCourts APIs become available:
-1. Create a backend proxy (Node.js/Express)
-2. In `js/courts-ecourts.js`, change line ~542:
-   ```javascript
-   USE_MOCK: false  // flip from true
-   BASE_URL: 'https://your-backend.com/api'  // update endpoint
-   ```
-3. Redeploy
-
----
-
-## 🧪 Testing
-
-All 40 automated tests pass:
-- ✅ HTML structure (9 tests)
-- ✅ CSS coverage (6 tests)
-- ✅ JavaScript logic (10 tests)
-- ✅ Data integrity (7 tests)
-- ✅ Accessibility (8 tests)
-
-Run tests (Node.js required):
-```bash
-node -e "
-const fs = require('fs');
-// Test code here (see docs for details)
-"
-```
-
-See [`docs/SESSION_CHECKPOINT_STEPS_4-6.md`](docs/SESSION_CHECKPOINT_STEPS_4-6.md) for full test suite.
-
----
-
-## ♿ Accessibility
-
-**WCAG 2.1 AA Compliant:**
-- ✅ Skip link at top of page
-- ✅ Focus visible (2px outline)
-- ✅ Full keyboard navigation
-- ✅ ARIA labels and roles
-- ✅ Semantic HTML
-- ✅ Color contrast (AAA)
-- ✅ Prefers-reduced-motion support
-
----
-
-## 📱 Responsive Design
-
-Works on:
-- ✅ Mobile (<640px) — 1 column, full-width
-- ✅ Tablet (640-768px) — 2 columns
-- ✅ Desktop (768px+) — 3 columns with full layout
-
----
-
-## 📋 Technical Stack
-
-- **Frontend:** Vanilla JavaScript (no dependencies)
-- **Styling:** CSS3 with CSS variables
-- **HTML:** HTML5 semantic markup
-- **Testing:** Node.js automated tests
-- **Deployment:** GitHub Pages
-- **Version Control:** Git
-
-**Zero external dependencies** — everything is self-contained.
-
----
-
-## 🔗 Important Links
-
-**Live Sites:**
-- Main: https://ieqlaw.com/
-- Courts: https://ieqlaw.com/courts.html
-
-**Repository:**
-- GitHub: https://github.com/inkandequity-tech/v5-ink-and-equity-website
-- Branch: main
-- Latest commit: 3385fdc
-
-**Documentation:**
-- See [`/docs/`](docs/) folder for complete reference
-
----
-
-## 📝 Version History
-
-### v2.0.0 (May 25, 2024) — Courts eCourts Portal
-**Major redesign**
-- Complete courts page redesign
-- 6 interactive service cards
-- 4-step workflow modal
-- 76 UP districts with metadata
-- 41 JavaScript functions
-- WCAG AA accessibility
-- 40/40 tests passing
-- Production deployed
-
-### v1.0.0 (Earlier)
-- Original Ink & Equity website
-
----
-
-## 🚀 Development Timeline
+Page text lives in `tools/build.py`; the long article lives in `tools/content/komal-jaiswal.html`.
 
 ```
-Step 1-3:    Foundation (HTML, CSS)                   30 min
-Step 4-6:    Core Logic (Data, JS, Results)          60 min
-Step 7-9:    Testing & QA (40 tests, 100% pass)      60 min
-Step 10:     Deployment (Git, GitHub Pages)          20 min
-─────────────────────────────────────────────────────────
-Total:       Complete eCourts Portal                   ~3 hours
+python3 tools/build.py   # regenerates every page, sitemap.xml and robots.txt
+python3 tools/lint.py    # title/description length, canonicals, JSON-LD, links, wording, enrolment-number scan
 ```
 
-See [`docs/SESSION_SUMMARY.md`](docs/SESSION_SUMMARY.md) for detailed timeline.
+Commit the generated pages. `tools/make_og.py` redraws `assets/og-image.png` (needs Pillow and static instances of the two fonts).
 
----
+## Deploying
 
-## 📞 Support
+GitHub Pages, branch `main`, root folder. `CNAME` holds `ieqlaw.com`.
+Only one repository should have Pages enabled for that domain at a time. Disable it on the old repository before enabling it here.
 
-### Documentation
-- **Overview:** [`docs/README.md`](docs/README.md)
-- **Complete Guide:** [`docs/SESSION_SUMMARY.md`](docs/SESSION_SUMMARY.md) ⭐
-- **Technical Spec:** [`docs/SPECIFICATION.md`](docs/SPECIFICATION.md)
-- **Deployment:** [`docs/FINAL_REPORT.md`](docs/FINAL_REPORT.md)
-- **All Files:** [`docs/FILES_INDEX.md`](docs/FILES_INDEX.md)
+## Design
 
-### Code
-- All source files include inline comments
-- See function signatures in `js/courts-ecourts.js`
-- Check data structure in `js/courts-data.js`
-- Review CSS variables in `css/variables.css`
+Indigo ink and vellum, with lapis and zafran accents; light and dark themes. Fraunces (variable) for display, Instrument Sans for text.
+Motifs come from Lucknow: a chikan-thread lattice that the pointer lights up, and Nawabi arches for portraits.
 
----
+Quirks, all optional and all off under `prefers-reduced-motion`:
+- the headline bleeds ink around the pointer (and once, by itself, on touch screens);
+- the theme toggle spills ink from the button (View Transitions API);
+- tap the scales on the home and contact pages;
+- tap the maxim in the footer;
+- Konami code, or tap the logo five times;
+- the tab title changes when you switch away.
 
-## ✨ Highlights
+## SEO
 
-✅ **Complete Solution**
-- Full frontend implementation
-- Ready-to-integrate API layer
-- Production deployment
-- Comprehensive documentation
+- One canonical per page, `https://ieqlaw.com/...`; the home page is `/`.
+- `LegalService`, `Person`/`ProfilePage`, `Article` and `BreadcrumbList` JSON-LD. No review or rating markup.
+- `404.html` is `noindex`; every other page is in `sitemap.xml`.
+- Content is in the HTML, not injected by script.
 
-✅ **High Quality**
-- 40/40 automated tests passing
-- WCAG AA accessibility compliance
-- Mobile-first responsive design
-- Clean, well-commented code
+## Professional conduct (Bar Council of India, Rule 36 and its 2008 proviso)
 
-✅ **Well Documented**
-- 10 reference documents (~50,000 words)
-- 15,000 word specification
-- Development timeline
-- Inline code comments
+The site keeps to information about the advocates and the practice: name, address, contact details, qualification, areas of practice, bar associations.
+It contains no testimonials, ratings, outcome claims, comparative or superlative wording, named clients, case boards, contact forms or fee offers.
+`tools/lint.py` fails the build if banned wording appears. The Bar enrolment ID is deliberately not published anywhere; the lint fails if an ID-like pattern appears.
+This is a working checklist, not legal advice. Have the final text reviewed against the current Rule 36 and any State Bar Council circulars.
 
-✅ **Future Ready**
-- API integration hooks included
-- Cache layer ready
-- Error handling framework
-- Extensible data structure
+## Licences
 
----
-
-## 🎉 Project Complete
-
-- ✅ 10/10 implementation steps done
-- ✅ 2,696 lines of code written
-- ✅ 40/40 tests passing (100%)
-- ✅ Deployed to GitHub Pages
-- ✅ Zero breaking changes to other pages
-- ✅ Production ready
-
----
-
-## 📄 License
-
-This project is part of the Ink & Equity website. All rights reserved.
-
----
-
-**Last Updated:** May 25, 2024  
-**Status:** ✅ Complete & Live  
-**Next:** Review documentation in [`/docs/`](docs/)
+Code: the owner's. Fonts: Fraunces and Instrument Sans, SIL Open Font License 1.1 (texts in `assets/fonts/`).
