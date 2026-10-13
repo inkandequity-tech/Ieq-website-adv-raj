@@ -255,14 +255,14 @@ def home():
 </div></div>
 </div></section>
 
-<section class="section" id="practice"><div class="wrap">
+<section class="section reveal" id="practice"><div class="wrap">
 <h2>Areas of practice</h2>
 <p class="lede">Each page explains the law in plain terms: what the area covers, where matters are heard, and which papers usually matter.</p>
 <ul class="index">{rows}</ul>
 <p class="also">The practice covers {len(PRACTICE)} areas in total. See <a class="link" href="{p("practice-areas.html")}">all areas</a>, or read worked examples in the <a class="link" href="{p("case-library.html")}">case library</a>.</p>
 </div></section>
 
-<section class="section" id="advocate"><div class="wrap founder">
+<section class="section reveal" id="advocate"><div class="wrap founder">
 <div class="arch"><img src="{p("assets/team/rishabh.webp")}" width="480" height="600" alt="Portrait of Rishabh Raj, advocate" loading="lazy" decoding="async"></div>
 <div>
 <h2>Rishabh Raj, Advocate</h2>
