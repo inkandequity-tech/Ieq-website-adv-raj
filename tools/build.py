@@ -121,7 +121,7 @@ def head(*, depth, path, title, desc, og_type="website", noindex=False, ld=None,
         f'<link rel="preload" href="{p("assets/fonts/instrument-sans.woff2")}" as="font" type="font/woff2" crossorigin>',
         f'<link rel="stylesheet" href="{p("css/nexus.css")}">',
         "<script>(function(){var d=document.documentElement;try{var t=localStorage.getItem('ie-theme');"
-        "if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';d.dataset.theme=t}"
+        "if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';d.dataset.theme=t;var p=localStorage.getItem('ie-palette');if(p&&/^(noir|emerald|burgundy)$/.test(p))d.dataset.palette=p}"
         "catch(e){d.dataset.theme='dark'}d.classList.add('js')})()</script>",
     ]
     for block in ld or []:
@@ -142,6 +142,11 @@ NAV = [
     ("contact", "contact.html", "Contact"),
 ]
 
+PALETTE_OPTIONS = ('<option value="ink">Ink</option>'
+    '<option value="noir">Noir</option>'
+    '<option value="emerald">Emerald</option>'
+    '<option value="burgundy">Burgundy</option>')
+
 
 def header(depth, current):
     p = lambda x: rel(depth, x)
@@ -151,7 +156,8 @@ def header(depth, current):
     )
     return f'''<header class="site-header"><div class="wrap bar">
 <a class="logo" href="{p("")}" aria-label="{NAME}, home">{LOGO}<span><b>{NAME}</b><small>Advocates and legal consultants</small></span></a>
-<nav class="nav" id="nav" aria-label="Main">{links}</nav>
+<nav class="nav" id="nav" aria-label="Main">{links}<label class="palette-mobile"><span>Colour theme</span><select class="palette-select" data-palette-select>{PALETTE_OPTIONS}</select></label></nav>
+<label class="theme-studio"><span class="visually-hidden">Colour theme</span><select class="palette-select" data-palette-select>{PALETTE_OPTIONS}</select></label>
 <button class="icon-btn" id="theme" type="button" aria-label="Switch between dark and light theme" aria-pressed="false">{MOON}{SUN}</button>
 <button class="icon-btn menu-btn" id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav">{MENU}</button>
 </div></header>'''
@@ -707,7 +713,7 @@ def privacy():
 <section class="prose"><div class="wrap narrow">
 <p>This site has no forms, accounts, analytics or advertising. It does not set cookies.</p>
 <h2>In your browser</h2>
-<p>Your browser may store two small settings on your own device: your light or dark theme choice, and whether you have dismissed the notice at the bottom of the page. They are never sent to us.</p>
+<p>Your browser may store two small settings on your own device: your light or dark mode, your colour theme, and whether you have dismissed the notice at the bottom of the page. They are never sent to us.</p>
 <h2>On the server</h2>
 <p>The site is delivered through third-party hosting. Like most hosts, they may keep standard server logs, such as IP addresses and the pages requested. We do not control those logs.</p>
 <h2>If you write or call</h2>
