@@ -268,7 +268,7 @@ def home():
         ORG,
         {"@type": "WebSite", "@id": BASE + "/#site", "url": BASE + "/", "name": NAME, "publisher": {"@id": BASE + "/#firm"}}]}]
     PAGES.append(("", MODIFIED))
-    write("index.html", shell(depth=0, path="", current="", title="Ink & Equity: Advocates and Legal Consultants, Lucknow",
+    write("index.html", shell(depth=0, path="", current="", title="Ink & Equity | Rishabh Raj, Advocates, Lucknow",
         desc="Ink & Equity is a law practice in Lucknow. Read about its areas of practice, its advocates and the courts they appear in. Address and contact details.",
         body=body, ld=ld))
 
