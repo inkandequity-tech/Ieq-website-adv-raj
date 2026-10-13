@@ -1,0 +1,62 @@
+{
+  "_note": "Editorial grouping for map.html. NEEDS ADVOCATE REVIEW before publication. Families group the existing area pages for browsing only; they are not a statement of how the practice is organised. forum_map normalises the free-text 'forum' label of each hypothetical scenario in scenarios.json into filter groups. A forum here means 'a forum named in a hypothetical scenario', never 'a forum where the practice appears'. build.py fails if a scenario forum label or an area page is not covered.",
+  "families": [
+    {"id": "public", "label": "Public law and government", "areas": [
+      "constitutional-and-writ", "service-matters", "government-procurement-and-rti",
+      "competition-and-regulatory", "environment-energy-and-infrastructure",
+      "healthcare-education-and-professional-regulation"]},
+    {"id": "disputes", "label": "Disputes and remedies", "areas": [
+      "civil-litigation", "commercial-and-contract-disputes", "arbitration-and-adr",
+      "consumer-protection", "insurance-and-claims"]},
+    {"id": "crime-tech", "label": "Crime and technology", "areas": [
+      "criminal-law", "cyber-crime-and-online-fraud", "data-privacy-and-technology"]},
+    {"id": "people", "label": "People and property", "areas": [
+      "family-and-matrimonial", "succession-and-wills", "property-and-real-estate",
+      "non-profit-trusts-and-societies"]},
+    {"id": "business", "label": "Business and finance", "areas": [
+      "corporate-and-commercial", "mergers-acquisitions-and-investment",
+      "banking-recovery-and-insolvency", "tax-customs-and-fema",
+      "cross-border-and-nri-matters", "employment-and-labour"]},
+    {"id": "ip-media", "label": "Intellectual property and media", "areas": [
+      "intellectual-property", "media-entertainment-and-sports"]}
+  ],
+  "forums": [
+    {"id": "hc", "label": "High Court"},
+    {"id": "civil", "label": "Civil and commercial courts"},
+    {"id": "crim", "label": "Criminal courts"},
+    {"id": "family", "label": "Family court"},
+    {"id": "nclt", "label": "NCLT and NCLAT"},
+    {"id": "drt", "label": "Debt recovery tribunals"},
+    {"id": "tribunal", "label": "Other tribunals"},
+    {"id": "consumer", "label": "Consumer commissions"},
+    {"id": "arb", "label": "Arbitration"},
+    {"id": "regulator", "label": "Regulators and authorities"}
+  ],
+  "forum_map": {
+    "Civil / commercial court": ["civil"],
+    "Civil court": ["civil"],
+    "NCLT": ["nclt"],
+    "NCLT / arbitration": ["nclt", "arb"],
+    "High Court (Art. 226)": ["hc"],
+    "High Court / appellate authority": ["hc", "tribunal"],
+    "CAT / High Court": ["tribunal", "hc"],
+    "Registry / High Court": ["regulator", "hc"],
+    "Tribunal / civil court": ["tribunal", "civil"],
+    "Arbitral tribunal / court": ["arb", "civil"],
+    "Sessions court / High Court": ["crim", "hc"],
+    "Family court": ["family"],
+    "GST appellate forums": ["tribunal"],
+    "DRT / DRAT": ["drt"],
+    "Consumer Commission": ["consumer"],
+    "Regulatory / internal": [],
+    "CCI / NCLAT": ["regulator", "nclt"],
+    "Pollution board / NGT": ["regulator", "tribunal"],
+    "Ombudsman / civil / consumer": ["regulator", "civil", "consumer"],
+    "State authority / civil court": ["regulator", "civil"],
+    "High Court": ["hc"],
+    "Charity regulator / civil court": ["regulator", "civil"],
+    "RBI / Government / CCI": ["regulator"],
+    "Transactional": [],
+    "Information Commission": ["regulator"]
+  }
+}
