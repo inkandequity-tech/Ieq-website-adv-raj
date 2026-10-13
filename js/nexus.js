@@ -28,10 +28,30 @@
   var meta = $('meta[name="theme-color"]');
   function paintTheme(t) {
     root.dataset.theme = t;
-    if (meta) meta.setAttribute("content", t === "light" ? "#eef1f8" : "#0a0f2e");
+    paintMeta();
     if (themeBtn) themeBtn.setAttribute("aria-pressed", String(t === "light"));
   }
   paintTheme(root.dataset.theme || "dark");
+
+  /* ---------- colour theme: Theme Studio ---------- */
+  var PALETTES = ["ink", "noir", "emerald", "burgundy"];
+  var paletteSelects = doc.querySelectorAll("[data-palette-select]");
+  function paintMeta() {
+    if (meta) meta.setAttribute("content", getComputedStyle(root).getPropertyValue("--bg").trim() || "#0a0f2e");
+  }
+  function paintPalette(p) {
+    if (PALETTES.indexOf(p) < 0) p = "ink";
+    if (p === "ink") delete root.dataset.palette; else root.dataset.palette = p;
+    for (var i = 0; i < paletteSelects.length; i++) paletteSelects[i].value = p;
+    paintMeta();
+  }
+  paintPalette(store.get("ie-palette") || "ink");
+  for (var s = 0; s < paletteSelects.length; s++) {
+    paletteSelects[s].addEventListener("change", function (e) {
+      store.set("ie-palette", e.target.value);
+      paintPalette(e.target.value);
+    });
+  }
   if (themeBtn) themeBtn.addEventListener("click", function (e) {
     var next = root.dataset.theme === "light" ? "dark" : "light";
     store.set("ie-theme", next);
