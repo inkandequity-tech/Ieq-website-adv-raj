@@ -137,7 +137,7 @@ The rule text was checked through secondary sources only. This is a working chec
 
 ## 10. Privacy
 
-No forms, accounts, analytics, advertising or cookies. The browser stores two settings locally (theme and "notice dismissed"). Hosting may keep standard server logs. If analytics is ever added, update `privacy.html` first.
+No forms, accounts, analytics, advertising or cookies. The browser stores three settings locally (light or dark mode, colour theme and "notice dismissed"). Hosting may keep standard server logs. If analytics is ever added, update `privacy.html` first.
 
 ## 11. Credits and licences
 
