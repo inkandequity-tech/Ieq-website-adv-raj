@@ -16,8 +16,8 @@ PHONE_TEL = "+919450727289"
 EMAIL = "ChamberLko@gmail.com"
 STREET = "1, Moti Mahal Marg, Hazratganj"
 CITY = "Lucknow, Uttar Pradesh 226001"
-MODIFIED = "2026-10-13"
-REVIEWED = "13 October 2026"
+MODIFIED = "2026-10-14"
+REVIEWED = "14 October 2026"
 
 PRACTICE = [
     ("constitutional-and-writ", "Constitutional and writ matters",
