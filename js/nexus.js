@@ -282,3 +282,24 @@
     console.log("Reading the source? It is plain HTML, CSS and a little JavaScript. Try the Konami code, or tap the logo five times.");
   }
 })();
+
+(function () {
+  var q = document.getElementById("lib-q"); if (!q) return;
+  var rows = [].slice.call(document.querySelectorAll("table.lib tbody tr"));
+  var chips = [].slice.call(document.querySelectorAll(".chip")), area = "";
+  var count = document.getElementById("lib-count");
+  function run() {
+    var t = q.value.trim().toLowerCase(), n = 0;
+    rows.forEach(function (r) {
+      var ok = (!area || r.getAttribute("data-area") === area) && (!t || r.getAttribute("data-text").indexOf(t) > -1);
+      r.hidden = !ok; if (ok) n++;
+    });
+    count.textContent = n + " of " + rows.length + " shown";
+  }
+  chips.forEach(function (c) { c.addEventListener("click", function () {
+    area = c.getAttribute("data-area");
+    chips.forEach(function (o) { o.setAttribute("aria-pressed", o === c ? "true" : "false"); });
+    run();
+  }); });
+  q.addEventListener("input", run); run();
+})();
