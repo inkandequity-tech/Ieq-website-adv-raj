@@ -191,6 +191,17 @@
     arches.forEach(function (a) { a.classList.add("open"); });
   }
 
+  /* ---------- homepage sections: fade and rise on scroll ---------- */
+  var reveals = $$(".reveal");
+  if ("IntersectionObserver" in window && !reduce) {
+    var rio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); rio.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+    reveals.forEach(function (r) { rio.observe(r); });
+  } else {
+    reveals.forEach(function (r) { r.classList.add("in"); });
+  }
+
   /* ---------- the scales: tap to add a weight ---------- */
   $$(".scales-btn").forEach(function (btn) {
     var svg = $(".scales", btn), cap = btn.parentNode.querySelector(".scales-cap");
