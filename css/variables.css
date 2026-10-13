@@ -1,0 +1,143 @@
+/* ============================================
+   INK & EQUITY — DESIGN TOKENS v2
+   Quiet luxury × Futuristic minimalism
+   ============================================ */
+
+:root {
+  /* --- DARK MODE (default) --- */
+  --bg-primary: #0f0f11;
+  --bg-secondary: #161619;
+  --bg-tertiary: #1e1e23;
+  --bg-card: #1a1a1f;
+  --bg-card-hover: #212128;
+
+  --text-primary: #f0ede8;
+  --text-secondary: #a8a5a0;
+  --text-muted: #6b6865;
+  --text-inverse: #0f0f11;
+
+  --accent-silver: #c8cdd6;
+  --accent-silver-bright: #e2e6ef;
+  --accent-silver-dim: #8a8f9a;
+  --accent-sapphire: #4a7ab5;
+  --accent-sapphire-glow: rgba(74, 122, 181, 0.15);
+  --accent-sapphire-bright: #6b9fd4;
+
+  --border-subtle: rgba(200, 205, 214, 0.08);
+  --border-medium: rgba(200, 205, 214, 0.16);
+  --border-accent: rgba(200, 205, 214, 0.3);
+
+  --surface-glass: rgba(255, 255, 255, 0.03);
+  --surface-glass-hover: rgba(255, 255, 255, 0.06);
+
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.4);
+  --shadow-md: 0 8px 32px rgba(0,0,0,0.5);
+  --shadow-lg: 0 24px 64px rgba(0,0,0,0.6);
+  --shadow-glow: 0 0 40px rgba(74, 122, 181, 0.12);
+
+  --navbar-bg: rgba(15, 15, 17, 0.92);
+  --loading-bg: #0f0f11;
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', 'Didot', 'Playfair Display', Georgia, serif;
+  --font-body: 'Jost', 'DM Sans', 'Outfit', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --text-xs: clamp(0.7rem, 1vw, 0.75rem);
+  --text-sm: clamp(0.8rem, 1.2vw, 0.875rem);
+  --text-base: clamp(0.9rem, 1.5vw, 1rem);
+  --text-md: clamp(1rem, 1.8vw, 1.125rem);
+  --text-lg: clamp(1.1rem, 2vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 2.5vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 3vw, 2rem);
+  --text-3xl: clamp(2rem, 4vw, 2.75rem);
+  --text-4xl: clamp(2.5rem, 5.5vw, 4rem);
+  --text-5xl: clamp(3rem, 7vw, 5.5rem);
+  --text-hero: clamp(3.5rem, 9vw, 7.5rem);
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* Layout */
+  --container-max: 1320px;
+  --container-wide: 1520px;
+  --navbar-height: 72px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* ============================================
+     BREAKPOINT TOKENS (em-based for reliability)
+     ============================================ */
+  --bp-sm: 40em;   /* 640px  — large phones       */
+  --bp-md: 48em;   /* 768px  — tablets            */
+  --bp-lg: 64em;   /* 1024px — small laptops      */
+  --bp-xl: 80em;   /* 1280px — desktops           */
+  --bp-2xl: 96em;  /* 1536px — large desktops     */
+
+  /* Motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast: 200ms;
+  --duration-base: 400ms;
+  --duration-slow: 700ms;
+  --duration-cinematic: 1200ms;
+}
+
+/* --- LIGHT MODE --- */
+[data-theme="light"] {
+  --bg-primary: #f5f3ef;
+  --bg-secondary: #eceae4;
+  --bg-tertiary: #e4e1da;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8f7f4;
+
+  --text-primary: #1a1815;
+  --text-secondary: #5a5652;
+  --text-muted: #9a9590;
+  --text-inverse: #f5f3ef;
+
+  --accent-silver: #4a5568;
+  --accent-silver-bright: #2d3748;
+  --accent-silver-dim: #718096;
+  --accent-sapphire: #2b6cb0;
+  --accent-sapphire-glow: rgba(43, 108, 176, 0.1);
+  --accent-sapphire-bright: #3182ce;
+
+  --border-subtle: rgba(0, 0, 0, 0.06);
+  --border-medium: rgba(0, 0, 0, 0.12);
+  --border-accent: rgba(0, 0, 0, 0.24);
+
+  --surface-glass: rgba(0, 0, 0, 0.02);
+  --surface-glass-hover: rgba(0, 0, 0, 0.04);
+
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md: 0 8px 32px rgba(0,0,0,0.12);
+  --shadow-lg: 0 24px 64px rgba(0,0,0,0.16);
+  --shadow-glow: 0 0 40px rgba(43, 108, 176, 0.08);
+
+  --navbar-bg: rgba(245, 243, 239, 0.92);
+  --loading-bg: #f5f3ef;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-slow: 0ms;
+    --duration-cinematic: 0ms;
+  }
+}

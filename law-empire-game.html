@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>⚖️ Law Empire - IEQ Interactive Game</title>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Courier New', monospace; overflow: hidden; background: #04071A; }
+    #root { width: 100vw; height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect, useRef, useCallback } = React;
+
+    const CW = 556, CH = 268;
+    const TEAM_DATA = [
+      { id:1, name:"Rishabh", short:"RB", role:"Managing Partner", tier:"partner", bodyColor:"#0F2044", skinTone:"#C8855A", hairColor:"#100500", hairStyle:"short", accentColor:"#E8C46A", stats:{ court:9, corp:9, research:8 }, speed:0.85, maxEnergy:100, salary:5000, special:"★ CRITICAL — 2× reputation on all wins" },
+      { id:2, name:"Gokul", short:"GK", role:"Senior Lawyer", tier:"senior", bodyColor:"#1B3D6F", skinTone:"#B87040", hairColor:"#080300", hairStyle:"short", accentColor:"#7EC8F7", stats:{ court:10, corp:6, research:7 }, speed:1.1, maxEnergy:90, salary:3500, special:"⚖️ Court cases complete 30% faster" },
+      { id:3, name:"Vedant", short:"VD", role:"Senior Lawyer", tier:"senior", bodyColor:"#1B3D6F", skinTone:"#A06030", hairColor:"#0d0400", hairStyle:"short", accentColor:"#7EE8A0", stats:{ court:6, corp:10, research:9 }, speed:1.1, maxEnergy:90, salary:3500, special:"📄 +₹2,000 bonus on every corporate case" },
+      { id:4, name:"Radhika", short:"RD", role:"Junior Lawyer", tier:"junior", bodyColor:"#2C5282", skinTone:"#D4A070", hairColor:"#0a0300", hairStyle:"long", accentColor:"#F7A8C0", stats:{ court:7, corp:7, research:8 }, speed:1.4, maxEnergy:115, salary:2000, special:"⚡ Highest stamina — never burns out" },
+      { id:5, name:"Hanumant", short:"HN", role:"Junior Lawyer", tier:"junior", bodyColor:"#2C5282", skinTone:"#906040", hairColor:"#060200", hairStyle:"short", accentColor:"#90EE90", stats:{ court:7, corp:6, research:10 }, speed:1.2, maxEnergy:100, salary:2000, special:"🔍 Research cases never fail" },
+      { id:6, name:"Richa", short:"RC", role:"Paralegal", tier:"support", bodyColor:"#7B5500", skinTone:"#C89060", hairColor:"#100400", hairStyle:"bun", accentColor:"#FFD060", stats:{ court:4, corp:5, research:6 }, speed:1.5, maxEnergy:95, salary:1500, special:"📋 Handles 2 support tasks efficiently" },
+      { id:7, name:"Kanchan", short:"KC", role:"Admin Manager", tier:"admin", bodyColor:"#374151", skinTone:"#B09070", hairColor:"#1a1410", hairStyle:"bun", accentColor:"#94B8D0", stats:{ court:2, corp:3, research:4 }, speed:1.6, maxEnergy:100, salary:1200, special:"🖥️ Reduces daily overhead by 10%" },
+    ];
+    const ROOMS = [
+      { id:"reception", name:"Reception", icon:"🏢", x:6, y:6, w:118, h:80, bg:"rgba(15,32,68,0.9)", border:"#1B3D6F", deskX:65, deskY:46 },
+      { id:"courtroom", name:"Courtroom", icon:"⚖️", x:130, y:6, w:118, h:80, bg:"rgba(8,30,14,0.9)", border:"#2d8a5e", deskX:189, deskY:46 },
+      { id:"library", name:"Law Library", icon:"📚", x:254, y:6, w:118, h:80, bg:"rgba(30,18,6,0.9)", border:"#8B6914", deskX:313, deskY:46 },
+      { id:"conference", name:"Conference", icon:"🤝", x:378, y:6, w:172, h:80, bg:"rgba(22,8,30,0.9)", border:"#7B2D7B", deskX:464, deskY:46 },
+      { id:"partners", name:"Partner Office", icon:"👑", x:6, y:92, w:118, h:80, bg:"rgba(30,10,6,0.9)", border:"#C9A84C", deskX:65, deskY:132 },
+      { id:"corporate", name:"Corporate Desk", icon:"💼", x:130, y:92, w:118, h:80, bg:"rgba(6,18,38,0.9)", border:"#4B7BE5", deskX:189, deskY:132 },
+      { id:"breakroom", name:"Break Room", icon:"☕", x:254, y:92, w:118, h:80, bg:"rgba(12,12,12,0.9)", border:"#4A5568", deskX:313, deskY:132 },
+      { id:"admin", name:"Admin Office", icon:"🖥️", x:378, y:92, w:172, h:80, bg:"rgba(8,8,22,0.9)", border:"#374151", deskX:464, deskY:132 },
+    ];
+    const CASE_TEMPLATES = [
+      { type:"Property Dispute", icon:"🏠", cat:"court", room:"courtroom", baseDur:14000, baseReward:8000, repGain:3, diff:"Medium", goodFor:[1,2,4,5] },
+      { type:"Bail Application", icon:"⛓️", cat:"court", room:"courtroom", baseDur:9000, baseReward:5000, repGain:4, diff:"High", goodFor:[1,2,4] },
+      { type:"Matrimonial", icon:"💔", cat:"civil", room:"conference", baseDur:17000, baseReward:6000, repGain:2, diff:"Medium", goodFor:[1,2,3,4,5] },
+      { type:"Corporate Contract", icon:"📄", cat:"corp", room:"corporate", baseDur:16000, baseReward:12000, repGain:3, diff:"High", goodFor:[1,3,4] },
+      { type:"Consumer Case", icon:"🛒", cat:"civil", room:"conference", baseDur:8000, baseReward:3000, repGain:2, diff:"Easy", goodFor:[1,2,4,5,6] },
+      { type:"Legal Research", icon:"🔍", cat:"research", room:"library", baseDur:9000, baseReward:2000, repGain:1, diff:"Easy", goodFor:[1,2,3,4,5,6] },
+      { type:"Cheque Dishonour", icon:"💳", cat:"court", room:"courtroom", baseDur:11000, baseReward:7000, repGain:3, diff:"Medium", goodFor:[1,2,3,4] },
+      { type:"Land Acquisition", icon:"🌾", cat:"court", room:"courtroom", baseDur:22000, baseReward:15000, repGain:5, diff:"Hard", goodFor:[1,2,5] },
+      { type:"Startup Legal", icon:"🚀", cat:"corp", room:"corporate", baseDur:13000, baseReward:9000, repGain:4, diff:"Medium", goodFor:[1,3,4] },
+      { type:"Domestic Violence", icon:"🛡️", cat:"civil", room:"conference", baseDur:11000, baseReward:4000, repGain:5, diff:"High", goodFor:[1,2,4,5] },
+      { type:"Service Matter", icon:"🏛️", cat:"court", room:"courtroom", baseDur:12000, baseReward:5500, repGain:3, diff:"Medium", goodFor:[1,2,4,5] },
+      { type:"Contract Review", icon:"📋", cat:"corp", room:"corporate", baseDur:8000, baseReward:6000, repGain:2, diff:"Easy", goodFor:[1,3,4,5,6] },
+    ];
+    const EVENTS_DATA = [
+      { text:"🏛️ HC Holiday! Court cases delayed.", type:"delay_court", duration:6000 },
+      { text:"📰 IEQ in Lucknow Tribune! +10 Rep", type:"rep_boost", value:10, duration:5000 },
+      { text:"🚨 URGENT: VIP client just walked in!", type:"urgent_spawn", duration:4000 },
+      { text:"⚡ Power cut! Everyone at 50% speed.", type:"slow_all", slowDur:8000, duration:5000 },
+      { text:"🍱 Team lunch! All staff energy +30.", type:"energy_boost", value:30, duration:4000 },
+      { text:"😤 Client complaint received. -6 Rep.", type:"rep_loss", value:6, duration:4000 },
+      { text:"⚖️ Bar Council visit. +5 Reputation.", type:"rep_boost", value:5, duration:5000 },
+      { text:"💰 Referral brings paying client! +₹8,000", type:"bonus_money", value:8000, duration:4000 },
+      { text:"🎉 Landmark case in media! +8 Rep", type:"rep_boost", value:8, duration:4000 },
+      { text:"🔥 Morale event! +20 Energy + 1.5× speed", type:"morale_boost", duration:4000 },
+    ];
+    const DIFF_C = { Easy:"#2d8a5e", Medium:"#C9A84C", High:"#E67E22", Hard:"#C0392B" };
+    let _id = 1;
+
+    function mkCase(tpl, urg=false) {
+      const tl=tpl.baseDur*(urg?0.65:1)*(1+Math.random()*0.35);
+      return {id:_id++,...tpl,timeLimit:tl,timeLeft:tl,assignedTo:null,progress:0,duration:0,urgent:urg,fitBonus:false};
+    }
+
+    function drawRoom(ctx, room, isTarget) {
+      ctx.save();
+      ctx.fillStyle = room.bg;
+      ctx.beginPath(); ctx.roundRect(room.x,room.y,room.w,room.h,4); ctx.fill();
+      ctx.strokeStyle = isTarget ? "#E8C46A" : room.border;
+      ctx.lineWidth = isTarget ? 2.5 : 1;
+      ctx.beginPath(); ctx.roundRect(room.x,room.y,room.w,room.h,4); ctx.stroke();
+      if (isTarget) { ctx.shadowColor="#E8C46A"; ctx.shadowBlur=14; ctx.strokeStyle="rgba(232,196,106,0.3)"; ctx.beginPath(); ctx.roundRect(room.x+1,room.y+1,room.w-2,room.h-2,4); ctx.stroke(); ctx.shadowBlur=0; }
+      ctx.fillStyle = isTarget ? "#E8C46A" : "rgba(237,228,204,0.5)";
+      ctx.font = "bold 7.5px 'Courier New',monospace"; ctx.textAlign = "center";
+      ctx.fillText(room.name.toUpperCase(), room.x+room.w/2, room.y+12);
+      ctx.font = "18px serif"; ctx.fillText(room.icon, room.x+room.w/2, room.y+34);
+      ctx.fillStyle = "rgba(201,168,75,0.1)";
+      ctx.fillRect(room.deskX-13,room.deskY-6,26,12);
+      ctx.strokeStyle = "rgba(201,168,75,0.25)"; ctx.lineWidth=0.5;
+      ctx.strokeRect(room.deskX-13,room.deskY-6,26,12);
+      ctx.restore();
+    }
+
+    function drawChar(ctx, char, t, isSel) {
+      const {x,y,data,state,energy,stress} = char;
+      const walk = state==="walking", work = state==="working", rest = state==="resting";
+      ctx.save(); ctx.translate(Math.round(x), Math.round(y));
+      const bob = walk ? Math.sin(t*0.013*data.speed*4)*2.5 : work ? Math.sin(t*0.004)*1 : rest ? Math.sin(t*0.002)*0.5 : 0;
+      if (isSel) { ctx.shadowColor=data.accentColor; ctx.shadowBlur=16; }
+      ctx.fillStyle="rgba(0,0,0,0.25)"; ctx.beginPath(); ctx.ellipse(0,16+bob,7,3,0,0,Math.PI*2); ctx.fill();
+      ctx.shadowBlur=0;
+      const leg = walk ? Math.sin(t*0.014*data.speed*5)*3.5 : 0;
+      const bc = (state==="idle"||rest) ? "#1a2540" : data.bodyColor;
+      ctx.fillStyle=bc; ctx.fillRect(-5,8+bob,4,9+leg); ctx.fillRect(1,8+bob,4,9-leg);
+      ctx.fillStyle="#0a0a0a"; ctx.fillRect(-6,17+bob+leg,5,3); ctx.fillRect(1,17+bob-leg,5,3);
+      ctx.fillStyle=bc; ctx.beginPath(); ctx.roundRect(-7,-4+bob,14,13,2); ctx.fill();
+      if (stress>65) { ctx.strokeStyle=`rgba(192,57,43,${(stress-65)/35*0.8})`; ctx.lineWidth=2; ctx.beginPath(); ctx.roundRect(-8,-5+bob,16,15,2); ctx.stroke(); }
+      ctx.fillStyle=data.accentColor; ctx.fillRect(-2,-2+bob,4,6);
+      ctx.fillStyle=data.skinTone; ctx.beginPath(); ctx.arc(0,-12+bob,7.5,0,Math.PI*2); ctx.fill();
+      ctx.fillStyle=data.hairColor;
+      if (data.hairStyle==="long") { ctx.fillRect(-7.5,-20+bob,15,9); ctx.fillRect(-7.5,-12+bob,3,8); ctx.fillRect(4.5,-12+bob,3,8); ctx.beginPath(); ctx.arc(0,-20+bob,7.5,Math.PI,0); ctx.fill(); }
+      else if (data.hairStyle==="bun") { ctx.fillRect(-7,-20+bob,14,8); ctx.beginPath(); ctx.arc(0,-20+bob,5,0,Math.PI*2); ctx.fill(); }
+      else { ctx.fillRect(-7,-21+bob,14,10); ctx.beginPath(); ctx.arc(0,-20+bob,7.5,Math.PI,0); ctx.fill(); }
+      ctx.fillStyle="#1a0a00"; ctx.fillRect(-3.5,-13+bob,2.5,2.5); ctx.fillRect(1,-13+bob,2.5,2.5);
+      if (energy>65&&stress<60) { ctx.strokeStyle="#1a0a00"; ctx.lineWidth=0.8; ctx.beginPath(); ctx.arc(0,-9+bob,2.5,0.1,Math.PI-0.1); ctx.stroke(); }
+      else if (stress>75) { ctx.strokeStyle="#1a0a00"; ctx.lineWidth=0.8; ctx.beginPath(); ctx.arc(0,-7.5+bob,2.5,Math.PI+0.1,-0.1); ctx.stroke(); }
+      ctx.fillStyle=data.accentColor; ctx.font="bold 6px 'Courier New',monospace"; ctx.textAlign="center"; ctx.fillText(data.short,0,5+bob);
+      const eW=22, ePct=Math.max(0,energy/data.maxEnergy), eC=ePct>0.5?"#2d8a5e":ePct>0.25?"#E67E22":"#C0392B";
+      ctx.fillStyle="rgba(0,0,0,0.6)"; ctx.fillRect(-eW/2,-26+bob,eW,3);
+      ctx.fillStyle=eC; ctx.fillRect(-eW/2,-26+bob,eW*ePct,3);
+      if (work) { const p=(Math.sin(t*0.007)+1)/2; ctx.strokeStyle=`rgba(232,196,106,${0.3+p*0.5})`; ctx.lineWidth=1.5; ctx.beginPath(); ctx.arc(0,-2+bob,12+p*3,0,Math.PI*2); ctx.stroke(); }
+      if (rest) { ctx.fillStyle="rgba(150,150,150,0.6)"; ctx.font="bold 8px serif"; ctx.textAlign="center"; ctx.fillText("z",8,-20+bob+Math.sin(t*0.003)*4); }
+      ctx.restore();
+    }
+
+    function LawEmpireGame() {
+      const cvs=useRef(null), gRef=useRef(null), raf=useRef(null);
+      const [screen,setScreen]=useState("title");
+      const [ui,setUi]=useState(null);
+
+      const sync=useCallback(()=>{
+        const g=gRef.current; if(!g) return;
+        if(g.over){setScreen("gameover"); return;}
+        setUi({money:g.money,rep:g.rep,day:g.day,score:g.score,combo:g.combo,queue:g.queue.map(c=>({...c})),chars:g.chars.map(c=>({id:c.id,name:c.data.name,short:c.data.short,role:c.data.role,tier:c.data.tier,state:c.state,energy:c.energy,stress:c.stress,maxEnergy:c.data.maxEnergy,accentColor:c.data.accentColor,color:c.data.bodyColor,special:c.data.special,assignedCase:c.assignedCase?{icon:c.assignedCase.icon,type:c.assignedCase.type,progress:c.assignedCase.progress}:null})),event:g.activeEv?{text:g.activeEv.text}:null,notifs:[...g.notifs],selCase:g.selectedCase,slow:g.slow,morale:g.morale,won:g.won,lost:g.lost});
+      },[]);
+
+      const startGame=useCallback(()=>{_id=1; gRef.current={money:50000,rep:50,day:1,score:0,combo:0,comboT:0,spawnT:0,dayT:0,evT:0,queue:[mkCase(CASE_TEMPLATES[4]),mkCase(CASE_TEMPLATES[5])],active:[],chars:TEAM_DATA.map((data,i)=>{const room=ROOMS[i%ROOMS.length]; return {id:data.id,data,x:room.deskX+(Math.random()-0.5)*16,y:room.deskY+(Math.random()-0.5)*10,targetX:room.deskX,targetY:room.deskY,currentRoom:room.id,state:"idle",energy:data.maxEnergy,stress:0,assignedCase:null,pendingBreak:false};}),particles:[],notifs:[],selectedCase:null,activeEv:null,slow:false,slowT:0,morale:1,moraleT:0,won:0,lost:0,over:false,overR:"",t:0}; setScreen("game"); sync();},[sync]);
+
+      const selCase=useCallback((cid)=>{const g=gRef.current; if(!g) return; g.selectedCase=g.selectedCase?.id===cid?null:g.queue.find(c=>c.id===cid)||null; sync();},[sync]);
+      
+      const assignCase=useCallback((charId)=>{const g=gRef.current; if(!g||!g.selectedCase) return; const char=g.chars.find(c=>c.id===charId), cas=g.selectedCase; if(!char||char.state==="working") return; if(char.energy<8){sync(); return;} const isGood=cas.goodFor.includes(charId), room=ROOMS.find(r=>r.id===cas.room); if(!room) return; g.queue=g.queue.filter(c=>c.id!==cas.id); cas.assignedTo=charId; cas.fitBonus=isGood; let dur=cas.baseDur; if(!isGood) dur*=1.55; dur/=char.data.speed; if(char.data.tier==="partner") dur*=0.7; if(char.id===2&&cas.cat==="court") dur*=0.7; cas.duration=dur; cas.progress=0; char.assignedCase=cas; char.state="walking"; char.targetX=room.deskX+(Math.random()-0.5)*14; char.targetY=room.deskY+(Math.random()-0.5)*8; g.active.push(cas); g.selectedCase=null; sync();},[sync]);
+
+      const sendBreak=useCallback((charId)=>{const g=gRef.current; if(!g) return; const char=g.chars.find(c=>c.id===charId); if(!char||char.state==="working") return; const br=ROOMS.find(r=>r.id==="breakroom"); char.targetX=br.deskX+(Math.random()-0.5)*18; char.targetY=br.deskY; char.state="walking"; char.pendingBreak=true; sync();},[sync]);
+
+      useEffect(()=>{if(screen!=="game") return; const canvas=cvs.current; if(!canvas) return; const ctx=canvas.getContext("2d"); let last=performance.now(), uiA=0; function loop(now){const dt=Math.min(now-last,50); last=now; const g=gRef.current; if(!g||g.over) return; g.t+=dt; g.spawnT+=dt; g.dayT+=dt; g.evT+=dt; if(g.comboT>0){g.comboT-=dt; if(g.comboT<=0) g.combo=0;} if(g.slow){g.slowT-=dt; if(g.slowT<=0) g.slow=false;} if(g.morale>1){g.moraleT-=dt; if(g.moraleT<=0) g.morale=1;} if(g.dayT>=60000){g.dayT-=60000; g.day++; const sal=TEAM_DATA.reduce((s,m)=>s+m.salary,0); g.money-=sal; if(g.money<0){g.over=true;g.overR="bankruptcy";return;} g.chars.forEach(c=>{c.energy=Math.min(c.data.maxEnergy,c.energy+18); c.stress=Math.max(0,c.stress-12);});} const spI=Math.max(4500,11000-(g.day-1)*650); if(g.spawnT>=spI&&g.queue.length<7){g.spawnT=0; const tpl=CASE_TEMPLATES[Math.floor(Math.random()*CASE_TEMPLATES.length)]; g.queue.push(mkCase(tpl,Math.random()<0.18));} const evI=18000+Math.random()*8000; if(g.evT>=evI&&!g.activeEv){g.evT=0; if(Math.random()<0.55){const ev=EVENTS_DATA[Math.floor(Math.random()*EVENTS_DATA.length)]; g.activeEv={...ev,elapsed:0};}} if(g.activeEv){g.activeEv.elapsed+=dt; if(g.activeEv.elapsed>=g.activeEv.duration) g.activeEv=null;} g.chars.forEach(char=>{const spd=char.data.speed*(g.slow?0.5:1)*(g.morale>1?1.3:1)*1.8; if(char.state==="walking"){const dx=char.targetX-char.x, dy=char.targetY-char.y, dist=Math.sqrt(dx*dx+dy*dy); if(dist<spd*1.5){char.x=char.targetX; char.y=char.targetY; if(char.assignedCase){char.state="working"; const rm=ROOMS.find(r=>r.id===char.assignedCase.room); if(rm) char.currentRoom=rm.id;} else if(char.pendingBreak){char.pendingBreak=false; char.state="resting"; char.currentRoom="breakroom";} else{char.state="idle"; const rm=ROOMS.find(r=>Math.abs(r.deskX-char.targetX)<30&&Math.abs(r.deskY-char.targetY)<30); if(rm) char.currentRoom=rm.id;}} else { char.x+=(dx/dist)*spd; char.y+=(dy/dist)*spd; }} if(char.state==="working"&&char.assignedCase){const sp=g.slow?0.5:(g.morale>1?1.3:1), su=char.id===2&&char.assignedCase.cat==="court"?1.3:1, pb=char.data.tier==="partner"?1.4:1; char.assignedCase.progress+=(dt*sp*su*pb)/char.assignedCase.duration; char.energy=Math.max(0,char.energy-dt*0.0018); char.stress=Math.min(100,char.stress+dt*0.0009); if(char.assignedCase.progress>=1) {let rew=char.assignedCase.baseReward, rep=char.assignedCase.repGain; if(char.assignedCase.fitBonus){rew*=1.25;rep+=1;} if(char.data.tier==="partner") rep*=2; if(char.id===3&&char.assignedCase.cat==="corp") rew+=2000; g.combo++; g.comboT=12000; if(g.combo>=3){rew*=1+(g.combo-2)*0.12;rep+=1;} rew*=(g.morale||1); g.money+=Math.floor(rew); g.rep=Math.min(100,g.rep+rep); g.score+=Math.floor(rew/100)+rep*12; g.won++; char.assignedCase=null; char.state="idle"; g.active=g.active.filter(c=>c.id!==char.assignedCase.id); const ir=ROOMS[Math.floor(Math.random()*4)]; char.targetX=ir.deskX+(Math.random()-0.5)*18; char.targetY=ir.deskY+(Math.random()-0.5)*10; char.state="walking";} else if(char.energy<=0) {g.rep=Math.max(0,g.rep-6); g.combo=0; g.lost++; char.assignedCase=null; g.active=g.active.filter(c=>c.id!==char.assignedCase.id); const br=ROOMS.find(r=>r.id==="breakroom"); char.targetX=br.deskX+(Math.random()-0.5)*16; char.targetY=br.deskY; char.state="walking"; char.pendingBreak=true;}} if(char.state==="resting"){char.energy=Math.min(char.data.maxEnergy,char.energy+dt*0.022); char.stress=Math.max(0,char.stress-dt*0.012); if(char.energy>=char.data.maxEnergy*0.88) char.state="idle";} if(char.state==="idle"&&Math.random()<0.0006){const rm=ROOMS[Math.floor(Math.random()*ROOMS.length)]; if(rm.id!=="breakroom"&&rm.id!=="partners"){char.targetX=rm.deskX+(Math.random()-0.5)*22; char.targetY=rm.deskY+(Math.random()-0.5)*12; char.state="walking";}}}); g.queue=g.queue.filter(cas=>{cas.timeLeft-=dt; if(cas.timeLeft<=0){g.rep=Math.max(0,g.rep-3); g.combo=0; return false;} return true;}); g.notifs=g.notifs.filter(n=>{n.t-=dt; return n.t>0;}); if(g.rep<=0){g.over=true;g.overR="reputation";} ctx.fillStyle="#04071A"; ctx.fillRect(0,0,CW,CH); ctx.strokeStyle="rgba(201,168,75,0.04)"; ctx.lineWidth=0.5; for(let x=0;x<CW;x+=22){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,CH);ctx.stroke();} for(let y=0;y<CH;y+=22){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(CW,y);ctx.stroke();} ctx.strokeStyle="rgba(201,168,75,0.06)"; ctx.lineWidth=1; ctx.setLineDash([6,6]); ctx.beginPath(); ctx.moveTo(0,88); ctx.lineTo(CW,88); ctx.stroke(); ctx.setLineDash([]); const sr=g.selectedCase?.room||null; ROOMS.forEach(r=>drawRoom(ctx,r,r.id===sr)); g.chars.forEach(char=>{if(char.state==="working"&&char.assignedCase){const room=ROOMS.find(r=>r.id===char.assignedCase.room); if(!room) return; ctx.fillStyle="rgba(0,0,0,0.5)"; ctx.fillRect(room.x+6,room.y+room.h-14,room.w-12,4); ctx.fillStyle=char.data.accentColor; ctx.fillRect(room.x+6,room.y+room.h-14,(room.w-12)*Math.min(1,char.assignedCase.progress),4);}}); g.chars.forEach(char=>drawChar(ctx,char,g.t,false)); if(g.slow){const grad=ctx.createRadialGradient(CW/2,CH/2,60,CW/2,CH/2,300); grad.addColorStop(0,"rgba(0,0,0,0)"); grad.addColorStop(1,"rgba(100,20,20,0.35)"); ctx.fillStyle=grad; ctx.fillRect(0,0,CW,CH);} if(uiA>120){uiA=0; sync();} raf.current=requestAnimationFrame(loop);} raf.current=requestAnimationFrame(loop); return()=>cancelAnimationFrame(raf.current);},[screen,sync]);
+
+      if(screen==="title") return (<div style={{background:"linear-gradient(160deg,#04071A 0%,#0a1535 60%,#04071A 100%)",minHeight:"100vh",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",fontFamily:"'Courier New',monospace",color:"#EDE4CC",padding:"20px",overflow:"hidden"}}><div style={{textAlign:"center",marginBottom:"24px"}}><div style={{fontSize:"10px",letterSpacing:"5px",color:"rgba(201,168,75,0.8)",marginBottom:"10px"}}>IEQ INTERACTIVE GAME</div><div style={{fontSize:"clamp(28px,6vw,52px)",fontWeight:900,background:"linear-gradient(135deg,#C9A84C,#E8C46A)",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}}>⚖️ LAW EMPIRE</div></div><div style={{display:"flex",gap:"6px",flexWrap:"wrap",justifyContent:"center",marginBottom:"20px",maxWidth:"480px"}}>{TEAM_DATA.map(m=>(<div key={m.id} style={{textAlign:"center",background:"rgba(255,255,255,0.04)",border:`1px solid ${m.accentColor}25`,borderRadius:"8px",padding:"8px",width:"58px"}}><div style={{width:"30px",height:"30px",borderRadius:"50%",margin:"0 auto 4px",background:m.bodyColor,border:`2px solid ${m.accentColor}`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:"8px",fontWeight:700,color:m.accentColor}}>{m.short}</div><div style={{fontSize:"7px",color:"rgba(237,228,204,0.9)",fontWeight:700}}>{m.name}</div></div>))}</div><div style={{background:"rgba(201,168,75,0.08)",border:"1px solid rgba(201,168,75,0.25)",borderRadius:"12px",padding:"12px 18px",maxWidth:"420px",marginBottom:"20px",fontSize:"10px",lineHeight:1.8}}><div style={{color:"#E8C46A",fontWeight:700,marginBottom:"6px"}}>HOW TO PLAY:</div>{[["📋","Click a case on the left → Select it"],["✅","Click a team member on the right → Assign"],["⭐","Matching the right lawyer = faster + bonus rewards"],["⚡","Watch energy bars — exhausted lawyers FAIL"],["☕","Send tired staff to break room to recover"],["🔥","Win 3+ cases in a row for COMBO multiplier"],["💀","0 reputation or bankruptcy = game over"]].map(([ic,tx])=>(<div key={tx} style={{display:"flex",gap:"6px"}}><span>{ic}</span><span>{tx}</span></div>))}</div><button onClick={startGame} style={{background:"linear-gradient(135deg,#C9A84C,#E8C46A)",color:"#04071A",border:"none",borderRadius:"8px",padding:"12px 40px",fontSize:"14px",fontWeight:900,letterSpacing:"1px",cursor:"pointer",boxShadow:"0 4px 24px rgba(232,196,106,0.45)"}} onMouseEnter={e=>e.target.style.boxShadow="0 8px 32px rgba(232,196,106,0.6)"} onMouseLeave={e=>e.target.style.boxShadow="0 4px 24px rgba(232,196,106,0.45)"}><span>⚖️ OPEN THE FIRM</span></button></div>);
+
+      if(screen==="gameover"){const g=gRef.current; return (<div style={{background:"#04071A",minHeight:"100vh",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",fontFamily:"'Courier New',monospace",color:"#EDE4CC",padding:"20px"}}><div style={{fontSize:"48px",marginBottom:"12px"}}>⚖️</div><div style={{fontSize:"clamp(18px,5vw,28px)",fontWeight:900,color:g?.overR==="reputation"?"#C0392B":"#E67E22",marginBottom:"8px"}}>{g?.overR==="reputation"?"REPUTATION DESTROYED":"BANKRUPTCY DECLARED"}</div><div style={{background:"rgba(201,168,75,0.08)",border:"1px solid rgba(201,168,75,0.3)",borderRadius:"12px",padding:"18px 32px",marginBottom:"20px",textAlign:"center",minWidth:"240px"}}><div style={{fontSize:"10px",color:"#C9A84C",letterSpacing:"2px",marginBottom:"10px"}}>FINAL STATS</div><div style={{fontSize:"36px",fontWeight:900,color:"#E8C46A"}}>{(g?.score||0).toLocaleString()}</div><div style={{fontSize:"10px",color:"rgba(237,228,204,0.4)",marginBottom:"12px"}}>SCORE</div><div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"6px",fontSize:"10px"}}>{[["Days",g?.day||1],["Cash",`₹${(g?.money||0).toLocaleString()}`],["Rep",`${g?.rep||0}/100`],["Won",g?.won||0],["Lost",g?.lost||0]].map(([l,v])=>(<div key={l}><span style={{color:"rgba(237,228,204,0.5)"}}>{l}:</span> <strong style={{color:"#E8C46A"}}>{v}</strong></div>))}</div></div><div style={{display:"flex",gap:"8px"}}><button onClick={startGame} style={{background:"linear-gradient(135deg,#C9A84C,#E8C46A)",color:"#04071A",border:"none",borderRadius:"8px",padding:"10px 28px",fontSize:"12px",fontWeight:900,cursor:"pointer"}}>PLAY AGAIN</button></div></div>);
+
+      if(!ui) return <div style={{background:"#04071A",minHeight:"100vh",display:"flex",alignItems:"center",justifyContent:"center",color:"#C9A84C"}}>Initialising...</div>;
+
+      const repColor=ui.rep>60?"#2d8a5e":ui.rep>30?"#E67E22":"#C0392B";
+      return (<div style={{background:"#04071A",minHeight:"100vh",display:"flex",flexDirection:"column",fontFamily:"'Courier New',monospace",color:"#EDE4CC",overflow:"hidden"}}><div style={{background:"rgba(8,15,32,0.98)",borderBottom:"1px solid rgba(201,168,75,0.22)",padding:"6px 12px",display:"flex",alignItems:"center",gap:"12px",flexWrap:"wrap"}}><div style={{color:"#E8C46A",fontWeight:900,fontSize:"12px"}}>⚖️ LAW EMPIRE</div><div style={{display:"flex",gap:"12px",flex:1,flexWrap:"wrap",alignItems:"center"}}><div style={{display:"flex",gap:"3px",alignItems:"center"}}><span style={{fontSize:"9px",color:"#C9A84C"}}>₹</span><span style={{fontSize:"12px",fontWeight:700,color:ui.money<10000?"#C0392B":"#E8C46A"}}>{ui.money.toLocaleString()}</span></div><div style={{display:"flex",gap:"5px",alignItems:"center"}}><span style={{fontSize:"9px",color:"#C9A84C"}}>REP</span><div style={{width:"60px",height:"6px",background:"rgba(0,0,0,0.5)",borderRadius:"3px",overflow:"hidden"}}><div style={{width:`${ui.rep}%`,height:"100%",background:repColor}}/></div><span style={{fontSize:"9px",color:repColor,fontWeight:700}}>{ui.rep}</span></div><span style={{fontSize:"8px",color:"rgba(237,228,204,0.5)"}}>DAY {ui.day}</span><span style={{fontSize:"8px",color:"rgba(237,228,204,0.5)"}}>SCORE {ui.score.toLocaleString()}</span></div><div style={{fontSize:"8px",color:"rgba(237,228,204,0.4)",display:"flex",gap:"8px"}}><span style={{color:"#2d8a5e"}}>✅{ui.won}</span><span style={{color:"#C0392B"}}>❌{ui.lost}</span></div></div><div style={{display:"flex",flex:1,gap:"0",overflow:"hidden",minHeight:0}}><div style={{width:"160px",minWidth:"150px",flexShrink:0,background:"rgba(6,12,28,0.98)",borderRight:"1px solid rgba(201,168,75,0.16)",display:"flex",flexDirection:"column",overflow:"hidden"}}><div style={{padding:"7px 9px",borderBottom:"1px solid rgba(201,168,75,0.1)",fontSize:"8px",letterSpacing:"1px",color:"#C9A84C",fontWeight:700}}>CASES ({ui.queue.length})</div><div style={{flex:1,overflowY:"auto",padding:"4px"}}>{ui.queue.map(cas=>{const isSel=ui.selCase?.id===cas.id, urg=cas.timeLeft/cas.timeLimit, uc=urg>0.55?"#2d8a5e":urg>0.28?"#E67E22":"#C0392B"; return (<div key={cas.id} onClick={()=>selCase(cas.id)} style={{background:isSel?"rgba(232,196,106,0.12)":"rgba(201,168,75,0.04)",border:`1px solid ${isSel?"#E8C46A":"rgba(201,168,75,0.1)"}`,borderRadius:"5px",padding:"6px",marginBottom:"3px",cursor:"pointer"}}><div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",marginBottom:"2px"}}><span style={{fontSize:"14px"}}>{cas.icon}</span><div style={{display:"flex",gap:"2px"}}>{cas.urgent&&<span style={{fontSize:"6px",background:"#C0392B",color:"white",padding:"1px 2px"}}>URG</span>}<span style={{fontSize:"6px",background:DIFF_C[cas.diff]+"22",color:DIFF_C[cas.diff]}}>{cas.diff.substring(0,1)}</span></div></div><div style={{fontSize:"9px",fontWeight:700,color:"#EDE4CC",marginBottom:"1px"}}>{cas.type}</div><div style={{fontSize:"8px",color:"#C9A84C"}}>₹{cas.baseReward.toLocaleString()}</div><div style={{marginTop:"3px",height:"2px",background:"rgba(0,0,0,0.5)",borderRadius:"1px",overflow:"hidden"}}><div style={{width:`${urg*100}%`,height:"100%",background:uc}}/></div></div>);})</div></div><div style={{flex:1,display:"flex",flexDirection:"column",overflow:"hidden",minWidth:0}}><div style={{flex:1,display:"flex",alignItems:"flex-start",justifyContent:"center",padding:"6px",background:"rgba(4,7,26,0.8)"}}><canvas ref={cvs} width={CW} height={CH} style={{display:"block",width:"100%",maxWidth:`${CW}px`,borderRadius:"6px",border:"1px solid rgba(201,168,75,0.16)",imageRendering:"pixelated"}}/></div></div><div style={{width:"160px",minWidth:"150px",flexShrink:0,background:"rgba(6,12,28,0.98)",borderLeft:"1px solid rgba(201,168,75,0.16)",display:"flex",flexDirection:"column",overflow:"hidden"}}><div style={{padding:"7px 9px",borderBottom:"1px solid rgba(201,168,75,0.1)",fontSize:"8px",letterSpacing:"1px",color:"#C9A84C",fontWeight:700}}>TEAM</div><div style={{flex:1,overflowY:"auto",padding:"4px"}}>{ui.chars.map(char=>{const ep=char.energy/char.maxEnergy, ec=ep>0.5?"#2d8a5e":ep>0.25?"#E67E22":"#C0392B"; const canA=!!ui.selCase&&char.state!=="working", isG=ui.selCase?.goodFor?.includes(char.id); return (<div key={char.id} onClick={()=>canA&&assignCase(char.id)} style={{background:canA?(isG?"rgba(45,138,94,0.12)":"rgba(201,168,75,0.06)"):"rgba(201,168,75,0.02)",border:`1px solid ${canA?(isG?"rgba(45,138,94,0.5)":"rgba(201,168,75,0.2)"):"rgba(201,168,75,0.06)"}`,borderRadius:"5px",padding:"6px",marginBottom:"3px",cursor:canA?"pointer":"default"}}><div style={{display:"flex",gap:"4px",alignItems:"flex-start"}}><div style={{width:"25px",height:"25px",borderRadius:"50%",flexShrink:0,background:char.color,border:`1.5px solid ${char.accentColor}`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:"8px",fontWeight:700,color:char.accentColor}}>{char.short}</div><div style={{flex:1,minWidth:0}}><div style={{fontSize:"8px",fontWeight:700,color:"#EDE4CC",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{char.name}</div><div style={{fontSize:"6.5px",color:char.accentColor}}>{char.role}</div></div><div style={{fontSize:"6px",padding:"1px 3px",borderRadius:"2px",flexShrink:0,background:char.state==="working"?"rgba(45,138,94,0.25)":"rgba(201,168,75,0.1)",color:char.state==="working"?"#2d8a5e":"#C9A84C"}}>{char.state==="working"?"⚡":"✓"}</div></div><div style={{display:"flex",gap:"3px",alignItems:"center",marginTop:"3px"}}><span style={{fontSize:"6px",color:"rgba(237,228,204,0.3)"}}>E</span><div style={{flex:1,height:"2px",background:"rgba(0,0,0,0.5)",borderRadius:"1px",overflow:"hidden"}}><div style={{width:`${ep*100}%`,height:"100%",background:ec}}/></div></div>{char.assignedCase&&<div style={{display:"flex",gap:"2px",alignItems:"center"}}><span style={{fontSize:"8px"}}>{char.assignedCase.icon}</span><div style={{width:"20px",height:"2px",background:"rgba(0,0,0,0.5)",borderRadius:"1px",overflow:"hidden"}}><div style={{width:`${Math.min(1,char.assignedCase.progress)*100}%`,height:"100%",background:char.accentColor}}/></div></div>}{(char.state==="idle"||char.state==="walking")&&char.energy<40&&!char.assignedCase&&<button onClick={e=>{e.stopPropagation();sendBreak(char.id);}} style={{width:"100%",marginTop:"3px",background:"rgba(70,70,70,0.2)",border:"1px solid rgba(80,80,80,0.3)",borderRadius:"2px",color:"#777",fontSize:"7px",padding:"1px",cursor:"pointer",fontFamily:"monospace"}}>☕ BREAK</button>}</div>);})</div></div></div></div>);
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<LawEmpireGame />);
+  </script>
+</body>
+</html>

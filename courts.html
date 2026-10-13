@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eCourts Services — District Courts India — Ink & Equity</title>
+  <meta name="description" content="Access case information, judgments, notices, and court services across district courts in India. Case search, status tracking, cause lists, and more." />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css"/>
+  <link rel="stylesheet" href="css/layouts.css"/>
+  <link rel="stylesheet" href="css/courts-ecourts.css"/>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<nav id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo">
+      <div class="navbar-logo-mark"><svg viewBox="0 0 36 36" fill="none"><path d="M18 3C18 3 27 14 27 22C27 26.97 22.97 31 18 31C13.03 31 9 26.97 9 22C9 14 18 3 18 3Z" stroke="var(--accent-silver)" stroke-width="1.2" fill="none"/><path d="M10 20L26 20" stroke="var(--accent-sapphire)" stroke-width="0.8"/><circle cx="18" cy="22" r="3" stroke="var(--accent-sapphire-bright)" stroke-width="0.8" fill="none"/></svg></div>
+      <div class="navbar-logo-text"><span class="name">Ink & Equity</span><span class="tagline">Advocates & Legal Consultants</span></div>
+    </a>
+    <nav class="navbar-nav">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="practice-areas.html">Practice</a><a href="courts.html" class="active" aria-current="page">Courts</a><a href="insights.html">Insights</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="navbar-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+      <a href="contact.html" class="btn-consult">Book Consultation</a>
+      <button class="navbar-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="navbar-mobile" id="mobile-nav" aria-hidden="true" aria-label="Mobile navigation">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="practice-areas.html">Practice</a><a href="courts.html">Courts</a><a href="insights.html">Insights</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a>
+</div>
+
+<main id="main-content">
+<!-- HERO SECTION -->
+<section id="ecourts-hero">
+  <div class="container">
+    <p class="section-label reveal">eCourts Services Portal</p>
+    <h1 class="reveal reveal-delay-1">District <em>Courts</em></h1>
+    <p class="section-subtitle reveal reveal-delay-2">Access case information, judgments, notices, and court services across district courts in India. Search cases, track status, and explore court documents.</p>
+  </div>
+</section>
+
+<!-- SEARCH BOX HERO CTA -->
+<section id="ecourts-search-hero">
+  <div class="container">
+    <div class="search-box-wrapper reveal reveal-delay-3">
+      <div class="search-box-inner">
+        <h2>What are you looking for?</h2>
+        <form id="quick-search-form" class="quick-search-form" onsubmit="handleQuickSearch(event)">
+          <div class="search-input-group">
+            <input 
+              type="text" 
+              id="quick-search-input" 
+              class="search-input" 
+              placeholder="Case Number • Filing Number • Party Name • Advocate Name"
+              aria-label="Quick search cases"
+              autocomplete="off"
+            />
+            <button type="submit" class="search-btn" aria-label="Search">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+              <span>Search</span>
+            </button>
+          </div>
+          <div class="search-hint">
+            ⚡ All data is PUBLIC and sourced from official eCourts platforms. 
+            <a href="#disclaimer" class="hint-link">Not legal advice</a>.
+          </div>
+        </form>
+        <div class="search-divider">or</div>
+        <a href="#services-grid" class="browse-services-btn">Browse Services ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES GRID -->
+<section id="services-section">
+  <div class="container">
+    <div class="services-header reveal">
+      <h2>Explore Services</h2>
+      <p>Access public information across district courts</p>
+    </div>
+    
+    <div class="services-grid reveal reveal-delay-1" id="services-grid">
+      <!-- Service Card 1: Case Status -->
+      <div class="service-card" onclick="initiateService('case-status')">
+        <div class="service-card__visual">
+          <div class="service-icon">📋</div>
+          <div class="service-illustration">
+            <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="10" width="80" height="60" fill="none" stroke="currentColor" stroke-width="2" rx="4"/>
+              <line x1="20" y1="20" x2="80" y2="20" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="20" y1="28" x2="70" y2="28" stroke="currentColor" stroke-width="1"/>
+              <line x1="20" y1="35" x2="75" y2="35" stroke="currentColor" stroke-width="1"/>
+              <line x1="20" y1="42" x2="70" y2="42" stroke="currentColor" stroke-width="1"/>
+              <circle cx="75" cy="52" r="6" fill="currentColor" opacity="0.7"/>
+            </svg>
+          </div>
+        </div>
+        <div class="service-card__content">
+          <h3 class="service-title">Case Status</h3>
+          <p class="service-description">Track your case status by case number, filing number, or party name</p>
+        </div>
+        <div class="service-card__footer">
+          <span class="explore-link">Explore Service →</span>
+        </div>
+      </div>
+
+      <!-- Service Card 2: Cause List -->
+      <div class="service-card" onclick="initiateService('cause-list')">
+        <div class="service-card__visual">
+          <div class="service-icon">📅</div>
+          <div class="service-illustration">
+            <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+              <rect x="15" y="15" width="70" height="55" fill="none" stroke="currentColor" stroke-width="2" rx="3"/>
+              <line x1="15" y1="25" x2="85" y2="25" stroke="currentColor" stroke-width="1.5"/>
+              <g opacity="0.6">
+                <line x1="20" y1="32" x2="80" y2="32" stroke="currentColor" stroke-width="0.8"/>
+                <line x1="20" y1="40" x2="80" y2="40" stroke="currentColor" stroke-width="0.8"/>
+                <line x1="20" y1="48" x2="80" y2="48" stroke="currentColor" stroke-width="0.8"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="service-card__content">
+          <h3 class="service-title">Cause List</h3>
+          <p class="service-description">View today's court schedule by judge, date, and court hall</p>
+        </div>
+        <div class="service-card__footer">
+          <span class="explore-link">Explore Service →</span>
+        </div>
+      </div>
+
+      <!-- Service Card 3: Case Search -->
+      <div class="service-card" onclick="initiateService('case-search')">
+        <div class="service-card__visual">
+          <div class="service-icon">🔍</div>
+          <div class="service-illustration">
+            <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="35" cy="30" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+              <line x1="50" y1="45" x2="70" y2="65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <g opacity="0.6">
+                <line x1="25" y1="30" x2="45" y2="30" stroke="currentColor" stroke-width="0.8"/>
+                <line x1="35" y1="20" x2="35" y2="40" stroke="currentColor" stroke-width="0.8"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="service-card__content">
+          <h3 class="service-title">Case Search</h3>
+          <p class="service-description">Find cases by party name, advocate name, or other criteria</p>
+        </div>
+        <div class="service-card__footer">
+          <span class="explore-link">Explore Service →</span>
+        </div>
+      </div>
+
+      <!-- Service Card 4: Judgments & Orders -->
+      <div class="service-card" onclick="initiateService('judgments')">
+        <div class="service-card__visual">
+          <div class="service-icon">⚖️</div>
+          <div class="service-illustration">
+            <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 15 L40 35 L60 35 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <line x1="30" y1="40" x2="70" y2="40" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="25" y="42" width="50" height="25" fill="none" stroke="currentColor" stroke-width="1.5" rx="2"/>
+              <line x1="32" y1="50" x2="68" y2="50" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+              <line x1="32" y1="58" x2="68" y2="58" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+            </svg>
+          </div>
+        </div>
+        <div class="service-card__content">
+          <h3 class="service-title">Judgments & Orders</h3>
+          <p class="service-description">Access published judgments, orders, and court decisions</p>
+        </div>
+        <div class="service-card__footer">
+          <span class="explore-link">Explore Service →</span>
+        </div>
+      </div>
+
+      <!-- Service Card 5: Notices -->
+      <div class="service-card" onclick="initiateService('notices')">
+        <div class="service-card__visual">
+          <div class="service-icon">📢</div>
+          <div class="service-illustration">
+            <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="20" width="60" height="45" fill="none" stroke="currentColor" stroke-width="2" rx="4"/>
+              <line x1="28" y1="30" x2="72" y2="30" stroke="currentColor" stroke-width="1.5"/>
+              <g opacity="0.6">
+                <line x1="28" y1="38" x2="72" y2="38" stroke="currentColor" stroke-width="0.8"/>
+                <line x1="28" y1="45" x2="65" y2="45" stroke="currentColor" stroke-width="0.8"/>
+              </g>
+              <path d="M50 58 L44 65 L56 65" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="service-card__content">
+          <h3 class="service-title">Notices</h3>
+          <p class="service-description">View court notices, summons, and official court communications</p>
+        </div>
+        <div class="service-card__footer">
+          <span class="explore-link">Explore Service →</span>
+        </div>
+      </div>
+
+      <!-- Service Card 6: Court Information -->
+      <div class="service-card" onclick="initiateService('court-info')">
+        <div class="service-card__visual">
+          <div class="service-icon">🏛️</div>
+          <div class="service-illustration">
+            <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+              <path d="M25 60 L25 30 L30 20 L50 15 L70 20 L75 30 L75 60 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <line x1="40" y1="30" x2="40" y2="60" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+              <line x1="50" y1="20" x2="50" y2="60" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+              <line x1="60" y1="30" x2="60" y2="60" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+            </svg>
+          </div>
+        </div>
+        <div class="service-card__content">
+          <h3 class="service-title">Court Information</h3>
+          <p class="service-description">Get details about court complexes, addresses, and contact information</p>
+        </div>
+        <div class="service-card__footer">
+          <span class="explore-link">Explore Service →</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE WORKFLOW MODAL - Hidden by default -->
+<div id="service-modal" class="modal" style="display:none;" aria-label="Service workflow" role="dialog" aria-modal="true">
+  <div class="modal-backdrop" onclick="closeServiceModal()"></div>
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeServiceModal()" aria-label="Close">&times;</button>
+
+    <!-- Step Progress Bar -->
+    <div class="workflow-progress" id="workflow-progress">
+      <div class="wp-step active" id="wp-1"><span>1</span> State</div>
+      <div class="wp-line"></div>
+      <div class="wp-step" id="wp-2"><span>2</span> District</div>
+      <div class="wp-line"></div>
+      <div class="wp-step" id="wp-3"><span>3</span> Court</div>
+      <div class="wp-line"></div>
+      <div class="wp-step" id="wp-4"><span>4</span> Search</div>
+    </div>
+    <div id="step-1-state" class="workflow-step active">
+        <p>Choose the state where the court is located</p>
+      </div>
+      <form onsubmit="goToStep(2, event)" class="workflow-form">
+        <div class="form-group">
+          <label for="state-select">State <span class="required">*</span></label>
+          <select id="state-select" required aria-required="true" onchange="loadDistricts()">
+            <option value="">-- Select State --</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="DL">Delhi (Future)</option>
+            <option value="MH">Maharashtra (Future)</option>
+          </select>
+          <small class="form-hint">Currently supporting Uttar Pradesh</small>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn-secondary" onclick="closeServiceModal()">Cancel</button>
+          <button type="submit" class="btn-primary">Continue</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Step 2: District Selection -->
+    <div id="step-2-district" class="workflow-step">
+      <div class="workflow-header">
+        <h2>Select District</h2>
+        <p>Choose the district court</p>
+      </div>
+      <form onsubmit="goToStep(3, event)" class="workflow-form">
+        <div class="form-group">
+          <label for="district-select">District <span class="required">*</span></label>
+          <select id="district-select" required aria-required="true" onchange="loadCourts()">
+            <option value="">-- Loading Districts --</option>
+          </select>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn-secondary" onclick="goToStep(1)">Back</button>
+          <button type="submit" class="btn-primary">Continue</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Step 3: Court Selection -->
+    <div id="step-3-court" class="workflow-step">
+      <div class="workflow-header">
+        <h2>Select Court</h2>
+        <p>Choose the court complex (optional)</p>
+      </div>
+      <form onsubmit="goToStep(4, event)" class="workflow-form">
+        <div class="form-group">
+          <fieldset>
+            <legend>Court Complex</legend>
+            <div class="checkbox-group" id="court-checkboxes">
+              <!-- Dynamically populated -->
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn-secondary" onclick="goToStep(2)">Back</button>
+          <button type="submit" class="btn-primary">Continue</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Step 4: Service-Specific Filters -->
+    <div id="step-4-filters" class="workflow-step">
+      <div class="workflow-header">
+        <h2 id="filter-title">Search Filters</h2>
+        <p id="filter-description">Enter your search criteria</p>
+      </div>
+      <form onsubmit="performSearch(event)" class="workflow-form" id="search-filters-form">
+        <!-- Dynamically populated based on service -->
+        <div id="service-filters"></div>
+        <div class="form-actions">
+          <button type="button" class="btn-secondary" onclick="goToStep(3)">Back</button>
+          <button type="submit" class="btn-primary">Search</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- RESULTS PAGE - Hidden by default -->
+<div id="results-page" class="results-page" style="display:none;">
+  <div class="results-header">
+    <div class="results-title">
+      <h2>Search Results</h2>
+      <button class="btn-back" onclick="backToServices()">← Back to Services</button>
+    </div>
+    <div class="results-controls">
+      <select id="results-per-page" onchange="changeResultsPerPage()">
+        <option value="25">25 per page</option>
+        <option value="50">50 per page</option>
+        <option value="100">100 per page</option>
+      </select>
+      <select id="sort-by">
+        <option value="date-desc">Latest First</option>
+        <option value="date-asc">Oldest First</option>
+        <option value="status">By Status</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="results-container" class="results-container">
+    <!-- Dynamically populated -->
+  </div>
+
+  <div class="results-pagination">
+    <button id="prev-page" class="btn-secondary" onclick="prevPage()">← Previous</button>
+    <span id="pagination-info">Page 1 of 1</span>
+    <button id="next-page" class="btn-secondary" onclick="nextPage()">Next →</button>
+  </div>
+</div>
+
+<!-- DISCLAIMER -->
+<section id="disclaimer" class="disclaimer-section reveal">
+  <div class="container">
+    <div class="disclaimer-box">
+      <h3>📋 Important Disclaimer</h3>
+      <p>All information displayed on this portal is public and sourced from official eCourts platforms. This tool is provided for informational purposes only and does not constitute legal advice. For official court information, please contact the respective court or visit official government portals.</p>
+      <p><strong>Data Accuracy:</strong> While we strive for accuracy, we recommend verifying critical information directly with the court. Ink & Equity is not responsible for errors or omissions in third-party data.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><span class="footer-logo-name">Ink & Equity</span><p>A modern litigation practice. Practicing before the Supreme Court, Delhi HC, Allahabad HC and UP courts.</p><div style="margin-top:var(--space-6);"><div class="footer-contact-item"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h3l1.5 3.5-2 1.5c1 2 2.5 3.5 4.5 4.5l1.5-2L14 12v3c-7 0-12-5-12-12z"/></svg><span>+91 9450 72 7289</span></div><div class="footer-contact-item"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h12v8H2zM2 4l6 5 6-5"/></svg><span>ChamberLko@gmail.com</span></div></div></div>
+      <div class="footer-col"><h4>Practice</h4><ul><li><a href="practice-areas.html">Constitutional Law</a></li><li><a href="practice-areas.html">Civil Litigation</a></li><li><a href="practice-areas.html">Criminal Defence</a></li><li><a href="practice-areas.html">Service Matters</a></li><li><a href="practice-areas.html">Tax Law</a></li></ul></div>
+      <div class="footer-col"><h4>Firm</h4><ul><li><a href="about.html">About</a></li><li><a href="about.html#team">Team</a></li><li><a href="insights.html">Insights</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Office Hours</h4><div class="footer-hours"><p><span>Mon–Fri</span><span>6:30–9:00 PM</span></p><p><span>Saturday</span><span>11 AM–1 PM</span></p><p><span>Sunday</span><span>11 AM–4 PM</span></p></div></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-bottom-left">© 2024 Ink & Equity. All rights reserved.</p><div class="footer-bottom-right"><a href="#">Disclaimer</a><a href="#">Privacy</a></div></div>
+    <p class="footer-disclaimer-note">Due to ethical rules set by the Advocates Act, 1961 and the Bar Council of India, Ink & Equity cannot advertise or solicit clients. Nothing herein constitutes legal advice.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/919450727289" id="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+<script src="js/global.js"></script>
+<script src="js/forms.js"></script>
+<script src="js/courts-data.js"></script>
+<script src="js/courts-ecourts.js"></script>
+</body>
+</html>
