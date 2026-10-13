@@ -29,7 +29,12 @@ PRACTICE = [
     ("cyber-crime-and-online-fraud", "Cyber crime and online fraud",
      "Reporting, evidence, bank disputes and criminal proceedings."),
 ]
-OTHER_AREAS = ["Civil litigation", "Criminal law", "Tax law", "Family law"]
+# Extra practice areas live in tools/practice_content.py (one page each).
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from practice_content import NEW_PRACTICE, NEW_PAGES
+PRACTICE = PRACTICE + NEW_PRACTICE
+HOME_PRACTICE = PRACTICE[:4]
+OTHER_AREAS = []
 
 TEAM = [
     ("rishabh", "Rishabh Raj", "Founding partner", "Constitutional and writ matters, property, service matters, cyber crime."),
@@ -140,7 +145,7 @@ def header(depth, current):
 
 def footer(depth):
     p = lambda x: rel(depth, x)
-    areas = "".join(f'<li><a href="{p("practice/" + s + ".html")}">{t}</a></li>' for s, t, _ in PRACTICE)
+    areas = "".join(f'<li><a href="{p("practice/" + s + ".html")}">{t}</a></li>' for s, t, _ in HOME_PRACTICE)
     return f'''<footer class="site-footer"><div class="wrap">
 <div class="foot">
 <div><h2>{NAME}</h2>
@@ -217,7 +222,7 @@ def home():
     p = lambda x: rel(d, x)
     rows = "".join(
         f'<li><a class="row" href="{p("practice/" + s + ".html")}"><h3>{t}</h3><p>{blurb}</p><span class="go" aria-hidden="true">Read more</span></a></li>'
-        for s, t, blurb in PRACTICE)
+        for s, t, blurb in HOME_PRACTICE)
     body = f'''<section class="hero"><div class="wrap">
 <p class="site-name">{NAME}, advocates and legal consultants in Lucknow</p>
 <div class="hero-grid">
@@ -233,7 +238,7 @@ def home():
 <h2>Areas of practice</h2>
 <p class="lede">Each page explains the law in plain terms: what the area covers, where matters are heard, and which papers usually matter.</p>
 <ul class="index">{rows}</ul>
-<p class="also">The practice also handles {", ".join(a.lower() for a in OTHER_AREAS[:-1])} and {OTHER_AREAS[-1].lower()} matters. See <a class="link" href="{p("practice-areas.html")}">all areas</a>.</p>
+<p class="also">The practice covers {len(PRACTICE)} areas in total. See <a class="link" href="{p("practice-areas.html")}">all areas</a>.</p>
 </div></section>
 
 <section class="section" id="advocate"><div class="wrap founder">
@@ -268,7 +273,7 @@ def home():
         ORG,
         {"@type": "WebSite", "@id": BASE + "/#site", "url": BASE + "/", "name": NAME, "publisher": {"@id": BASE + "/#firm"}}]}]
     PAGES.append(("", MODIFIED))
-    write("index.html", shell(depth=0, path="", current="", title="Ink & Equity: Advocates and Legal Consultants, Lucknow",
+    write("index.html", shell(depth=0, path="", current="", title="Ink & Equity | Rishabh Raj, Advocates, Lucknow",
         desc="Ink & Equity is a law practice in Lucknow. Read about its areas of practice, its advocates and the courts they appear in. Address and contact details.",
         body=body, ld=ld))
 
@@ -366,11 +371,10 @@ def practice_index():
     body = f'''<section class="page-head"><div class="wrap">
 <p class="site-name">Areas of practice</p>
 <h1>What the practice handles.</h1>
-<p class="lede">Four areas have their own pages. The practice also handles civil, criminal, tax and family matters.</p>
+<p class="lede">{len(PRACTICE)} areas have their own pages, from constitutional and writ matters to cross-border and NRI work.</p>
 </div></section>
 <section class="section"><div class="wrap">
 <ul class="index">{rows}</ul>
-<p class="also">Also: {", ".join(a.lower() for a in OTHER_AREAS)}. Pages for these will be added over time.</p>
 <div class="aside-note">These pages give general information and are reviewed from time to time. The law changes, and every matter turns on its own facts. Nothing here is legal advice.</div>
 </div></section>'''
     ld = [crumbs([("Home", BASE + "/"), ("Areas of practice", BASE + "/practice-areas.html")])]
@@ -517,6 +521,9 @@ PAGES_CONTENT = {
         ("Can I get my money back?", "It depends on how fast the fraud was reported, where the money moved and the bank's policy. No outcome can be promised."),
     ]),
 }
+
+
+PAGES_CONTENT.update(NEW_PAGES)
 
 
 def practice_pages():
