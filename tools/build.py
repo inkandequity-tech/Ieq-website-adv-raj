@@ -32,6 +32,7 @@ PRACTICE = [
 # Extra practice areas live in tools/practice_content.py (one page each).
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from practice_content import NEW_PRACTICE, NEW_PAGES
+import mapdata
 PRACTICE = PRACTICE + NEW_PRACTICE
 HOME_PRACTICE = PRACTICE[:4]
 OTHER_AREAS = []
@@ -135,6 +136,7 @@ def esc(s):
 
 NAV = [
     ("practice", "practice-areas.html", "Practice"),
+    ("map", "map.html", "Map"),
     ("about", "about.html", "About"),
     ("insights", "insights.html", "Insights"),
     ("library", "case-library.html", "Library"),
@@ -174,6 +176,7 @@ def footer(depth):
 <div><h2>The practice</h2><ul>
 <li><a href="{p("about.html")}">About</a></li>
 <li><a href="{p("rishabh-raj.html")}">Rishabh Raj, Advocate</a></li>
+<li><a href="{p("map.html")}">Map of the areas</a></li>
 <li><a href="{p("insights.html")}">Insights</a></li>
 <li><a href="{p("case-library.html")}">Case library</a></li>
 <li><a href="{p("careers.html")}">Careers</a></li>
@@ -253,6 +256,15 @@ def home():
 <div class="hero-actions"><a class="btn solid" href="{p("practice-areas.html")}">Areas of practice</a><a class="btn" href="{p("contact.html")}">Contact the chamber</a></div>
 <p class="hint">The headline bleeds where you point.</p>
 </div></div>
+</div></section>
+
+<section class="section reveal ways" id="ways"><div class="wrap">
+<h2 class="ways-h">Three ways to look around</h2>
+<div class="ways-grid">
+<div><h3>Get to know the practice</h3><p>Its history, its advocates and the profile of Rishabh Raj.</p><p><a class="link" href="{p("about.html")}">About</a> <span aria-hidden="true">&middot;</span> <a class="link" href="{p("rishabh-raj.html")}">Profile</a></p></div>
+<div><h3>Find a topic</h3><p>{len(PRACTICE)} areas of practice, drawn as a map that shows how they group and which forums the worked scenarios name.</p><p><a class="link" href="{p("map.html")}">Open the map</a> <span aria-hidden="true">&middot;</span> <a class="link" href="{p("practice-areas.html")}">List of areas</a></p></div>
+<div><h3>Read in depth</h3><p>Worked hypothetical scenarios, and commentary on judgments.</p><p><a class="link" href="{p("case-library.html")}">Case library</a> <span aria-hidden="true">&middot;</span> <a class="link" href="{p("insights.html")}">Insights</a></p></div>
+</div>
 </div></section>
 
 <section class="section reveal" id="practice"><div class="wrap">
@@ -557,6 +569,7 @@ def practice_pages():
         faq = "".join(f"<details><summary>{q}</summary><p>{a}</p></details>" for q, a in c["faq"])
         others = "".join(f'<li><a href="{p("practice/" + s + ".html")}">{tt}</a></li>' for s, tt, _ in PRACTICE if s != slug)
         sc = SCEN_BY_PRACTICE.get(slug, [])
+        onmap = f'<p class="onmap"><a class="link" href="{p("map.html")}#map-{slug}">See this area on the map</a></p>'
         scen = ('<h2>Illustrative scenarios</h2><p>Worked hypothetical scenarios in this area. They are general information and do not describe actual matters.</p><ul class="related">'
                 + "".join(f'<li><a href="{p("library/" + x["slug"] + ".html")}">{esc(x["title"])}</a></li>' for x in sc) + "</ul>") if sc else ""
         body = f'''<section class="page-head"><div class="wrap">
@@ -570,6 +583,7 @@ def practice_pages():
 <h2>Common questions</h2>
 <div class="faq">{faq}</div>
 {scen}
+{onmap}
 <div class="aside-note">This page gives general information. It is not legal advice, the law changes, and every matter turns on its own facts. Advocates cannot solicit work, and nothing here is an invitation to instruct. Contact details are on the <a href="{p("contact.html")}">contact page</a>.</div>
 <h2>Other areas</h2>
 <ul class="related">{others}</ul>
@@ -838,6 +852,7 @@ def library_pages():
             f'<li><a href="{p("library/" + y["slug"] + ".html")}">{esc(y["title"])}</a></li>' for y in same) + "</ul>") if same else ""
         ptitle = next((t for s_, t, _ in PRACTICE if s_ == x["practice"]), "")
         plink = f'<li><a href="{p("practice/" + x["practice"] + ".html")}">{esc(ptitle)}: area overview</a></li>' if ptitle else ""
+        mlink = f'<li><a href="{p("map.html")}#map-{x["practice"]}">See this area on the map</a></li>'
         cite = [("Ref.", x["ref"]), ("Type", "Illustrative scenario"), ("Area", x["area"]), ("Jurisdiction", x["jurisdiction"]),
                 ("Forum", x["forum"]), ("Audience", x["audience"]), ("Prepared", SCEN_DATE_HUMAN), ("Status", SCEN_STATUS)]
         cite_html = "".join(f"<div><dt>{esc(a)}</dt><dd>{esc(b)}</dd></div>" for a, b in cite if b)
@@ -853,7 +868,7 @@ def library_pages():
 <div class="notice-box" role="note"><strong>Illustrative scenario.</strong> {esc(SCEN_NOTICE)}</div>
 {"".join(parts)}
 <h2>Related</h2>
-<ul class="related">{plink}<li><a href="{p("case-library.html")}">Back to the case library</a></li></ul>
+<ul class="related">{plink}{mlink}<li><a href="{p("case-library.html")}">Back to the case library</a></li></ul>
 {more}
 <div class="aside-note">This page gives general information. It is not legal advice, the law changes, and every matter turns on its own facts. Contact details are on the <a href="{p("contact.html")}">contact page</a>.</div>
 </article></div></section>'''
@@ -866,6 +881,44 @@ def library_pages():
                           body=body, ld=ld, og_type="article"))
 
 
+def map_page():
+    """The thread map: areas of practice, their worked scenarios and the forums those scenarios name."""
+    d = 0
+    p = lambda x: rel(d, x)
+    m = mapdata.render(PRACTICE, LIB, p)
+    body = f'''<section class="page-head map-head"><div class="wrap map-head-grid">
+<div><p class="site-name">Map of the areas of practice</p>
+<h1>How the areas connect.</h1></div>
+<div class="map-head-aside"><p class="lede">{m["n_areas"]} areas in {m["n_fams"]} families. Each small bead is a worked, hypothetical scenario from the case library. Choose a forum to see which areas name it.</p>
+<p class="meta-line">General information, prepared {SCEN_DATE_HUMAN}.</p></div>
+</div></section>
+<section class="map-stage" aria-labelledby="map-h"><div class="wrap">
+<h2 class="sr" id="map-h">The map</h2>
+<div class="map-grid">
+<figure class="map" id="map">{m["svg"]}<div class="map-tip" id="map-tip" hidden></div>
+<figcaption>Each diamond is an area of practice, grouped into families around the centre. Filled diamonds have a worked scenario, shown as a bead. Hollow ones do not yet. The list below the map holds the same information as text.</figcaption></figure>
+<div class="map-side">
+<div class="map-filter" id="map-filter" hidden><p class="map-filter-h" id="map-filter-h">Forum named in a scenario</p><div class="chips" role="group" aria-labelledby="map-filter-h">{m["chips"]}</div></div>
+<p class="map-status" id="map-status" role="status" aria-live="polite"></p>
+<aside class="map-read" id="map-read" aria-label="Selected area" hidden></aside>
+</div>
+</div>
+<div class="aside-note">The map shows how the pages of this website relate to one another. A forum appears on it only because a hypothetical scenario names it. It does not show where the advocates appear, and it is not legal advice.</div>
+</div></section>
+<section class="section" id="list"><div class="wrap">
+<h2>All areas, as a list</h2>
+<p class="lede">Grouped by family, with the scenarios and forums for each area.</p>
+<div class="map-list">{m["list"]}</div>
+</div></section>'''
+    ld = [crumbs([("Home", BASE + "/"), ("Map of the areas of practice", BASE + "/map.html")]),
+          {"@context": "https://schema.org", "@type": "WebPage", "url": BASE + "/map.html", "name": "Map of the areas of practice",
+           "dateModified": SCEN_DATE, "publisher": {"@id": BASE + "/#firm"}}]
+    PAGES.append(("map.html", SCEN_DATE))
+    write("map.html", shell(depth=0, path="map.html", current="map", title="Map of the Areas of Practice | Ink & Equity",
+        desc=f"An interactive map of the {m['n_areas']} areas of practice at Ink & Equity, Lucknow, with worked hypothetical scenarios and the forums they name. General information.",
+        body=body, ld=ld))
+
+
 def sitemap_and_robots():
     urls = "\n".join(
         f"  <url><loc>{BASE}/{path}</loc><lastmod>{mod}</lastmod></url>" for path, mod in PAGES)
@@ -874,6 +927,6 @@ def sitemap_and_robots():
 
 
 if __name__ == "__main__":
-    home(); about(); rishabh(); practice_index(); practice_pages(); article(); insights(); case_library(); library_pages(); contact(); careers()
+    home(); about(); rishabh(); practice_index(); practice_pages(); article(); insights(); case_library(); library_pages(); map_page(); contact(); careers()
     disclaimer(); privacy(); not_found(); sitemap_and_robots()
     print(f"built {len(PAGES)} indexable pages + 404")

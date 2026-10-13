@@ -63,6 +63,13 @@ for rel, c in canon.items():
     if not noidx and c not in locs: fail(f"{rel}: missing from sitemap")
 for l in locs:
     if l not in canon.values(): fail(f"sitemap URL without page: {l}")
+# map.html must reach every area page and every scenario page (it is generated, so this catches a broken build or config)
+mp = ROOT / "map.html"
+if mp.exists():
+    ms = mp.read_text(encoding="utf-8")
+    for d in ("practice", "library"):
+        for f in sorted((ROOT / d).glob("*.html")):
+            if f"{d}/{f.name}" not in ms: fail(f"map.html does not link to {d}/{f.name}")
 # whole-repo enrolment/secret scan
 for f in ROOT.rglob("*"):
     if f.is_file() and ".git" not in f.parts and f.suffix in (".html",".js",".css",".md",".txt",".xml",".py",".svg"):
