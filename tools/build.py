@@ -383,6 +383,37 @@ def rishabh():
         body=body, ld=ld, og_type="profile", og_alt="Rishabh Raj, advocate, Lucknow"))
 
 
+def forum_map(p):
+    """Simplified map of the forums most matters pass through. Clickable; draws in on scroll."""
+    def node(x, y, w, h, title, sub, href=None, cls=""):
+        inner = (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="14" class="fnode {cls}"/>'
+                 f'<text x="{x + w/2}" y="{y + 26}" text-anchor="middle" class="ftitle">{title}</text>'
+                 f'<text x="{x + w/2}" y="{y + 44}" text-anchor="middle" class="fsub">{sub}</text>')
+        if href:
+            return f'<a href="{href}" class="fnode-link"><title>{title}: {sub}</title>{inner}</a>'
+        return f'<g><title>{title}: {sub}</title>{inner}</g>'
+    sc = node(250, 20, 220, 56, "Supreme Court of India", "Article 32 writs and appeals", cls="top")
+    hc = node(70, 160, 270, 56, "High Court at Allahabad", "Lucknow bench \u00b7 Article 226 writs and appeals", href=p("practice/constitutional-and-writ.html"))
+    tr = node(400, 160, 270, 56, "Tribunals", "CAT, NCLT, NGT and similar bodies", href=p("practice/service-matters.html"))
+    dc = node(70, 300, 270, 56, "District and civil courts", "Suits, criminal trials, first appeals", href=p("practice/criminal-law.html"))
+    cm = node(400, 300, 270, 56, "Commissions and regulators", "Consumer, RERA and sector forums", href=p("practice/consumer-protection.html"))
+    lines = (
+        '<path class="flink" d="M205 160 L360 76" />'
+        '<path class="flink" d="M405 160 L360 76" />'
+        '<path class="flink dash" d="M205 216 L205 300" />'
+        '<path class="flink dash" d="M535 216 L535 300" />'
+        '<path class="flink dash" d="M340 188 L400 188" />'
+    )
+    return f"""<figure class="forum-map reveal" aria-labelledby="forum-map-title">
+<figcaption id="forum-map-title"><span class="kicker">Simplified map</span>Where most matters are heard</figcaption>
+<svg viewBox="0 0 720 390" role="img" aria-label="Diagram of the Supreme Court, the High Court, tribunals, district courts and commissions. Solid lines show usual routes; dashed lines show routes that depend on the statute.">
+{lines}{sc}{hc}{tr}{dc}{cm}
+</svg>
+<p class="forum-note">Solid lines show the usual route. Dashed lines apply only where the statute allows. The right forum depends on the subject, the relief sought and the order being challenged, so check the relevant page before relying on any route.</p>
+</figure>
+"""
+
+
 def practice_index():
     d = 0
     p = lambda x: rel(d, x)
@@ -395,6 +426,7 @@ def practice_index():
 <p class="lede">{len(PRACTICE)} areas have their own pages, from constitutional and writ matters to cross-border and NRI work.</p>
 </div></section>
 <section class="section"><div class="wrap">
+{forum_map(p)}
 <ul class="index">{rows}</ul>
 <p class="also">Worked hypothetical scenarios for many of these areas are in the <a class="link" href="{p("case-library.html")}">case library</a>.</p>
 <div class="aside-note">These pages give general information and are reviewed from time to time. The law changes, and every matter turns on its own facts. Nothing here is legal advice.</div>
