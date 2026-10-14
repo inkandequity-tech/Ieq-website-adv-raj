@@ -334,3 +334,150 @@
   }); });
   q.addEventListener("input", run); run();
 })();
+
+/* Thread map (map.html). Enhancement only: the page already holds the same information as a list.
+   Selection, the forum filter and the readout all read the list and the data attributes in the markup. */
+(function () {
+  "use strict";
+  var doc = document, fig = doc.getElementById("map"); if (!fig) return;
+  var svg = doc.getElementById("map-svg"), read = doc.getElementById("map-read"), tip = doc.getElementById("map-tip");
+  var filter = doc.getElementById("map-filter"), status = doc.getElementById("map-status");
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var small = window.matchMedia("(max-width: 900px)");
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || doc).querySelectorAll(s)); };
+  var nodes = $$(".m-n", svg), hubs = $$(".m-h", svg), items = $$(".map-item"), chips = $$(".chip", filter);
+  var itemOf = {}, nodeOf = {}, famLabel = {}, famAreas = {};
+  items.forEach(function (li) { itemOf[li.getAttribute("data-area")] = li; });
+  nodes.forEach(function (n) {
+    var a = n.getAttribute("data-area"), f = n.getAttribute("data-family");
+    nodeOf[a] = n;
+    (famAreas[f] = famAreas[f] || []).push(a);
+  });
+  items.forEach(function (li) { famLabel[nodeOf[li.getAttribute("data-area")].getAttribute("data-family")] = li.getAttribute("data-family-label"); });
+  var forumName = {};
+  chips.forEach(function (c) { forumName[c.getAttribute("data-forum")] = c.textContent; });
+  var forum = "", active = "", activeFam = "";
+
+  function of(slug) { return $$('[data-area="' + slug + '"]', svg); }
+  function el(tag, cls, text) { var e = doc.createElement(tag); if (cls) e.className = cls; if (text) e.textContent = text; return e; }
+
+  /* ---- forum filter ---- */
+  function setForum(id) {
+    forum = id === forum ? "" : id;
+    var lit = 0;
+    nodes.forEach(function (n) {
+      var on = !!forum && (" " + n.getAttribute("data-forums") + " ").indexOf(" " + forum + " ") > -1;
+      if (on) lit++;
+      of(n.getAttribute("data-area")).forEach(function (e) { e.classList.toggle("lit", on); });
+      itemOf[n.getAttribute("data-area")].classList.toggle("is-lit", on);
+    });
+    fig.classList.toggle("is-forum", !!forum);
+    chips.forEach(function (c) { c.setAttribute("aria-pressed", String(c.getAttribute("data-forum") === forum)); });
+    status.textContent = forum
+      ? lit + (lit === 1 ? " area has" : " areas have") + " a worked scenario that names " + forumName[forum] + ". Shown lit on the map and marked in the list."
+      : "";
+  }
+
+  /* ---- selection and readout ---- */
+  function clearMarks() {
+    nodes.concat(hubs).forEach(function (n) { n.classList.remove("is-active"); });
+    items.forEach(function (li) { li.classList.remove("is-active"); });
+    $$(".m-e", svg).forEach(function (e) { e.classList.remove("fam-on"); });
+  }
+  function famOn(f) {
+    $$('.m-e[data-family="' + f + '"]', svg).forEach(function (e) { e.classList.add("fam-on"); });
+  }
+  function prompt() {
+    read.textContent = "";
+    read.appendChild(el("p", "k", "The map"));
+    read.appendChild(el("p", "", "Choose a diamond to see that area, its worked scenarios and the forums they name. The smaller marks near the centre stand for the families. Choose a forum above to light every area that names it."));
+  }
+  function reveal() {
+    if (!small.matches) return;
+    var r = read.getBoundingClientRect();
+    if (r.bottom > innerHeight || r.top < 76) read.scrollIntoView({ block: "nearest", behavior: reduce ? "auto" : "smooth" });
+  }
+  function clear() {
+    active = activeFam = ""; clearMarks(); prompt();
+    if (history.replaceState && location.hash) history.replaceState(null, "", location.pathname + location.search);
+  }
+  function selectArea(slug, scroll) {
+    var li = itemOf[slug], n = nodeOf[slug]; if (!li || !n) return;
+    clearMarks(); active = slug; activeFam = n.getAttribute("data-family");
+    n.classList.add("is-active"); li.classList.add("is-active"); famOn(activeFam);
+    read.textContent = "";
+    read.appendChild(el("p", "k", li.getAttribute("data-family-label")));
+    var h = el("h3"); h.appendChild(li.querySelector(".map-title").cloneNode(true)); read.appendChild(h);
+    $$(".map-blurb,.map-meta", li).forEach(function (p) { read.appendChild(p.cloneNode(true)); });
+    var b = el("button", "btn small", "Clear"); b.type = "button"; b.addEventListener("click", clear); read.appendChild(b);
+    if (history.replaceState) history.replaceState(null, "", "#map-" + slug);
+    if (scroll) reveal();
+  }
+  function selectFamily(f) {
+    clearMarks(); active = ""; activeFam = f;
+    hubs.forEach(function (h) { if (h.getAttribute("data-family") === f) h.classList.add("is-active"); });
+    famOn(f);
+    read.textContent = "";
+    read.appendChild(el("p", "k", "Family"));
+    read.appendChild(el("h3", "", famLabel[f]));
+    var ul = el("ul");
+    famAreas[f].forEach(function (a) {
+      var li = el("li"), src = itemOf[a].querySelector(".map-title").cloneNode(true);
+      li.appendChild(src); ul.appendChild(li);
+    });
+    read.appendChild(ul);
+    var b = el("button", "btn small", "Clear"); b.type = "button"; b.addEventListener("click", clear); read.appendChild(b);
+    reveal();
+  }
+
+  /* ---- hover label (mouse only) ---- */
+  function showTip(g, text) {
+    var d = g.querySelector(".m-dot, .m-hub").getBoundingClientRect(), f = fig.getBoundingClientRect();
+    tip.textContent = text; tip.hidden = false;
+    var w = tip.offsetWidth, x = d.left + d.width / 2 - f.left;
+    x = Math.max(w / 2 + 4, Math.min(f.width - w / 2 - 4, x));
+    tip.style.left = x + "px"; tip.style.top = (d.top - f.top) + "px";
+  }
+  svg.addEventListener("pointerover", function (e) {
+    if (e.pointerType !== "mouse") return;
+    var g = e.target.closest(".m-n, .m-h"); if (!g) return;
+    g.classList.add("is-peek");
+    showTip(g, g.classList.contains("m-n") ? itemOf[g.getAttribute("data-area")].querySelector(".map-title").textContent : famLabel[g.getAttribute("data-family")]);
+  });
+  svg.addEventListener("pointerout", function (e) {
+    var g = e.target.closest(".m-n, .m-h"); if (!g) return;
+    g.classList.remove("is-peek"); tip.hidden = true;
+  });
+  svg.addEventListener("click", function (e) {
+    var g = e.target.closest(".m-n, .m-h");
+    if (!g) { if (active || activeFam) clear(); return; }
+    if (g.classList.contains("m-n")) selectArea(g.getAttribute("data-area"), true);
+    else selectFamily(g.getAttribute("data-family"));
+  });
+
+  /* ---- the list lights its point on the map, so keyboard users get the same feedback as hover ---- */
+  items.forEach(function (li) {
+    var n = nodeOf[li.getAttribute("data-area")];
+    var on = function () { n.classList.add("is-peek"); }, off = function () { n.classList.remove("is-peek"); };
+    li.addEventListener("mouseenter", on); li.addEventListener("mouseleave", off);
+    li.addEventListener("focusin", on); li.addEventListener("focusout", off);
+  });
+
+  chips.forEach(function (c) { c.addEventListener("click", function () { setForum(c.getAttribute("data-forum")); }); });
+  doc.addEventListener("keydown", function (e) {
+    if (e.key !== "Escape") return;
+    if (active || activeFam) clear();
+    if (forum) setForum(forum);
+    tip.hidden = true;
+  });
+  addEventListener("resize", function () { tip.hidden = true; });
+
+  /* ---- go ---- */
+  filter.hidden = false; read.hidden = false; fig.classList.add("is-ready"); prompt();
+  var m = /^#map-([a-z0-9-]+)$/.exec(location.hash);
+  if (m && itemOf[m[1]]) {
+    selectArea(m[1], false);
+    var stage = doc.querySelector(".map-stage");
+    if (stage) window.scrollTo({ top: stage.getBoundingClientRect().top + scrollY - 76, behavior: "instant" });
+  }
+})();

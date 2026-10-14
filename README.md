@@ -23,6 +23,7 @@ It is a **static site**. There is no database, no form handler, no analytics and
 | `/about.html` | Name, history of the practice (timeline), the seven advocates | yes |
 | `/rishabh-raj.html` | Profile page for name searches: qualification, enrolment year, bar associations, courts, areas of practice, a note separating him from other advocates of the same name | yes |
 | `/practice-areas.html` | Index of all areas of practice | yes |
+| `/map.html` | Thread map: the areas of practice grouped into families, with the worked scenarios and the forums those scenarios name | yes |
 | `/practice/constitutional-and-writ.html` | Articles 226, 32, 136; writs; alternative remedy and delay | yes |
 | `/practice/service-matters.html` | Recruitment, promotion, discipline, pension; tribunals and the High Court | yes |
 | `/practice/property-and-real-estate.html` | Title, tenancy, RERA, development authorities, limitation | yes |
@@ -87,6 +88,14 @@ python3 -m http.server 8000   # preview at http://localhost:8000
 - **Layout.** Left-aligned, 62-character text measure, one wide index list instead of card grids. Numbers appear only where content is a real sequence (steps before a first meeting; the practice timeline).
 - **Themes.** Follows the system setting, remembered after a toggle.
 - **Accessibility.** Skip link, visible focus, `aria-current`, reduced-motion support, semantic landmarks, alt text on portraits, content readable with JavaScript off.
+
+### The thread map (`/map.html`)
+
+Generated from existing content, never typed per area: `tools/mapdata.py` lays out one point per area page (`PRACTICE`), one bead per published scenario (`scenarios.json`), and groups them using `tools/content/map.json`. `build.py` stops if an area is missing from a family, if a scenario's forum label has no entry in `forum_map`, or if a forum id is unknown, and `lint.py` fails if `map.html` does not link to every area and scenario page.
+
+- `map.json` holds two editorial choices that **need the advocate's review**: the six families, and how each scenario's free-text forum label maps to the ten forum filters. "Forum" on the map means "a forum named in a hypothetical scenario", never "a forum where the practice appears".
+- With JavaScript off, the page is the text list of areas, scenarios and forums. JavaScript adds the forum filter, hover labels, selection, the readout and `map.html#map-<area-slug>` deep links (used by "See this area on the map" on area and scenario pages). The list marks the same areas as the map (text flag, not colour alone), and focusing a list link lights its point on the map.
+- Effects used: colour and opacity transitions, one glow on the areas that match a forum, and a hover label. Nothing moves on its own. Reduced motion removes the transitions.
 
 ### Motion and quirks (all optional, all off under reduced motion)
 
